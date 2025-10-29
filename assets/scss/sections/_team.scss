@@ -1,0 +1,727 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+.team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  // Hero section styles
+  .team-hero {
+    padding: 2rem 0 4rem;
+    position: relative;
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+
+      .team-badge {
+        display: inline-block;
+        background: color-mix(in srgb, var(--accent-color), transparent 85%);
+        color: var(--accent-color);
+        font-weight: 600;
+        padding: 0.5rem 1.25rem;
+        border-radius: 30px;
+        margin-bottom: 1.25rem;
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+      }
+
+      h2 {
+        font-size: 2.75rem;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        margin-bottom: 2rem;
+        max-width: 90%;
+      }
+
+      .team-metrics {
+        display: flex;
+        gap: 2.5rem;
+        margin-bottom: 2.5rem;
+
+        .metric {
+          .counter {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent-color);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+          }
+
+          .label {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--heading-color);
+          }
+        }
+      }
+
+      .btn-discover {
+        background-color: var(--accent-color);
+        color: var(--contrast-color);
+        padding: 0.9rem 2rem;
+        border-radius: 50px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        display: inline-block;
+        border: none;
+
+        &:hover {
+          background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+          transform: translateY(-3px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+
+    .hero-image-wrapper {
+      position: relative;
+
+      .hero-image {
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          right: -20px;
+          bottom: -20px;
+          border: 4px solid var(--accent-color);
+          border-radius: 20px;
+          z-index: -1;
+        }
+
+        img {
+          border-radius: 20px;
+          transition: transform 0.8s ease;
+          width: 100%;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
+
+  // Section header styles
+  .section-header {
+    margin-bottom: 3.5rem;
+
+    h3 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      position: relative;
+      display: inline-block;
+      font-weight: 700;
+
+      &:after {
+        content: '';
+        width: 70px;
+        height: 4px;
+        background: var(--accent-color);
+        position: absolute;
+        bottom: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 2px;
+      }
+    }
+
+    p {
+      font-size: 1.15rem;
+      color: color-mix(in srgb, var(--default-color), transparent 30%);
+      max-width: 700px;
+      margin: 0 auto;
+      margin-top: 1.5rem;
+    }
+  }
+
+  // Notable Team section
+  .notable-team {
+    padding: 5rem;
+    background-color: color-mix(in srgb, var(--default-color), transparent 96%);
+    border-radius: 20px;
+    margin: 4rem 0;
+
+    .team-profile {
+      background-color: var(--surface-color);
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+      margin-bottom: 30px;
+      position: relative;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      }
+
+      .profile-header {
+        position: relative;
+
+        .profile-img {
+          height: 260px;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.5s ease;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+
+        .profile-year {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          background-color: var(--accent-color);
+          color: var(--contrast-color);
+          padding: 0.5rem 1rem;
+          border-radius: 30px;
+          font-weight: 700;
+          font-size: 0.9rem;
+        }
+      }
+
+      .profile-body {
+        padding: 2rem;
+
+        h4 {
+          font-size: 1.4rem;
+          margin-bottom: 0.5rem;
+          font-weight: 700;
+        }
+
+        .profile-title {
+          display: block;
+          color: var(--accent-color);
+          font-weight: 600;
+          margin-bottom: 1.25rem;
+          font-size: 0.95rem;
+        }
+
+        p {
+          margin-bottom: 1.5rem;
+          line-height: 1.7;
+        }
+
+        .btn-view-profile {
+          color: var(--accent-color);
+          font-weight: 600;
+          display: inline-flex;
+          align-items: center;
+          transition: all 0.3s ease;
+
+          i {
+            margin-left: 0.5rem;
+            transition: transform 0.3s ease;
+          }
+
+          &:hover {
+            color: color-mix(in srgb, var(--accent-color), transparent 25%);
+
+            i {
+              transform: translateX(5px);
+            }
+          }
+        }
+      }
+
+      .achievement-badge {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: var(--accent-color);
+        color: var(--contrast-color);
+        padding: 0.75rem 2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-weight: 600;
+        font-size: 0.9rem;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+
+        i {
+          font-size: 1.1rem;
+        }
+      }
+
+      &:hover .achievement-badge {
+        transform: translateY(0);
+      }
+    }
+
+    .btn-explore {
+      display: inline-block;
+      border: 2px solid var(--accent-color);
+      color: var(--accent-color);
+      padding: 0.8rem 2.5rem;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: var(--accent-color);
+        color: var(--contrast-color);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  // Team Engagement section
+  .team-engagement {
+    padding: 4rem 0;
+
+    .engagement-cards {
+      .engagement-card {
+        background-color: var(--surface-color);
+        border-radius: 15px;
+        padding: 2.5rem 1.5rem;
+        text-align: center;
+        height: 100%;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+
+          .card-icon {
+            background-color: var(--accent-color);
+            color: var(--contrast-color);
+            transform: rotateY(360deg);
+          }
+        }
+
+        .card-icon {
+          width: 90px;
+          height: 90px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto 1.5rem;
+          background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+          color: var(--accent-color);
+          border-radius: 50%;
+          font-size: 2.5rem;
+          transition: all 0.5s ease;
+        }
+
+        h4 {
+          font-size: 1.3rem;
+          margin-bottom: 1.25rem;
+        }
+
+        p {
+          margin-bottom: 1.5rem;
+          font-size: 0.95rem;
+          line-height: 1.7;
+        }
+
+        .card-link {
+          color: var(--accent-color);
+          font-weight: 600;
+          position: relative;
+          display: inline-block;
+
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+          }
+
+          &:hover:after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  // Upcoming Events section
+  .upcoming-events {
+    padding: 4rem 0;
+
+    .events-wrapper {
+      background-color: var(--surface-color);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+      .event {
+        display: flex;
+        padding: 1.75rem 2rem;
+        border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+        transition: all 0.3s ease;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        &:hover {
+          background-color: color-mix(in srgb, var(--background-color), #f8f9fa 50%);
+
+          .date-badge {
+            background-color: var(--accent-color);
+            color: var(--contrast-color);
+            transform: scale(1.05);
+          }
+        }
+
+        .date-badge {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          min-width: 85px;
+          height: 85px;
+          background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+          color: var(--accent-color);
+          border-radius: 12px;
+          margin-right: 2rem;
+          transition: all 0.3s ease;
+
+          .month {
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+
+          .day {
+            font-size: 1.8rem;
+            font-weight: 800;
+            line-height: 1;
+            margin-top: 0.25rem;
+          }
+        }
+
+        .event-info {
+          flex: 1;
+
+          h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+          }
+
+          .event-meta {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 1rem;
+            color: color-mix(in srgb, var(--default-color), transparent 30%);
+            font-size: 0.9rem;
+
+            span {
+              display: inline-flex;
+              align-items: center;
+
+              i {
+                margin-right: 0.5rem;
+                color: var(--accent-color);
+              }
+            }
+          }
+
+          p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 0;
+          }
+        }
+
+        .event-action {
+          display: flex;
+          align-items: center;
+          margin-left: 2rem;
+
+          .btn-register {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--contrast-color);
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+
+            &:hover {
+              background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+              transform: translateY(-3px);
+              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+          }
+        }
+      }
+    }
+
+    .calendar-link {
+      display: inline-flex;
+      align-items: center;
+      color: var(--heading-color);
+      font-weight: 600;
+      margin-top: 2rem;
+
+      i {
+        margin-left: 0.75rem;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover {
+        color: var(--accent-color);
+
+        i {
+          transform: translateX(5px);
+        }
+      }
+    }
+  }
+
+  // Impact Banner section
+  .impact-banner {
+    background-color: color-mix(in srgb, var(--heading-color), transparent 90%);
+    padding: 3rem;
+    border-radius: 20px;
+    margin-top: 4rem;
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.3;
+    }
+
+    .impact-content {
+      position: relative;
+      z-index: 2;
+
+      h3 {
+        font-size: 2.2rem;
+        color: var(--heading-color);
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+        line-height: 1.8;
+      }
+
+      .impact-buttons {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+
+        .btn-donate {
+          background-color: var(--accent-color);
+          color: var(--contrast-color);
+          padding: 0.9rem 2rem;
+          border-radius: 50px;
+          font-weight: 600;
+          transition: all 0.3s ease;
+          display: inline-block;
+
+          &:hover {
+            background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+          }
+        }
+
+        .btn-learn-more {
+          display: inline-flex;
+          align-items: center;
+          padding: 0.9rem 2rem;
+          border: 2px solid var(--accent-color);
+          border-radius: 50px;
+          color: var(--accent-color);
+          font-weight: 600;
+          transition: all 0.3s ease;
+
+          i {
+            margin-left: 0.75rem;
+            transition: transform 0.3s ease;
+          }
+
+          &:hover {
+            background-color: var(--accent-color);
+            color: var(--contrast-color);
+
+            i {
+              transform: translateX(5px);
+            }
+          }
+        }
+      }
+    }
+
+    .impact-image {
+      position: relative;
+
+      img {
+        border-radius: 15px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .impact-stat {
+        position: absolute;
+        bottom: -20px;
+        right: -20px;
+        background-color: var(--accent-color);
+        color: var(--contrast-color);
+        padding: 1.25rem;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        max-width: 220px;
+
+        .stat-number {
+          font-size: 1.8rem;
+          font-weight: 800;
+          display: block;
+          line-height: 1;
+          margin-bottom: 0.5rem;
+        }
+
+        .stat-text {
+          font-size: 0.9rem;
+          line-height: 1.5;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  // Responsive styles
+  @media (max-width: 1200px) {
+    .team-hero .hero-content {
+      h2 {
+        font-size: 2.25rem;
+      }
+
+      p {
+        max-width: 100%;
+      }
+    }
+
+    .impact-banner .impact-image .impact-stat {
+      bottom: 10px;
+      right: 10px;
+      padding: 1rem;
+      max-width: 180px;
+
+      .stat-number {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .team-hero {
+      .hero-content {
+        margin-bottom: 3rem;
+        text-align: center;
+
+        p {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .team-metrics {
+          justify-content: center;
+        }
+      }
+
+      .hero-image-wrapper .hero-image:after {
+        display: none;
+      }
+    }
+
+    .upcoming-events .events-wrapper .event {
+      flex-direction: column;
+
+      .date-badge {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+      }
+
+      .event-action {
+        margin-left: 0;
+        margin-top: 1.5rem;
+      }
+    }
+
+    .impact-banner {
+      .impact-content {
+        text-align: center;
+        margin-bottom: 2rem;
+
+        .impact-buttons {
+          justify-content: center;
+        }
+      }
+
+      .impact-image .impact-stat {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .section-header h3 {
+      font-size: 1.8rem;
+    }
+
+    .team-hero .hero-content {
+      h2 {
+        font-size: 2rem;
+      }
+
+      .team-metrics {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+      }
+    }
+
+    .upcoming-events .events-wrapper .event .event-info .event-meta {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .impact-banner {
+      padding: 2rem;
+    }
+  }
+}

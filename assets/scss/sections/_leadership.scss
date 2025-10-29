@@ -1,0 +1,181 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Leadership Section
+--------------------------------------------------------------*/
+.leadership {
+  padding-top: 60px;
+  padding-bottom: 51px;
+
+  .section-subtitle {
+    color: var(--accent-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  .section-heading {
+    color: var(--heading-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .section-description {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  .about-image {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .stats-container {
+    background-color: color-mix(in srgb, var(--accent-color), transparent 92%);
+    border-radius: 8px;
+    padding: 20px;
+
+    .stat-item {
+      text-align: center;
+      padding: 15px 0;
+
+      h3 {
+        color: var(--heading-color);
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+
+      p {
+        color: var(--default-color);
+        font-size: 0.9rem;
+        margin: 0;
+      }
+    }
+  }
+
+  .leadership-team {
+    margin-top: 4rem;
+
+    .leader-card {
+      background-color: var(--surface-color);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      height: 100%;
+      transition: transform 0.3s, box-shadow 0.3s;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+        .social-links {
+          opacity: 1;
+        }
+      }
+
+      .leader-image {
+        position: relative;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+          transition: transform 0.5s;
+        }
+
+        .social-links {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+          padding: 15px 0 10px;
+          display: flex;
+          justify-content: center;
+          opacity: 0;
+          transition: opacity 0.3s;
+
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 34px;
+            height: 34px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            margin: 0 5px;
+            color: var(--contrast-color);
+            font-size: 1rem;
+            transition: background-color 0.3s;
+
+            &:hover {
+              background-color: var(--accent-color);
+            }
+          }
+        }
+      }
+
+      .leader-info {
+        padding: 20px;
+        text-align: center;
+
+        h4 {
+          font-weight: 700;
+          margin-bottom: 5px;
+          font-size: 1.25rem;
+        }
+
+        .position {
+          color: var(--accent-color);
+          font-weight: 600;
+          margin-bottom: 15px;
+          font-size: 0.95rem;
+        }
+
+        .bio {
+          font-size: 0.95rem;
+          line-height: 1.6;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .section-heading {
+      font-size: 2rem;
+    }
+
+    .about-image {
+      margin-top: 2rem;
+      height: 400px;
+    }
+
+    .leadership-team {
+      margin-top: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .about-image {
+      height: 300px;
+    }
+
+    .stat-item {
+      margin-bottom: 15px;
+    }
+  }
+}

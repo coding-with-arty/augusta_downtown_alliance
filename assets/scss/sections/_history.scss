@@ -1,0 +1,178 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# History Section
+--------------------------------------------------------------*/
+.history {
+  padding-top: 39px;
+  padding-bottom: 53px;
+
+  .about-content {
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    h3 {
+      color: var(--accent-color);
+      font-weight: 600;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+
+    .timeline {
+      position: relative;
+      margin-top: 40px;
+      padding-left: 30px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 3px;
+        background-color: color-mix(in srgb, var(--accent-color), transparent 70%);
+      }
+
+      .timeline-item {
+        position: relative;
+        margin-bottom: 30px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .timeline-dot {
+          position: absolute;
+          left: -35px;
+          top: 5px;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          background-color: var(--accent-color);
+        }
+
+        .timeline-content {
+          h4 {
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: var(--heading-color);
+          }
+
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .about-image {
+    position: relative;
+
+    img {
+      width: 100%;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .mission-vision {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+
+      .mission,
+      .vision {
+        background-color: var(--surface-color);
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+
+        h3 {
+          font-size: 1.3rem;
+          margin-bottom: 15px;
+          font-weight: 600;
+          position: relative;
+          padding-left: 15px;
+
+          &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 5px;
+            height: 20px;
+            background-color: var(--accent-color);
+            border-radius: 3px;
+          }
+        }
+
+        p {
+          margin-bottom: 0;
+          font-size: 0.95rem;
+        }
+      }
+    }
+  }
+
+  .core-values {
+    margin-top: 30px;
+
+    h3 {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    .value-card {
+      background-color: var(--surface-color);
+      padding: 30px 20px;
+      border-radius: 10px;
+      text-align: center;
+      height: 100%;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .value-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+        margin-bottom: 20px;
+
+        i {
+          font-size: 32px;
+          color: var(--accent-color);
+        }
+      }
+
+      h4 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 0.95rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

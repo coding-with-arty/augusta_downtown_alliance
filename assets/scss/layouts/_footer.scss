@@ -1,0 +1,231 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Global Footer
+--------------------------------------------------------------*/
+.footer {
+  color: var(--default-color);
+  background: var(--background-color);
+  font-size: 15px;
+  padding: 80px 0 0;
+  position: relative;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+
+  .footer-brand {
+
+    h1,
+    .logo {
+      margin: 0;
+      line-height: 1;
+      font-weight: 300;
+
+      .sitename {
+        font-family: var(--heading-font);
+        font-size: 26px;
+        letter-spacing: 0.8px;
+        color: var(--heading-color);
+      }
+    }
+
+    .tagline {
+      color: color-mix(in srgb, var(--default-color), transparent 30%);
+      font-size: 16px;
+      line-height: 1.7;
+      font-weight: 300;
+      margin: 12px 0 0;
+    }
+  }
+
+  .social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background-color: transparent;
+      color: color-mix(in srgb, var(--default-color), transparent 40%);
+      transition: all 0.3s ease;
+      text-decoration: none;
+      border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+
+      &:hover {
+        background-color: var(--accent-color);
+        color: var(--contrast-color);
+        transform: translateY(-3px);
+        border-color: var(--accent-color);
+      }
+
+      i {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .footer-links-grid {
+    h5 {
+      color: var(--heading-color);
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 20px;
+      font-family: var(--heading-font);
+      letter-spacing: 0.5px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 12px;
+
+        a {
+          color: color-mix(in srgb, var(--default-color), transparent 25%);
+          text-decoration: none;
+          font-size: 15px;
+          font-weight: 300;
+          transition: all 0.3s ease;
+          position: relative;
+          padding-left: 10px;
+
+          &::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            opacity: 0;
+            transition: all 0.3s ease;
+            color: var(--accent-color);
+          }
+
+          &:hover {
+            color: var(--accent-color);
+            padding-left: 16px;
+
+            &::before {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-cta {
+    h5 {
+      color: var(--heading-color);
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 18px;
+      font-family: var(--heading-font);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--heading-color);
+      border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
+      padding: 10px 24px;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+
+      &:hover {
+        background: var(--accent-color);
+        color: var(--contrast-color);
+        border-color: var(--accent-color);
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 60px;
+    padding: 25px 0;
+    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+
+    .footer-bottom-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+      }
+
+      p {
+        margin: 0;
+        color: color-mix(in srgb, var(--default-color), transparent 40%);
+        font-size: 14px;
+        font-weight: 300;
+
+        .sitename {
+          color: var(--heading-color);
+          font-weight: 500;
+        }
+      }
+
+      .credits {
+        font-size: 13px;
+        color: color-mix(in srgb, var(--default-color), transparent 50%);
+
+        a {
+          color: var(--accent-color);
+          text-decoration: none;
+          font-weight: 400;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    .footer-links-grid {
+      margin-bottom: 30px;
+    }
+
+    .footer-cta {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 60px 0 0;
+
+    .row {
+      text-align: center;
+    }
+
+    .footer-brand,
+    .footer-links-grid,
+    .footer-cta {
+      margin-bottom: 40px;
+    }
+
+    .footer-links-grid {
+      .col-6 {
+        margin-bottom: 30px;
+      }
+
+      h5 {
+        text-align: left;
+      }
+
+      ul {
+        text-align: left;
+        display: inline-block;
+      }
+    }
+  }
+}

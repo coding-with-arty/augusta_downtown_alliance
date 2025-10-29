@@ -1,0 +1,254 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Error 404 Section
+--------------------------------------------------------------*/
+.error-404 {
+  padding-top: 100px;
+  background: linear-gradient(135deg,
+      color-mix(in srgb, var(--background-color), transparent 0%),
+      color-mix(in srgb, var(--background-color), var(--accent-color) 4%));
+  padding-bottom: 100px;
+
+  .error-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .error-illustration {
+    position: relative;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      font-size: 9rem;
+      color: color-mix(in srgb, var(--accent-color), transparent 10%);
+      position: relative;
+      z-index: 2;
+      animation: pulse 2s infinite;
+    }
+
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.6;
+
+      &.circle-1 {
+        width: 200px;
+        height: 200px;
+        background: color-mix(in srgb, var(--accent-color), transparent 80%);
+        animation: float 6s ease-in-out infinite;
+      }
+
+      &.circle-2 {
+        width: 120px;
+        height: 120px;
+        background: color-mix(in srgb, var(--heading-color), transparent 85%);
+        top: 30%;
+        left: 25%;
+        animation: float 8s ease-in-out infinite;
+      }
+
+      &.circle-3 {
+        width: 80px;
+        height: 80px;
+        background: color-mix(in srgb, var(--accent-color), transparent 75%);
+        bottom: 20%;
+        right: 30%;
+        animation: float 7s ease-in-out infinite reverse;
+      }
+    }
+  }
+
+  .error-content {
+    padding: 30px 0;
+  }
+
+  .error-badge {
+    display: inline-block;
+    background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .error-code {
+    font-size: clamp(5rem, 10vw, 8rem);
+    font-weight: 900;
+    margin: 0;
+    background: linear-gradient(135deg, var(--heading-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    letter-spacing: -2px;
+  }
+
+  .error-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-bottom: 1.5rem;
+  }
+
+  .error-description {
+    font-size: 1.1rem;
+    color: color-mix(in srgb, var(--default-color), transparent 15%);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .error-actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+
+    .btn-home,
+    .btn-help {
+      padding: 0.8rem 1.8rem;
+      border-radius: 8px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.3s ease;
+
+      i {
+        font-size: 1.2rem;
+      }
+    }
+
+    .btn-home {
+      background-color: var(--accent-color);
+      color: var(--contrast-color);
+      border: none;
+
+      &:hover {
+        background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px color-mix(in srgb, var(--accent-color), transparent 70%);
+      }
+    }
+
+    .btn-help {
+      background-color: transparent;
+      color: var(--accent-color);
+      border: 2px solid color-mix(in srgb, var(--accent-color), transparent 75%);
+
+      &:hover {
+        background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  .error-suggestions {
+    padding: 1.5rem;
+    background-color: color-mix(in srgb, var(--background-color), var(--accent-color) 5%);
+    border-radius: 12px;
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--heading-color);
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 0.8rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          color: var(--default-color);
+          font-size: 1.05rem;
+          transition: all 0.3s;
+
+          i {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+            transition: transform 0.3s;
+          }
+
+          &:hover {
+            color: var(--accent-color);
+
+            i {
+              transform: translateX(3px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes pulse {
+
+    0%,
+    100% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.05);
+    }
+  }
+
+  @media (max-width: 992px) {
+    .error-illustration {
+      height: 300px;
+      margin-bottom: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 70px 0;
+
+    .error-code {
+      font-size: clamp(4rem, 12vw, 6rem);
+    }
+
+    .error-title {
+      font-size: 1.8rem;
+    }
+
+    .error-actions {
+      flex-direction: column;
+
+      .btn-home,
+      .btn-help {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+}
