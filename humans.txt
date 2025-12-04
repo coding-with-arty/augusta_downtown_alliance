@@ -1,0 +1,8 @@
+/* TEAM */
+Developer: Arthur Belanger
+Role: Treasurer & Technical Lead, UMA MHHS Club
+Contact: contact@example.com
+
+/* SITE */
+Last update: 2025-12-02
+Standards: HTML5, CSS3, Sitemap protocol
