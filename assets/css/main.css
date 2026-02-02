@@ -4,39 +4,52 @@
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
+
+
 /* Fonts */
+
 :root {
-  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway", sans-serif;
   --nav-font: "Poppins", sans-serif;
 }
 
+
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+
 :root {
-  --background-color: #f1f5f4; /* Background color for the entire website, including individual sections */
-  --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #fd564a; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #7fa087; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #f1f5f4;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #212529;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #fd564a;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #7fa087;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
+
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+
 :root {
-  --nav-color: rgba(
-    255,
-    255,
-    255,
-    0.75
-  ); /* The default color of the main navmenu links */
-  --nav-hover-color: #7fa087; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #7fa087; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: rgba( 255, 255, 255, 0.75);
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #7fa087;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #212529;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #7fa087;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
+
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
@@ -58,14 +71,18 @@
   --contrast-color: #000000;
 }
 
+
 /* Smooth scroll */
+
 :root {
   scroll-behavior: smooth;
 }
 
+
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
+
 body {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -93,8 +110,10 @@ h6 {
   font-family: var(--heading-font);
 }
 
+
 /* PHP Email Form Messages
 ------------------------------*/
+
 .php-email-form .error-message {
   display: none;
   background: #df1529;
@@ -139,15 +158,16 @@ h6 {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
 }
 
+
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
+
 .header {
   --background-color: rgba(255, 255, 255, 0);
   --default-color: #ffffff;
@@ -201,11 +221,9 @@ h6 {
   .header .logo {
     order: 1;
   }
-
   .header .header-social-links {
     order: 2;
   }
-
   .header .navmenu {
     order: 3;
   }
@@ -215,8 +233,10 @@ h6 {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
 
+
 /* Global Header on Scroll
 ------------------------------*/
+
 .scrolled .header {
   --background-color: rgba(0, 0, 0, 0.8);
 }
@@ -224,15 +244,19 @@ h6 {
 .sitename-img {
   margin-right: 1rem;
 }
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
+
+
 /* Navmenu - Desktop */
+
 @media (min-width: 75rem) {
   .navmenu {
     padding: 0;
   }
-
   .navmenu ul {
     margin: 0;
     padding: 0;
@@ -240,11 +264,9 @@ h6 {
     list-style: none;
     align-items: center;
   }
-
   .navmenu li {
     position: relative;
   }
-
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
@@ -258,7 +280,6 @@ h6 {
     white-space: nowrap;
     transition: 0.3s;
   }
-
   .navmenu a i,
   .navmenu a:focus i {
     font-size: 0.75rem;
@@ -266,17 +287,14 @@ h6 {
     margin-left: 0.3125rem;
     transition: 0.3s;
   }
-
   .navmenu li:last-child a {
     padding-right: 0;
   }
-
   .navmenu li:hover > a,
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
   }
-
   .navmenu .dropdown ul {
     margin: 0;
     padding: 0.625rem 0;
@@ -292,40 +310,33 @@ h6 {
     z-index: 99;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
   }
-
   .navmenu .dropdown ul li {
     min-width: 12.5rem;
   }
-
   .navmenu .dropdown ul a {
     padding: 0.625rem 20px;
     font-size: 0.9375rem;
     text-transform: none;
     color: var(--nav-dropdown-color);
   }
-
   .navmenu .dropdown ul a i {
     font-size: 0.75rem;
   }
-
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
   .navmenu .dropdown ul li:hover > a {
     color: var(--nav-dropdown-hover-color);
   }
-
   .navmenu .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
   }
-
   .navmenu .dropdown .dropdown ul {
     top: 0;
     left: -90%;
     visibility: hidden;
   }
-
   .navmenu .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
@@ -334,7 +345,9 @@ h6 {
   }
 }
 
+
 /* Navmenu - Mobile */
+
 @media (max-width: 74.9375rem) {
   .mobile-nav-toggle {
     color: var(--nav-color);
@@ -344,12 +357,10 @@ h6 {
     cursor: pointer;
     transition: color 0.3s;
   }
-
   .navmenu {
     padding: 0;
     z-index: 9997;
   }
-
   .navmenu ul {
     display: none;
     list-style: none;
@@ -364,7 +375,6 @@ h6 {
     z-index: 9998;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
   }
-
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-dropdown-color);
@@ -378,7 +388,6 @@ h6 {
     white-space: nowrap;
     transition: 0.3s;
   }
-
   .navmenu a i,
   .navmenu a:focus i {
     font-size: 0.75rem;
@@ -393,26 +402,22 @@ h6 {
     transition: 0.3s;
     background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
   }
-
   .navmenu a i:hover,
   .navmenu a:focus i:hover {
     background-color: var(--accent-color);
     color: var(--contrast-color);
   }
-
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-dropdown-hover-color);
   }
-
   .navmenu .active i,
   .navmenu .active:focus i {
     background-color: var(--accent-color);
     color: var(--contrast-color);
     transform: rotate(180deg);
   }
-
   .navmenu .dropdown ul {
     position: static;
     display: none;
@@ -424,20 +429,16 @@ h6 {
     box-shadow: none;
     transition: all 0.5s ease-in-out;
   }
-
   .navmenu .dropdown ul ul {
     background-color: rgba(33, 37, 41, 0.1);
   }
-
   .navmenu .dropdown > .dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
-
   .mobile-nav-active {
     overflow: hidden;
   }
-
   .mobile-nav-active .mobile-nav-toggle {
     color: #fff;
     position: absolute;
@@ -447,7 +448,6 @@ h6 {
     margin-right: 0;
     z-index: 9999;
   }
-
   .mobile-nav-active .navmenu {
     position: fixed;
     overflow: hidden;
@@ -455,23 +455,23 @@ h6 {
     background: rgba(33, 37, 41, 0.8);
     transition: 0.3s;
   }
-
   .mobile-nav-active .navmenu > ul {
     display: block;
   }
 }
 
+
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
+
 .footer {
   color: var(--default-color);
   background: var(--background-color);
   font-size: 0.9375rem;
   padding: 5rem 0 0;
   position: relative;
-  border-top: 0.0625rem solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 0.0625rem solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .footer .footer-brand h1,
@@ -606,8 +606,7 @@ h6 {
 .footer .footer-bottom {
   margin-top: 3.75rem;
   padding: 1.5625rem 0;
-  border-top: 0.0625rem solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 0.0625rem solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .footer .footer-bottom .footer-bottom-content {
@@ -655,7 +654,6 @@ h6 {
   .footer .footer-links-grid {
     margin-bottom: 1.875rem;
   }
-
   .footer .footer-cta {
     text-align: center;
   }
@@ -665,34 +663,31 @@ h6 {
   .footer {
     padding: 3.75rem 0 0;
   }
-
   .footer .row {
     text-align: center;
   }
-
   .footer .footer-brand,
   .footer .footer-links-grid,
   .footer .footer-cta {
     margin-bottom: 2.5rem;
   }
-
   .footer .footer-links-grid .col-6 {
     margin-bottom: 1.875rem;
   }
-
   .footer .footer-links-grid h5 {
     text-align: left;
   }
-
   .footer .footer-links-grid ul {
     text-align: left;
     display: inline-block;
   }
 }
 
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
+
 #preloader {
   position: fixed;
   inset: 0;
@@ -719,15 +714,16 @@ h6 {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
 }
 
+
 /*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
+
 .scroll-top {
   position: fixed;
   visibility: hidden;
@@ -758,18 +754,22 @@ h6 {
   opacity: 1;
 }
 
+
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
+
 @media screen and (max-width: 48rem) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
 }
 
+
 /*--------------------------------------------------------------
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
+
 .page-title {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -783,11 +783,7 @@ h6 {
 
 .page-title:before {
   content: "";
-  background-color: color-mix(
-    in srgb,
-    var(--background-color),
-    transparent 50%
-  );
+  background-color: color-mix( in srgb, var(--background-color), transparent 50%);
   position: absolute;
   inset: 0;
 }
@@ -820,9 +816,11 @@ h6 {
   color: color-mix(in srgb, var(--default-color), transparent 50%);
 }
 
+
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
+
 section,
 .section {
   color: var(--default-color);
@@ -839,9 +837,11 @@ section,
   }
 }
 
+
 /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
+
 .section-title {
   text-align: center;
   padding-bottom: 3.75rem;
@@ -875,9 +875,11 @@ section,
   margin-bottom: 0;
 }
 
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
 .hero {
   padding: 0;
   overflow: hidden;
@@ -908,11 +910,7 @@ section,
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    135deg,
-    color-mix(in srgb, var(--background-color), transparent 30%) 0%,
-    color-mix(in srgb, var(--background-color), transparent 60%) 100%
-  );
+  background: linear-gradient( 135deg, color-mix(in srgb, var(--background-color), transparent 30%) 0%, color-mix(in srgb, var(--background-color), transparent 60%) 100%);
   z-index: 2;
 }
 
@@ -1134,9 +1132,11 @@ section,
   color: var(--accent-color);
 }
 
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+
 .about {
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;
@@ -1199,8 +1199,7 @@ section,
 }
 
 .about .signature-block {
-  border-top: 0.0625rem solid
-    color-mix(in srgb, var(--default-color), transparent 85%);
+  border-top: 0.0625rem solid color-mix(in srgb, var(--default-color), transparent 85%);
   padding-top: 1.5rem;
 }
 
@@ -1333,15 +1332,19 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
+
 /*--------------------------------------------------------------
 # Featured Programs Section (Updated)
 --------------------------------------------------------------*/
+
 .featured-programs {
   padding-top: 3.75rem;
   padding-bottom: 3.125rem;
 }
 
+
 /* Filter Tabs */
+
 .featured-programs .isotope-filters {
   display: flex;
   justify-content: center;
@@ -1367,7 +1370,9 @@ section,
   color: var(--contrast-color);
 }
 
+
 /* Override Bootstrap Tabs */
+
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-link:hover {
   background-color: var(--accent-color) !important;
@@ -1375,7 +1380,9 @@ section,
   border-radius: 3.125rem;
 }
 
+
 /* Program Cards */
+
 .featured-programs .program-item {
   position: relative;
   border-radius: 0.625rem;
@@ -1422,6 +1429,7 @@ section,
   margin-bottom: 0.9375rem;
 }
 
+
 /* Show More Button */
 
 .featured-programs .show-more {
@@ -1462,9 +1470,11 @@ section,
   }
 }
 
+
 /*--------------------------------------------------------------
 # Visit Downtown Section
 --------------------------------------------------------------*/
+
 .visit-downtown {
   padding-top: 3.3125rem;
   padding-bottom: 3.75rem;
@@ -1619,7 +1629,6 @@ section,
   .visit-downtown .about-downtown-img {
     margin-bottom: 2rem;
   }
-
   .visit-downtown .about-downtown-content h2 {
     font-size: 1.8rem;
   }
@@ -1631,9 +1640,11 @@ section,
   }
 }
 
+
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
+
 .stats {
   padding-top: 4rem;
   padding-bottom: 3.375rem;
@@ -1781,9 +1792,11 @@ section,
   transform: scale(1.1);
 }
 
+
 /*--------------------------------------------------------------
 # History Section
 --------------------------------------------------------------*/
+
 .history {
   padding-top: 2.4375rem;
   padding-bottom: 3.3125rem;
@@ -1960,9 +1973,11 @@ section,
   margin-bottom: 0;
 }
 
+
 /*--------------------------------------------------------------
 # Leadership Section
 --------------------------------------------------------------*/
+
 .leadership {
   padding-top: 3.75rem;
   padding-bottom: 3.1875rem;
@@ -2120,12 +2135,10 @@ section,
   .leadership .section-heading {
     font-size: 2rem;
   }
-
   .leadership .about-image {
     margin-top: 2rem;
     height: 25rem;
   }
-
   .leadership .leadership-team {
     margin-top: 2rem;
   }
@@ -2135,15 +2148,16 @@ section,
   .leadership .about-image {
     height: 18.75rem;
   }
-
   .leadership .stat-item {
     margin-bottom: 0.9375rem;
   }
 }
 
+
 /*--------------------------------------------------------------
 # Get Involved Section
 --------------------------------------------------------------*/
+
 .get-involved h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
@@ -2325,8 +2339,7 @@ section,
 .get-involved .request-info .form-control:focus,
 .get-involved .request-info .form-select:focus {
   border-color: var(--accent-color);
-  box-shadow: 0 0 0 0.2rem
-    color-mix(in srgb, var(--accent-color), transparent 90%);
+  box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--accent-color), transparent 90%);
 }
 
 .get-involved .request-info .form-control::placeholder,
@@ -2422,7 +2435,6 @@ section,
   .get-involved h2 {
     font-size: 2rem;
   }
-
   .get-involved h3 {
     font-size: 1.5rem;
   }
@@ -2432,7 +2444,6 @@ section,
   .get-involved .cta-wrapper .cta-item.tour {
     border-radius: 0.5rem 8px 0 0;
   }
-
   .get-involved .cta-wrapper .cta-item.apply {
     border-radius: 0 0 8px 8px;
   }
@@ -2442,24 +2453,23 @@ section,
   .get-involved .deadlines .deadline-grid {
     grid-template-columns: 1fr;
   }
-
   .get-involved .requirement-item {
     flex-direction: column;
   }
-
   .get-involved .requirement-item .icon-box {
     margin-bottom: 1rem;
     margin-right: 0;
   }
-
   .get-involved .cta-item {
     padding: 2rem 1.5rem;
   }
 }
 
+
 /*--------------------------------------------------------------
 # about downtown Section
 --------------------------------------------------------------*/
+
 .about-downtown .about-downtown-banner {
   position: relative;
   border-radius: 0.75rem;
@@ -2503,15 +2513,12 @@ section,
   .about-downtown .about-downtown-banner {
     height: 21.875rem;
   }
-
   .about-downtown .about-downtown-banner .banner-content {
     padding: 3.75rem 25px 25px;
   }
-
   .about-downtown .about-downtown-banner .banner-content h2 {
     font-size: 1.8rem;
   }
-
   .about-downtown .about-downtown-banner .banner-content p {
     font-size: 1rem;
   }
@@ -2609,7 +2616,6 @@ section,
     flex-wrap: wrap;
     justify-content: center;
   }
-
   .about-downtown .about-downtown-tabs .nav-pills .nav-link {
     margin: 0.3125rem;
     font-size: 0.9rem;
@@ -2638,11 +2644,7 @@ section,
   object-fit: cover;
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .tab-content-image
-  .stat-badge {
+.about-downtown .about-downtown-tabs .tab-content .tab-content-image .stat-badge {
   position: absolute;
   top: 1.25rem;
   right: 1.25rem;
@@ -2653,24 +2655,14 @@ section,
   text-align: center;
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .tab-content-image
-  .stat-badge
-  .number {
+.about-downtown .about-downtown-tabs .tab-content .tab-content-image .stat-badge .number {
   font-size: 1.8rem;
   font-weight: 700;
   display: block;
   line-height: 1;
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .tab-content-image
-  .stat-badge
-  .text {
+.about-downtown .about-downtown-tabs .tab-content .tab-content-image .stat-badge .text {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.0625rem;
@@ -2709,20 +2701,11 @@ section,
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .club-category:hover
-  .icon-box {
+.about-downtown .about-downtown-tabs .tab-content .club-category:hover .icon-box {
   background-color: var(--accent-color);
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .club-category:hover
-  .icon-box
-  i {
+.about-downtown .about-downtown-tabs .tab-content .club-category:hover .icon-box i {
   color: var(--contrast-color);
 }
 
@@ -2773,12 +2756,7 @@ section,
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .stats-container
-  .stat-item
-  .number {
+.about-downtown .about-downtown-tabs .tab-content .stats-container .stat-item .number {
   display: block;
   font-size: 2.5rem;
   font-weight: 700;
@@ -2786,12 +2764,7 @@ section,
   line-height: 1.1;
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .stats-container
-  .stat-item
-  .label {
+.about-downtown .about-downtown-tabs .tab-content .stats-container .stat-item .label {
   display: block;
   font-size: 0.9rem;
   color: var(--heading-color);
@@ -2803,43 +2776,25 @@ section,
   padding-bottom: 3.125rem;
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .activities-programs-slider
-  .swiper-wrapper {
+.about-downtown .about-downtown-tabs .tab-content .activities-programs-slider .swiper-wrapper {
   height: auto !important;
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .activities-programs-slider
-  .sport-card {
+.about-downtown .about-downtown-tabs .tab-content .activities-programs-slider .sport-card {
   border-radius: 0.625rem;
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
   position: relative;
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .activities-programs-slider
-  .sport-card
-  img {
+.about-downtown .about-downtown-tabs .tab-content .activities-programs-slider .sport-card img {
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .activities-programs-slider
-  .sport-card
-  .sport-info {
+.about-downtown .about-downtown-tabs .tab-content .activities-programs-slider .sport-card .sport-info {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -2849,25 +2804,13 @@ section,
   color: var(--contrast-color);
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .activities-programs-slider
-  .sport-card
-  .sport-info
-  h5 {
+.about-downtown .about-downtown-tabs .tab-content .activities-programs-slider .sport-card .sport-info h5 {
   color: var(--contrast-color);
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .activities-programs-slider
-  .sport-card
-  .sport-info
-  .badge {
+.about-downtown .about-downtown-tabs .tab-content .activities-programs-slider .sport-card .sport-info .badge {
   display: inline-block;
   background-color: var(--accent-color);
   color: var(--contrast-color);
@@ -2877,41 +2820,22 @@ section,
   font-weight: 500;
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .activities-programs-slider
-  .sport-card:hover
-  img {
+.about-downtown .about-downtown-tabs .tab-content .activities-programs-slider .sport-card:hover img {
   transform: scale(1.1);
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .activities-programs-slider
-  .swiper-pagination {
+.about-downtown .about-downtown-tabs .tab-content .activities-programs-slider .swiper-pagination {
   bottom: 0;
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .activities-programs-slider
-  .swiper-pagination
-  .swiper-pagination-bullet {
+.about-downtown .about-downtown-tabs .tab-content .activities-programs-slider .swiper-pagination .swiper-pagination-bullet {
   width: 0.625rem;
   height: 0.625rem;
   background-color: color-mix(in srgb, var(--accent-color), transparent 60%);
   opacity: 1;
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .activities-programs-slider
-  .swiper-pagination
-  .swiper-pagination-bullet-active {
+.about-downtown .about-downtown-tabs .tab-content .activities-programs-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
   width: 0.75rem;
   height: 0.75rem;
@@ -2952,11 +2876,7 @@ section,
   margin-bottom: 1.25rem;
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .downtowns-list
-  .alliance-item {
+.about-downtown .about-downtown-tabs .tab-content .downtowns-list .alliance-item {
   display: flex;
   align-items: flex-start;
   background-color: var(--surface-color);
@@ -2966,51 +2886,27 @@ section,
   transition: transform 0.3s ease;
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .downtowns-list
-  .alliance-item:hover {
+.about-downtown .about-downtown-tabs .tab-content .downtowns-list .alliance-item:hover {
   transform: translateY(-5px);
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .downtowns-list
-  .alliance-item:hover
-  i {
+.about-downtown .about-downtown-tabs .tab-content .downtowns-list .alliance-item:hover i {
   color: var(--accent-color);
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .downtowns-list
-  .alliance-item
-  i {
+.about-downtown .about-downtown-tabs .tab-content .downtowns-list .alliance-item i {
   font-size: 1.5rem;
   color: var(--heading-color);
   margin-right: 0.9375rem;
   transition: color 0.3s ease;
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .downtowns-list
-  .alliance-item
-  h5 {
+.about-downtown .about-downtown-tabs .tab-content .downtowns-list .alliance-item h5 {
   margin-bottom: 0.3125rem;
   font-size: 1rem;
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .downtowns-list
-  .alliance-item
-  p {
+.about-downtown .about-downtown-tabs .tab-content .downtowns-list .alliance-item p {
   margin-bottom: 0;
   font-size: 0.85rem;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
@@ -3040,20 +2936,11 @@ section,
   color: var(--contrast-color);
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .support-card:hover
-  .service-link {
+.about-downtown .about-downtown-tabs .tab-content .support-card:hover .service-link {
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .support-card:hover
-  .service-link
-  i {
+.about-downtown .about-downtown-tabs .tab-content .support-card:hover .service-link i {
   transform: translateX(5px);
 }
 
@@ -3097,12 +2984,7 @@ section,
   transition: all 0.3s ease;
 }
 
-.about-downtown
-  .about-downtown-tabs
-  .tab-content
-  .support-card
-  .service-link
-  i {
+.about-downtown .about-downtown-tabs .tab-content .support-card .service-link i {
   margin-left: 0.3125rem;
   transition: all 0.3s ease;
 }
@@ -3194,11 +3076,7 @@ section,
   opacity: 1;
 }
 
-.about-downtown
-  .about-downtown-gallery
-  .gallery-item:hover
-  .gallery-overlay
-  span {
+.about-downtown .about-downtown-gallery .gallery-item:hover .gallery-overlay span {
   transform: translateY(0);
 }
 
@@ -3207,11 +3085,7 @@ section,
 }
 
 .about-downtown .cta-wrapper .cta-content {
-  background: linear-gradient(
-    135deg,
-    var(--accent-color),
-    color-mix(in srgb, var(--accent-color), purple 60%)
-  );
+  background: linear-gradient( 135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), purple 60%));
   border-radius: 0.9375rem;
   padding: 3.125rem 40px;
   color: var(--contrast-color);
@@ -3311,7 +3185,6 @@ section,
   .about-downtown .tab-content-image {
     margin-bottom: 1.875rem;
   }
-
   .about-downtown .downtowns-info {
     margin-top: 1.875rem;
   }
@@ -3321,27 +3194,21 @@ section,
   .about-downtown .about-downtown-banner {
     margin-bottom: 1.875rem;
   }
-
   .about-downtown .life-categories .category-card {
     margin-bottom: 0.9375rem;
   }
-
   .about-downtown .about-downtown-tabs {
     margin-top: 2.5rem;
   }
-
   .about-downtown .about-downtown-tabs .nav-pills {
     margin-bottom: 1.875rem;
   }
-
   .about-downtown .cta-wrapper .cta-content {
     padding: 1.875rem 25px;
   }
-
   .about-downtown .cta-wrapper .cta-content h3 {
     font-size: 1.5rem;
   }
-
   .about-downtown .cta-wrapper .cta-content p {
     font-size: 1rem;
   }
@@ -3351,15 +3218,16 @@ section,
   .about-downtown .about-downtown-tabs .club-category {
     margin-bottom: 0.9375rem;
   }
-
   .about-downtown .support-card {
     margin-bottom: 0.9375rem;
   }
 }
 
+
 /*--------------------------------------------------------------
 # Tourism Info Section
 --------------------------------------------------------------*/
+
 .events-info .container {
   position: relative;
 }
@@ -3407,12 +3275,7 @@ section,
   flex-direction: column;
 }
 
-.events-info
-  .intro-row
-  .intro-content
-  .stats-container
-  .stat-item
-  .stat-number {
+.events-info .intro-row .intro-content .stats-container .stat-item .stat-number {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--accent-color);
@@ -3500,24 +3363,19 @@ section,
   .events-info .intro-row .intro-content {
     margin-bottom: 3rem;
   }
-
   .events-info .intro-row .intro-content h2 {
     font-size: 2rem;
   }
-
   .events-info .intro-row .intro-content p {
     max-width: 100%;
   }
-
   .events-info .intro-row .intro-image-container {
     min-height: 31.25rem;
   }
-
   .events-info .intro-row .intro-image-container .intro-image.main-image {
     width: 80%;
     height: 21.875rem;
   }
-
   .events-info .intro-row .intro-image-container .intro-image.accent-image {
     width: 60%;
     height: 13.75rem;
@@ -3529,13 +3387,11 @@ section,
   .events-info .intro-row .intro-image-container {
     min-height: 25rem;
   }
-
   .events-info .intro-row .intro-image-container .intro-image.main-image {
     width: 100%;
     position: relative;
     height: 18.75rem;
   }
-
   .events-info .intro-row .intro-image-container .intro-image.accent-image {
     display: none;
   }
@@ -3599,35 +3455,18 @@ section,
   margin-bottom: 2rem;
 }
 
-.events-info
-  .downtowns-tabs
-  .tab-content
-  .alliance-highlight
-  .alliance-slider
-  .alliance-slide {
+.events-info .downtowns-tabs .tab-content .alliance-highlight .alliance-slider .alliance-slide {
   position: relative;
 }
 
-.events-info
-  .downtowns-tabs
-  .tab-content
-  .alliance-highlight
-  .alliance-slider
-  .alliance-slide
-  img {
+.events-info .downtowns-tabs .tab-content .alliance-highlight .alliance-slider .alliance-slide img {
   width: 100%;
   height: 25rem;
   object-fit: cover;
   transition: transform 0.5s;
 }
 
-.events-info
-  .downtowns-tabs
-  .tab-content
-  .alliance-highlight
-  .alliance-slider
-  .alliance-slide
-  .slide-caption {
+.events-info .downtowns-tabs .tab-content .alliance-highlight .alliance-slider .alliance-slide .slide-caption {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -3639,22 +3478,11 @@ section,
   font-size: 1.2rem;
 }
 
-.events-info
-  .downtowns-tabs
-  .tab-content
-  .alliance-highlight
-  .alliance-slider
-  .alliance-slide:hover
-  img {
+.events-info .downtowns-tabs .tab-content .alliance-highlight .alliance-slider .alliance-slide:hover img {
   transform: scale(1.05);
 }
 
-.events-info
-  .downtowns-tabs
-  .tab-content
-  .alliance-highlight
-  .alliance-description
-  h3 {
+.events-info .downtowns-tabs .tab-content .alliance-highlight .alliance-description h3 {
   color: var(--heading-color);
   margin-bottom: 1rem;
   font-weight: 700;
@@ -3662,12 +3490,7 @@ section,
   padding-bottom: 0.8rem;
 }
 
-.events-info
-  .downtowns-tabs
-  .tab-content
-  .alliance-highlight
-  .alliance-description
-  h3:after {
+.events-info .downtowns-tabs .tab-content .alliance-highlight .alliance-description h3:after {
   content: "";
   position: absolute;
   left: 0;
@@ -3678,45 +3501,22 @@ section,
   border-radius: 1.5px;
 }
 
-.events-info
-  .downtowns-tabs
-  .tab-content
-  .alliance-highlight
-  .alliance-description
-  p {
+.events-info .downtowns-tabs .tab-content .alliance-highlight .alliance-description p {
   margin-bottom: 1.5rem;
 }
 
-.events-info
-  .downtowns-tabs
-  .tab-content
-  .alliance-highlight
-  .alliance-description
-  .feature-list {
+.events-info .downtowns-tabs .tab-content .alliance-highlight .alliance-description .feature-list {
   padding: 0;
   list-style: none;
 }
 
-.events-info
-  .downtowns-tabs
-  .tab-content
-  .alliance-highlight
-  .alliance-description
-  .feature-list
-  li {
+.events-info .downtowns-tabs .tab-content .alliance-highlight .alliance-description .feature-list li {
   padding: 0.5rem 0;
   display: flex;
   align-items: center;
 }
 
-.events-info
-  .downtowns-tabs
-  .tab-content
-  .alliance-highlight
-  .alliance-description
-  .feature-list
-  li
-  i {
+.events-info .downtowns-tabs .tab-content .alliance-highlight .alliance-description .feature-list li i {
   color: var(--accent-color);
   font-size: 1rem;
   margin-right: 0.625rem;
@@ -3739,11 +3539,7 @@ section,
   overflow: hidden;
 }
 
-.events-info
-  .downtowns-tabs
-  .tab-content
-  .alliance-cards
-  .alliance-card:before {
+.events-info .downtowns-tabs .tab-content .alliance-cards .alliance-card:before {
   content: "";
   position: absolute;
   top: 0;
@@ -3755,12 +3551,7 @@ section,
   z-index: 0;
 }
 
-.events-info
-  .downtowns-tabs
-  .tab-content
-  .alliance-cards
-  .alliance-card
-  .icon-container {
+.events-info .downtowns-tabs .tab-content .alliance-cards .alliance-card .icon-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3772,13 +3563,7 @@ section,
   transition: all 0.3s;
 }
 
-.events-info
-  .downtowns-tabs
-  .tab-content
-  .alliance-cards
-  .alliance-card
-  .icon-container
-  i {
+.events-info .downtowns-tabs .tab-content .alliance-cards .alliance-card .icon-container i {
   font-size: 1.6rem;
   color: var(--accent-color);
   transition: all 0.3s;
@@ -3799,12 +3584,7 @@ section,
   z-index: 1;
 }
 
-.events-info
-  .downtowns-tabs
-  .tab-content
-  .alliance-cards
-  .alliance-card
-  .info-badge {
+.events-info .downtowns-tabs .tab-content .alliance-cards .alliance-card .info-badge {
   display: inline-flex;
   align-items: center;
   background: color-mix(in srgb, var(--accent-color), transparent 85%);
@@ -3815,13 +3595,7 @@ section,
   font-weight: 500;
 }
 
-.events-info
-  .downtowns-tabs
-  .tab-content
-  .alliance-cards
-  .alliance-card
-  .info-badge
-  i {
+.events-info .downtowns-tabs .tab-content .alliance-cards .alliance-card .info-badge i {
   margin-right: 0.3125rem;
 }
 
@@ -3830,22 +3604,11 @@ section,
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.events-info
-  .downtowns-tabs
-  .tab-content
-  .alliance-cards
-  .alliance-card:hover
-  .icon-container {
+.events-info .downtowns-tabs .tab-content .alliance-cards .alliance-card:hover .icon-container {
   background: var(--accent-color);
 }
 
-.events-info
-  .downtowns-tabs
-  .tab-content
-  .alliance-cards
-  .alliance-card:hover
-  .icon-container
-  i {
+.events-info .downtowns-tabs .tab-content .alliance-cards .alliance-card:hover .icon-container i {
   color: var(--contrast-color);
 }
 
@@ -3855,23 +3618,15 @@ section,
     overflow-x: auto;
     padding-bottom: 0.3125rem;
   }
-
   .events-info .downtowns-tabs .nav-tabs .nav-item {
     margin: 0 0.3rem;
   }
-
   .events-info .downtowns-tabs .nav-tabs .nav-item .nav-link {
     padding: 0.5rem 16px;
     font-size: 0.9rem;
     white-space: nowrap;
   }
-
-  .events-info
-    .downtowns-tabs
-    .tab-content
-    .alliance-slider
-    .alliance-slide
-    img {
+  .events-info .downtowns-tabs .tab-content .alliance-slider .alliance-slide img {
     height: 18.75rem;
   }
 }
@@ -3936,11 +3691,7 @@ section,
   transition: transform 0.5s;
 }
 
-.events-info
-  .augusta-gallery-section
-  .gallery-grid
-  .gallery-item
-  .gallery-overlay {
+.events-info .augusta-gallery-section .gallery-grid .gallery-item .gallery-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -3951,12 +3702,7 @@ section,
   transition: all 0.3s;
 }
 
-.events-info
-  .augusta-gallery-section
-  .gallery-grid
-  .gallery-item
-  .gallery-overlay
-  h4 {
+.events-info .augusta-gallery-section .gallery-grid .gallery-item .gallery-overlay h4 {
   color: white;
   margin: 0;
   font-size: 1.1rem;
@@ -3972,11 +3718,7 @@ section,
   transform: scale(1.1);
 }
 
-.events-info
-  .augusta-gallery-section
-  .gallery-grid
-  .gallery-item:hover
-  .gallery-overlay {
+.events-info .augusta-gallery-section .gallery-grid .gallery-item:hover .gallery-overlay {
   transform: translateY(0);
 }
 
@@ -3992,7 +3734,6 @@ section,
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 200px);
   }
-
   .events-info .augusta-gallery-section .gallery-grid .gallery-item.large {
     grid-column: 1;
     grid-row: span 1;
@@ -4045,48 +3786,23 @@ section,
   margin-right: 0.625rem;
 }
 
-.events-info
-  .augusta-map-section
-  .map-info
-  .map-legend
-  .legend-item
-  .marker.ada {
+.events-info .augusta-map-section .map-info .map-legend .legend-item .marker.ada {
   background: #4285f4;
 }
 
-.events-info
-  .augusta-map-section
-  .map-info
-  .map-legend
-  .legend-item
-  .marker.residential {
+.events-info .augusta-map-section .map-info .map-legend .legend-item .marker.residential {
   background: #ea4335;
 }
 
-.events-info
-  .augusta-map-section
-  .map-info
-  .map-legend
-  .legend-item
-  .marker.activities {
+.events-info .augusta-map-section .map-info .map-legend .legend-item .marker.activities {
   background: #34a853;
 }
 
-.events-info
-  .augusta-map-section
-  .map-info
-  .map-legend
-  .legend-item
-  .marker.dining {
+.events-info .augusta-map-section .map-info .map-legend .legend-item .marker.dining {
   background: #fbbc05;
 }
 
-.events-info
-  .augusta-map-section
-  .map-info
-  .map-legend
-  .legend-item
-  .marker.parking {
+.events-info .augusta-map-section .map-info .map-legend .legend-item .marker.parking {
   background: #7986cb;
 }
 
@@ -4134,9 +3850,11 @@ section,
   }
 }
 
+
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
+
 .team {
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;
@@ -4488,11 +4206,7 @@ section,
   transition: width 0.3s ease;
 }
 
-.team
-  .team-engagement
-  .engagement-cards
-  .engagement-card
-  .card-link:hover:after {
+.team .team-engagement .engagement-cards .engagement-card .card-link:hover:after {
   width: 100%;
 }
 
@@ -4510,8 +4224,7 @@ section,
 .team .upcoming-events .events-wrapper .event {
   display: flex;
   padding: 1.75rem 2rem;
-  border-bottom: 0.0625rem solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
+  border-bottom: 0.0625rem solid color-mix(in srgb, var(--default-color), transparent 90%);
   transition: all 0.3s ease;
 }
 
@@ -4606,12 +4319,7 @@ section,
   white-space: nowrap;
 }
 
-.team
-  .upcoming-events
-  .events-wrapper
-  .event
-  .event-action
-  .btn-register:hover {
+.team .upcoming-events .events-wrapper .event .event-action .btn-register:hover {
   background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -4762,18 +4470,15 @@ section,
   .team .team-hero .hero-content h2 {
     font-size: 2.25rem;
   }
-
   .team .team-hero .hero-content p {
     max-width: 100%;
   }
-
   .team .impact-banner .impact-image .impact-stat {
     bottom: 0.625rem;
     right: 0.625rem;
     padding: 1rem;
     max-width: 11.25rem;
   }
-
   .team .impact-banner .impact-image .impact-stat .stat-number {
     font-size: 1.5rem;
   }
@@ -4784,43 +4489,34 @@ section,
     margin-bottom: 3rem;
     text-align: center;
   }
-
   .team .team-hero .hero-content p {
     margin-left: auto;
     margin-right: auto;
   }
-
   .team .team-hero .hero-content .team-metrics {
     justify-content: center;
   }
-
   .team .team-hero .hero-image-wrapper .hero-image:after {
     display: none;
   }
-
   .team .upcoming-events .events-wrapper .event {
     flex-direction: column;
   }
-
   .team .upcoming-events .events-wrapper .event .date-badge {
     margin-right: 0;
     margin-bottom: 1.5rem;
   }
-
   .team .upcoming-events .events-wrapper .event .event-action {
     margin-left: 0;
     margin-top: 1.5rem;
   }
-
   .team .impact-banner .impact-content {
     text-align: center;
     margin-bottom: 2rem;
   }
-
   .team .impact-banner .impact-content .impact-buttons {
     justify-content: center;
   }
-
   .team .impact-banner .impact-image .impact-stat {
     left: 50%;
     right: auto;
@@ -4832,29 +4528,27 @@ section,
   .team .section-header h3 {
     font-size: 1.8rem;
   }
-
   .team .team-hero .hero-content h2 {
     font-size: 2rem;
   }
-
   .team .team-hero .hero-content .team-metrics {
     gap: 1.5rem;
     flex-wrap: wrap;
   }
-
   .team .upcoming-events .events-wrapper .event .event-info .event-meta {
     flex-direction: column;
     gap: 0.5rem;
   }
-
   .team .impact-banner {
     padding: 2rem;
   }
 }
 
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+
 .contact .contact-info-box {
   background-color: var(--surface-color);
   border-radius: 0.625rem;
@@ -4988,29 +4682,16 @@ section,
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contact
-  .contact-form-wrapper
-  .form-group
-  .input-with-icon
-  .form-control:focus {
+.contact .contact-form-wrapper .form-group .input-with-icon .form-control:focus {
   border-color: var(--accent-color);
-  box-shadow: 0 0 0 0.25rem
-    color-mix(in srgb, var(--accent-color), transparent 90%);
+  box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--accent-color), transparent 90%);
 }
 
-.contact
-  .contact-form-wrapper
-  .form-group
-  .input-with-icon
-  .form-control::placeholder {
+.contact .contact-form-wrapper .form-group .input-with-icon .form-control::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
-.contact
-  .contact-form-wrapper
-  .form-group
-  .input-with-icon
-  textarea.form-control {
+.contact .contact-form-wrapper .form-group .input-with-icon textarea.form-control {
   height: 11.25rem;
   resize: none;
   padding-top: 0.9375rem;
@@ -5026,21 +4707,18 @@ section,
   letter-spacing: 0.0625rem;
   border-radius: 0.5rem;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px
-    color-mix(in srgb, var(--accent-color), transparent 70%);
+  box-shadow: 0 5px 15px color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
 .contact .contact-form-wrapper .btn-submit:hover {
   background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px
-    color-mix(in srgb, var(--accent-color), transparent 60%);
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--accent-color), transparent 60%);
 }
 
 .contact .contact-form-wrapper .btn-submit:active {
   transform: translateY(0);
-  box-shadow: 0 3px 10px
-    color-mix(in srgb, var(--accent-color), transparent 70%);
+  box-shadow: 0 3px 10px color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
 .contact .contact-form-wrapper .loading,
@@ -5054,7 +4732,6 @@ section,
   .contact .form-container-overlap {
     margin-top: -120px;
   }
-
   .contact .contact-form-wrapper {
     padding: 1.875rem;
   }
@@ -5064,19 +4741,15 @@ section,
   .contact .contact-info-box {
     margin-bottom: 1.25rem;
   }
-
   .contact .form-container-overlap {
     margin-top: -100px;
   }
-
   .contact .contact-form-wrapper {
     padding: 1.5625rem;
   }
-
   .contact .contact-form-wrapper h2 {
     font-size: 1.5rem;
   }
-
   .contact .map-section {
     height: 28.125rem;
   }
@@ -5086,23 +4759,22 @@ section,
   .contact .form-container-overlap {
     margin-top: -80px;
   }
-
   .contact .contact-form-wrapper {
     padding: 1.25rem;
   }
-
   .contact .btn-submit {
     width: 100%;
   }
-
   .contact .map-section {
     height: 25rem;
   }
 }
 
+
 /*--------------------------------------------------------------
 # Privacy Section
 --------------------------------------------------------------*/
+
 .privacy {
   font-size: 1rem;
   line-height: 1.7;
@@ -5111,8 +4783,7 @@ section,
 .privacy .privacy-header {
   margin-bottom: 3.75rem;
   text-align: center;
-  border-bottom: 0.0625rem solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
+  border-bottom: 0.0625rem solid color-mix(in srgb, var(--default-color), transparent 90%);
   padding-bottom: 2.5rem;
 }
 
@@ -5202,8 +4873,7 @@ section,
   max-width: 50rem;
   margin: 0auto;
   padding-top: 2.5rem;
-  border-top: 0.0625rem solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 0.0625rem solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .privacy .privacy-contact h2 {
@@ -5241,33 +4911,27 @@ section,
     font-size: 12pt;
     line-height: 1.5;
   }
-
   .privacy .privacy-header {
     text-align: left;
     border-bottom: 1pt solid #000;
     padding-bottom: 20pt;
     margin-bottom: 30pt;
   }
-
   .privacy h1 {
     font-size: 24pt;
   }
-
   .privacy h2 {
     font-size: 18pt;
     page-break-after: avoid;
   }
-
   .privacy h3 {
     font-size: 14pt;
     page-break-after: avoid;
   }
-
   .privacy p,
   .privacy ul {
     page-break-inside: avoid;
   }
-
   .privacy .contact-details {
     border: 1pt solid #000;
     padding: 15pt;
@@ -5279,40 +4943,33 @@ section,
     margin-bottom: 2.5rem;
     padding-bottom: 1.875rem;
   }
-
   .privacy .privacy-header .header-content h1 {
     font-size: 2.2rem;
   }
-
   .privacy .privacy-header .header-content .intro-text {
     font-size: 1.1rem;
   }
-
   .privacy .privacy-content .content-section {
     margin-bottom: 2.5rem;
   }
-
   .privacy .privacy-content .content-section h2 {
     font-size: 1.6rem;
   }
-
   .privacy .privacy-content .content-section h3 {
     font-size: 1.3rem;
   }
 }
 
+
 /*--------------------------------------------------------------
 # Terms Of Service Section
 --------------------------------------------------------------*/
+
 .terms-of-service .terms-hero {
   text-align: center;
   margin-bottom: 4.375rem;
   padding: 3.75rem 0;
-  background: linear-gradient(
-    135deg,
-    color-mix(in srgb, var(--accent-color), transparent 97%) 0%,
-    color-mix(in srgb, var(--accent-color), transparent 98%) 100%
-  );
+  background: linear-gradient( 135deg, color-mix(in srgb, var(--accent-color), transparent 97%) 0%, color-mix(in srgb, var(--accent-color), transparent 98%) 100%);
   border-radius: 1.875rem;
 }
 
@@ -5416,8 +5073,7 @@ section,
 .terms-of-service .terms-grid .terms-card .card-header {
   padding: 1.875rem;
   text-align: center;
-  border-bottom: 0.0625rem solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
+  border-bottom: 0.0625rem solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .terms-of-service .terms-grid .terms-card .card-header .header-icon {
@@ -5466,12 +5122,7 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
-.terms-of-service
-  .terms-grid
-  .terms-card
-  .card-content
-  .check-list
-  li:last-child {
+.terms-of-service .terms-grid .terms-card .card-content .check-list li:last-child {
   margin-bottom: 0;
 }
 
@@ -5487,35 +5138,18 @@ section,
   gap: 15px;
 }
 
-.terms-of-service
-  .terms-grid
-  .terms-card
-  .card-content
-  .restrictions-list
-  .restriction-item {
+.terms-of-service .terms-grid .terms-card .card-content .restrictions-list .restriction-item {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.terms-of-service
-  .terms-grid
-  .terms-card
-  .card-content
-  .restrictions-list
-  .restriction-item
-  i {
+.terms-of-service .terms-grid .terms-card .card-content .restrictions-list .restriction-item i {
   color: #dc3545;
   font-size: 1.1rem;
 }
 
-.terms-of-service
-  .terms-grid
-  .terms-card
-  .card-content
-  .restrictions-list
-  .restriction-item
-  span {
+.terms-of-service .terms-grid .terms-card .card-content .restrictions-list .restriction-item span {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   font-size: 0.95rem;
 }
@@ -5647,11 +5281,7 @@ section,
 }
 
 .terms-of-service .terms-contact .contact-wrapper {
-  background: linear-gradient(
-    135deg,
-    color-mix(in srgb, var(--accent-color), transparent 95%) 0%,
-    color-mix(in srgb, var(--accent-color), transparent 98%) 100%
-  );
+  background: linear-gradient( 135deg, color-mix(in srgb, var(--accent-color), transparent 95%) 0%, color-mix(in srgb, var(--accent-color), transparent 98%) 100%);
   border-radius: 1.875rem;
   padding: 3.125rem;
   text-align: center;
@@ -5662,60 +5292,33 @@ section,
   margin: 0auto;
 }
 
-.terms-of-service
-  .terms-contact
-  .contact-wrapper
-  .contact-content
-  .contact-text {
+.terms-of-service .terms-contact .contact-wrapper .contact-content .contact-text {
   margin-bottom: 1.875rem;
 }
 
-.terms-of-service
-  .terms-contact
-  .contact-wrapper
-  .contact-content
-  .contact-text
-  h4 {
+.terms-of-service .terms-contact .contact-wrapper .contact-content .contact-text h4 {
   font-size: 1.8rem;
   margin-bottom: 0.625rem;
 }
 
-.terms-of-service
-  .terms-contact
-  .contact-wrapper
-  .contact-content
-  .contact-text
-  p {
+.terms-of-service .terms-contact .contact-wrapper .contact-content .contact-text p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
-.terms-of-service
-  .terms-contact
-  .contact-wrapper
-  .contact-content
-  .contact-actions {
+.terms-of-service .terms-contact .contact-wrapper .contact-content .contact-actions {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
 @media (max-width: 36rem) {
-  .terms-of-service
-    .terms-contact
-    .contact-wrapper
-    .contact-content
-    .contact-actions {
+  .terms-of-service .terms-contact .contact-wrapper .contact-content .contact-actions {
     flex-direction: column;
     align-items: center;
   }
 }
 
-.terms-of-service
-  .terms-contact
-  .contact-wrapper
-  .contact-content
-  .contact-actions
-  a {
+.terms-of-service .terms-contact .contact-wrapper .contact-content .contact-actions a {
   padding: 0.75rem 30px;
   border-radius: 1.875rem;
   text-decoration: none;
@@ -5726,57 +5329,35 @@ section,
   gap: 8px;
 }
 
-.terms-of-service
-  .terms-contact
-  .contact-wrapper
-  .contact-content
-  .contact-actions
-  .btn-primary {
+.terms-of-service .terms-contact .contact-wrapper .contact-content .contact-actions .btn-primary {
   background-color: var(--accent-color);
   color: var(--contrast-color);
 }
 
-.terms-of-service
-  .terms-contact
-  .contact-wrapper
-  .contact-content
-  .contact-actions
-  .btn-primary:hover {
+.terms-of-service .terms-contact .contact-wrapper .contact-content .contact-actions .btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.terms-of-service
-  .terms-contact
-  .contact-wrapper
-  .contact-content
-  .contact-actions
-  .btn-outline {
+.terms-of-service .terms-contact .contact-wrapper .contact-content .contact-actions .btn-outline {
   background-color: transparent;
   border: 2px solid var(--accent-color);
   color: var(--accent-color);
 }
 
-.terms-of-service
-  .terms-contact
-  .contact-wrapper
-  .contact-content
-  .contact-actions
-  .btn-outline:hover {
+.terms-of-service .terms-contact .contact-wrapper .contact-content .contact-actions .btn-outline:hover {
   background-color: var(--accent-color);
   color: var(--contrast-color);
 }
 
+
 /*--------------------------------------------------------------
 # Error 404 Section
 --------------------------------------------------------------*/
+
 .error-404 {
   padding-top: 6.25rem;
-  background: linear-gradient(
-    135deg,
-    color-mix(in srgb, var(--background-color), transparent 0%),
-    color-mix(in srgb, var(--background-color), var(--accent-color) 4%)
-  );
+  background: linear-gradient( 135deg, color-mix(in srgb, var(--background-color), transparent 0%), color-mix(in srgb, var(--background-color), var(--accent-color) 4%));
   padding-bottom: 6.25rem;
 }
 
@@ -5853,11 +5434,7 @@ section,
   font-size: clamp(5rem, 10vw, 8rem);
   font-weight: 900;
   margin: 0;
-  background: linear-gradient(
-    135deg,
-    var(--heading-color),
-    var(--accent-color)
-  );
+  background: linear-gradient( 135deg, var(--heading-color), var(--accent-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -5911,8 +5488,7 @@ section,
 .error-404 .error-actions .btn-home:hover {
   background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px
-    color-mix(in srgb, var(--accent-color), transparent 70%);
+  box-shadow: 0 5px 15px color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
 .error-404 .error-actions .btn-help {
@@ -5928,11 +5504,7 @@ section,
 
 .error-404 .error-suggestions {
   padding: 1.5rem;
-  background-color: color-mix(
-    in srgb,
-    var(--background-color),
-    var(--accent-color) 5%
-  );
+  background-color: color-mix( in srgb, var(--background-color), var(--accent-color) 5%);
   border-radius: 0.75rem;
 }
 
@@ -5985,7 +5557,6 @@ section,
   100% {
     transform: translateY(0);
   }
-
   50% {
     transform: translateY(-20px);
   }
@@ -5996,7 +5567,6 @@ section,
   100% {
     transform: scale(1);
   }
-
   50% {
     transform: scale(1.05);
   }
@@ -6013,19 +5583,15 @@ section,
   .error-404 {
     padding: 4.375rem 0;
   }
-
   .error-404 .error-code {
     font-size: clamp(4rem, 12vw, 6rem);
   }
-
   .error-404 .error-title {
     font-size: 1.8rem;
   }
-
   .error-404 .error-actions {
     flex-direction: column;
   }
-
   .error-404 .error-actions .btn-home,
   .error-404 .error-actions .btn-help {
     width: 100%;

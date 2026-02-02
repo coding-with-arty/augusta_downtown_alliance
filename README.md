@@ -1,7 +1,7 @@
 # Augusta Downtown Alliance Website
 
 A community web project built to promote the businesses, culture, and activities of downtown Augusta, Maine.  
-Developed and maintained by **Arthur Belanger (MusicalViking)** as a volunteer effort in partnership with the **Augusta Downtown Alliance**.
+Developed and maintained by **Arthur Belanger (coding-with-arty)** as a volunteer effort in partnership with the **Augusta Downtown Alliance**.
 
 ---
 
@@ -60,23 +60,25 @@ Each HTML file represents a dedicated section of the site (e.g., **Downtown Life
 ## ⚙️ Setup and Launch
 
 1. **Clone this repository:**
+
    ```bash
-   git clone https://github.com/MusicalViking/augusta_downtown_alliance.git
+   git clone https://github.com/coding-with-arty/augusta_downtown_alliance.git
    cd augusta_downtown_alliance
    ```
 
 2. **Install dependencies (optional if using Node.js tooling):**
+
    ```bash
    npm install
    ```
 
 3. **Open the site locally:**
-   - Simply open `index.html` in a browser, or  
+   - Simply open `index.html` in a browser, or
    - Run a local server (recommended):
      ```bash
      npx serve
      ```
-   The site should be available at `http://localhost:3000`.
+     The site should be available at `http://localhost:3000`.
 
 ---
 
@@ -84,7 +86,7 @@ Each HTML file represents a dedicated section of the site (e.g., **Downtown Life
 
 Contributions are welcome. Please follow this process:
 
-1. **Fork** the repository.  
+1. **Fork** the repository.
 2. **Create a new branch** for your feature or fix:
    ```bash
    git checkout -b feature-name
@@ -110,8 +112,8 @@ You are free to use, modify, and distribute this code as long as proper credit i
 
 ## 🧩 Credits
 
-- Developed by **Arthur Belanger ([@MusicalViking](https://github.com/MusicalViking))**  
-- For the **[Augusta Downtown Alliance](https://www.augustadowntownalliance.org/)**  
+- Developed by **Arthur Belanger ([@coding-with-arty](https://github.com/coding-with-arty))**
+- For the **[Augusta Downtown Alliance](https://www.augustadowntownalliance.org/)**
 - Built as part of a volunteer initiative supporting local community engagement and downtown development.
 
 ---
@@ -119,6 +121,7 @@ You are free to use, modify, and distribute this code as long as proper credit i
 ## 🌐 Future Development
 
 Planned updates include:
+
 - Enhanced accessibility and SEO
 - Event integration with dynamic listings
 - Optimized performance for mobile
@@ -129,5 +132,5 @@ Planned updates include:
 ## 📬 Contact
 
 For questions, feedback, or collaboration:  
-**Email:** [via GitHub profile](https://github.com/MusicalViking)  
+**Email:** [via GitHub profile](https://github.com/coding-with-arty)  
 **Organization:** [augustadowntownalliance.org](https://www.augustadowntownalliance.org/)
