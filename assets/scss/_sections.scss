@@ -6,14 +6,15 @@ section,
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 60px 0;
-  scroll-margin-top: 90px;
+  scroll-margin-top: 72px;
   overflow: clip;
 }
 
 @media (max-width: 1199px) {
+
   section,
   .section {
-    scroll-margin-top: 66px;
+    scroll-margin-top: 57px;
   }
 }
 
@@ -28,24 +29,7 @@ section,
   h2 {
     font-size: 32px;
     font-weight: 700;
-    position: relative;
-
-    &:before,
-    &:after {
-      content: "";
-      width: 50px;
-      height: 2px;
-      background: var(--accent-color);
-      display: inline-block;
-    }
-
-    &:before {
-      margin: 0 15px 10px 0;
-    }
-
-    &:after {
-      margin: 0 0 10px 15px;
-    }
+    margin-bottom: 15px;
   }
 
   p {
@@ -53,18 +37,24 @@ section,
   }
 }
 
-@import "./sections/_hero.scss";
-@import "./sections/_about.scss";
-@import "./sections/_featured-programs.scss";
-@import "./sections/_visit-downtown.scss";
-@import "./sections/_stats.scss";
-@import "./sections/_history.scss";
-@import "./sections/_leadership.scss";
-@import "./sections/_get-involved.scss";
-@import "./sections/_about-downtown.scss";
-@import "./sections/_tourism-info.scss";
-@import "./sections/_team.scss";
-@import "./sections/_contact.scss";
-@import "./sections/_privacy.scss";
-@import "./sections/_terms-of-service.scss";
-@import "./sections/_error-404.scss";
+@import './sections/_hero.scss';
+@import './sections/_about-downtown.scss';
+@import './sections/_ada-president.scss';
+@import './sections/_visit-downtown.scss';
+@import './sections/_about-augusta.scss';
+@import './sections/_gallery-home.scss';
+@import './sections/_faq.scss';
+@import './sections/_business-contact.scss';
+@import './sections/_events-downtown.scss';
+@import './sections/_gallery-events.scss';
+@import './sections/_contact-us.scss';
+@import './sections/_gallery-3.scss';
+@import './sections/_downtown-information.scss';
+@import './sections/_augusta-purpose.scss';
+@import './sections/_augusta-options.scss';
+@import './sections/_featured-downtown.scss';
+@import './sections/_downtown-features.scss';
+@import './sections/_downtown-gallery.scss';
+@import './sections/_downtown-experience.scss';
+@import './sections/_downtown-programs.scss';
+@import './sections/_downtown-initiatives.scss';

@@ -1,0 +1,246 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Downtown Experience Section
+--------------------------------------------------------------*/
+.downtown-experience {
+  .content-wrapper {
+    padding: 80px 0;
+
+    @media (max-width: 992px) {
+      padding: 40px 0;
+    }
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 32px;
+
+    @media (max-width: 768px) {
+      font-size: 2.25rem;
+    }
+  }
+
+  .lead {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    margin-bottom: 48px;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 40px;
+    margin-top: 48px;
+  }
+
+  .stat-item {
+    text-align: center;
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: var(--accent-color);
+      display: block;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.875rem;
+      color: color-mix(in srgb, var(--default-color), transparent 40%);
+      margin-top: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .image-showcase {
+    position: relative;
+    height: 100%;
+    min-height: 500px;
+
+    .main-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .floating-image {
+      position: absolute;
+      bottom: -40px;
+      right: -40px;
+      width: 200px;
+      height: 200px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px color-mix(in srgb, var(--default-color), transparent 80%);
+
+      @media (max-width: 992px) {
+        bottom: 20px;
+        right: 20px;
+        width: 150px;
+        height: 150px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    @media (max-width: 992px) {
+      margin-top: 40px;
+      min-height: 400px;
+    }
+  }
+
+  .activities-section {
+    margin-top: 120px;
+
+    @media (max-width: 992px) {
+      margin-top: 80px;
+    }
+
+    h3 {
+      font-size: 2.25rem;
+      font-weight: 300;
+      margin-bottom: 24px;
+
+      @media (max-width: 768px) {
+        font-size: 1.875rem;
+      }
+    }
+
+    >.row:first-child {
+      margin-bottom: 80px;
+
+      @media (max-width: 768px) {
+        margin-bottom: 60px;
+      }
+
+      p {
+        font-size: 1.125rem;
+        line-height: 1.7;
+        color: color-mix(in srgb, var(--default-color), transparent 20%);
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .activity-card {
+    height: 100%;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-8px);
+    }
+
+    .activity-image {
+      margin-bottom: 32px;
+      border-radius: 8px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+    }
+
+    &:hover .activity-image img {
+      transform: scale(1.05);
+    }
+
+    .activity-content {
+      h4 {
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin-bottom: 16px;
+      }
+
+      p {
+        line-height: 1.7;
+        color: color-mix(in srgb, var(--default-color), transparent 20%);
+        margin: 0;
+      }
+    }
+  }
+
+  .testimonial-section {
+    margin-top: 120px;
+
+    @media (max-width: 992px) {
+      margin-top: 80px;
+    }
+
+    .testimonial-image {
+      img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 8px;
+
+        @media (max-width: 992px) {
+          height: 300px;
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+    .testimonial-content {
+      padding-left: 60px;
+
+      @media (max-width: 992px) {
+        padding-left: 0;
+      }
+
+      blockquote {
+        font-size: 1.375rem;
+        font-style: italic;
+        line-height: 1.6;
+        margin-bottom: 32px;
+        color: var(--heading-color);
+        position: relative;
+
+        &::before {
+          content: '"';
+          font-size: 4rem;
+          color: var(--accent-color);
+          position: absolute;
+          top: -20px;
+          left: -30px;
+          font-family: serif;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 1.125rem;
+
+          &::before {
+            font-size: 3rem;
+            top: -15px;
+            left: -20px;
+          }
+        }
+      }
+
+      .testimonial-author {
+        h5 {
+          font-size: 1.125rem;
+          font-weight: 500;
+          margin-bottom: 4px;
+        }
+
+        span {
+          color: color-mix(in srgb, var(--default-color), transparent 40%);
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,187 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Downtown Life Section
+--------------------------------------------------------------*/
+.visit-downtown {
+  padding-top: 53px;
+  padding-bottom: 60px;
+
+  .about-downtown-img {
+    overflow: hidden;
+    border-radius: 1rem;
+
+    img {
+      transition: transform 0.5s ease;
+      width: 100%;
+    }
+
+    .img-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+      padding: 2rem 1.5rem;
+      transition: all 0.3s ease;
+
+      h3 {
+        color: var(--contrast-color);
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .explore-btn {
+        color: color-mix(
+          in srgb,
+          var(--accent-color),
+          var(--contrast-color) 30%
+        );
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+
+        i {
+          margin-left: 5px;
+          transition: transform 0.3s;
+        }
+
+        &:hover {
+          color: var(--contrast-color);
+
+          i {
+            transform: translateX(5px);
+          }
+        }
+      }
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.05);
+      }
+
+      .img-overlay {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+      }
+    }
+  }
+
+  .about-downtown-content {
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 60px;
+        height: 3px;
+        background-color: var(--accent-color);
+      }
+    }
+
+    p {
+      margin-top: 1.5rem;
+      line-height: 1.7;
+    }
+  }
+
+  .tourist-attraction-item {
+    background-color: var(--surface-color);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    height: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+    .icon-box {
+      background-color: color-mix(
+        in srgb,
+        var(--accent-color),
+        transparent 85%
+      );
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      transition: all 0.3s ease;
+
+      i {
+        font-size: 1.5rem;
+        color: var(--accent-color);
+      }
+    }
+
+    h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+
+      .icon-box {
+        background-color: var(--accent-color);
+
+        i {
+          color: var(--contrast-color);
+        }
+      }
+    }
+  }
+
+  .about-downtown-cta {
+    margin-top: 1rem;
+
+    .btn-primary {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      color: var(--contrast-color);
+      padding: 0.6rem 1.5rem;
+      font-weight: 500;
+      border-radius: 0.25rem;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: color-mix(
+          in srgb,
+          var(--accent-color),
+          transparent 20%
+        );
+        border-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .about-downtown-img {
+      margin-bottom: 2rem;
+    }
+
+    .about-downtown-content {
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .tourist-attraction-item {
+      margin-bottom: 1rem;
+    }
+  }
+}

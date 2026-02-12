@@ -1,0 +1,305 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Events Downtown Section
+--------------------------------------------------------------*/
+.events-downtown {
+  .event-meta {
+    background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+    padding: 15px;
+    border-radius: 8px;
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      i {
+        color: var(--accent-color);
+        font-size: 1.2rem;
+      }
+
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .event-content {
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+
+      @media (max-width: 768px) {
+        font-size: 1.8rem;
+      }
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        height: 3px;
+        width: 50px;
+        background-color: var(--accent-color);
+      }
+    }
+
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.7;
+    }
+
+    .event-highlights {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 1.5rem;
+
+      li {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+
+        i {
+          color: var(--accent-color);
+          font-size: 1.1rem;
+          margin-top: 3px;
+        }
+
+        span {
+          flex: 1;
+        }
+      }
+    }
+
+    .schedule-table {
+      margin-top: 1.5rem;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+
+      .schedule-row {
+        display: flex;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        &:nth-child(odd) {
+          background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+        }
+
+        @media (max-width: 576px) {
+          flex-direction: column;
+        }
+      }
+
+      .schedule-time {
+        width: 180px;
+        padding: 15px;
+        font-weight: 600;
+        background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 576px) {
+          width: 100%;
+        }
+      }
+
+      .schedule-activity {
+        flex: 1;
+        padding: 15px 20px;
+
+        h4 {
+          font-size: 1.1rem;
+          margin-bottom: 5px;
+        }
+
+        p {
+          margin: 0;
+          font-size: 0.95rem;
+        }
+      }
+    }
+
+    .event-gallery {
+      img {
+        transition: all 0.3s ease;
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+
+        &:hover {
+          transform: scale(1.03);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+
+  .event-sidebar {
+    .sidebar-widget {
+      margin-bottom: 30px;
+      background-color: var(--surface-color);
+      border-radius: 10px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+      padding: 25px;
+
+      h3 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        position: relative;
+
+        &:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -1px;
+          height: 3px;
+          width: 60px;
+          background-color: var(--accent-color);
+        }
+      }
+    }
+
+    .registration-form {
+      .btn-register {
+        background-color: var(--accent-color);
+        color: var(--contrast-color);
+        border: none;
+        padding: 12px 0;
+        font-weight: 600;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: color-mix(in srgb, var(--accent-color), black 15%);
+          transform: translateY(-2px);
+        }
+
+        &:active {
+          transform: translateY(0);
+        }
+      }
+    }
+
+    .organizer-info {
+      .organizer-details {
+        display: flex;
+        flex-direction: column;
+
+        .organizer-image {
+          margin-bottom: 15px;
+
+          img {
+            border-radius: 8px;
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+          }
+        }
+
+        .organizer-content {
+          h4 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+          }
+
+          .organizer-position {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+          }
+
+          .organizer-contact {
+            background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+
+            p {
+              margin-bottom: 8px;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+
+              i {
+                color: var(--accent-color);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .related-events {
+      .related-event-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+        &:last-child {
+          border-bottom: none;
+          padding-bottom: 0;
+        }
+
+        .related-event-date {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          min-width: 60px;
+          height: 70px;
+          background-color: var(--accent-color);
+          color: var(--contrast-color);
+          border-radius: 8px;
+
+          .day {
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1;
+          }
+
+          .month {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+          }
+        }
+
+        .related-event-info {
+          flex: 1;
+
+          h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+          }
+
+          p {
+            margin: 0;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+          }
+        }
+      }
+    }
+  }
+}

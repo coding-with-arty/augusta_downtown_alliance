@@ -1,0 +1,70 @@
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  scroll-margin-top: 90px;
+  overflow: clip;
+}
+
+@media (max-width: 1199px) {
+  section,
+  .section {
+    scroll-margin-top: 66px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: "";
+      width: 50px;
+      height: 2px;
+      background: var(--accent-color);
+      display: inline-block;
+    }
+
+    &:before {
+      margin: 0 15px 10px 0;
+    }
+
+    &:after {
+      margin: 0 0 10px 15px;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+@import "./sections/_hero.scss";
+@import "./sections/_about.scss";
+@import "./sections/_featured-programs.scss";
+@import "./sections/_visit-downtown.scss";
+@import "./sections/_stats.scss";
+@import "./sections/_history.scss";
+@import "./sections/_leadership.scss";
+@import "./sections/_get-involved.scss";
+@import "./sections/_about-downtown.scss";
+@import "./sections/_tourism-info.scss";
+@import "./sections/_team.scss";
+@import "./sections/_contact.scss";
+@import "./sections/_privacy.scss";
+@import "./sections/_terms-of-service.scss";
+@import "./sections/_error-404.scss";

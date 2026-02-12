@@ -1,187 +1,289 @@
 // main: ../main.scss
 /*--------------------------------------------------------------
-# Downtown Life Section
+# Visit Downtown Section
 --------------------------------------------------------------*/
 .visit-downtown {
-  padding-top: 53px;
+  padding-top: 60px;
+  position: relative;
   padding-bottom: 60px;
 
-  .about-downtown-img {
-    overflow: hidden;
-    border-radius: 1rem;
-
-    img {
-      transition: transform 0.5s ease;
-      width: 100%;
+  .services-content {
+    .subtitle {
+      display: inline-block;
+      background-color: color-mix(in srgb, var(--accent-color), transparent 94%);
+      color: var(--accent-color);
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 20px;
     }
 
-    .img-overlay {
+    h2 {
+      font-size: 42px;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 20px;
+
+      @media (max-width: 992px) {
+        font-size: 32px;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 28px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    .btn-consultation {
+      display: inline-flex;
+      align-items: center;
+      background-color: var(--accent-color);
+      color: var(--contrast-color);
+      padding: 12px 24px;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+
+      span {
+        margin-right: 8px;
+      }
+
+      i {
+        transition: transform 0.3s ease;
+      }
+
+      &:hover {
+        background-color: color-mix(in srgb, var(--accent-color), #000 15%);
+
+        i {
+          transform: translateX(5px);
+        }
+      }
+    }
+  }
+
+  .services-image {
+    position: relative;
+    height: 380px;
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+      position: relative;
+      z-index: 2;
+      max-height: 100%;
+      object-fit: cover;
+    }
+
+    .shape-circle {
+      position: absolute;
+      right: -30px;
+      top: -30px;
+      height: 180px;
+      width: 180px;
+      background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .shape-accent {
       position: absolute;
       bottom: 0;
       left: 0;
-      width: 100%;
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-      padding: 2rem 1.5rem;
-      transition: all 0.3s ease;
+      height: 100px;
+      width: 100px;
+      background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+      z-index: 1;
+      animation: float 5s infinite ease-in-out;
+    }
 
-      h3 {
+    @media (max-width: 992px) {
+      margin-top: 30px;
+      height: 300px;
+      justify-content: center;
+    }
+  }
+
+  .services-slider {
+    position: relative;
+    margin-top: 30px;
+    padding-top: 30px;
+
+    .swiper-wrapper {
+      height: auto !important;
+    }
+  }
+
+  .service-card {
+    background-color: var(--surface-color);
+    padding: 32px;
+    border-radius: 16px;
+    position: relative;
+    transition: all 0.4s;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+    .icon-box {
+      height: 70px;
+      width: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--accent-color);
+      border-radius: 50%;
+      margin-bottom: 20px;
+      transition: all 0.4s;
+
+      i {
+        font-size: 30px;
         color: var(--contrast-color);
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
+        transition: all 0.4s;
+      }
+    }
+
+    .arrow-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+      color: var(--accent-color);
+      background-color: var(--surface-color);
+      border-radius: 50%;
+      transform: rotate(-45deg);
+      position: absolute;
+      right: -50px;
+      top: -50px;
+      transition: all 0.4s;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .content {
+      h4 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 15px;
+
+        a {
+          color: var(--heading-color);
+          transition: all 0.4s;
+        }
       }
 
-      .explore-btn {
-        color: color-mix(
-          in srgb,
-          var(--accent-color),
-          var(--contrast-color) 30%
-        );
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        transition: all 0.4s;
+      }
+
+      .service-number {
+        position: relative;
+        padding-left: 76px;
+        color: var(--accent-color);
+        font-size: 18px;
         font-weight: 500;
-        display: inline-flex;
-        align-items: center;
+        transition: all 0.4s;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 12px;
+          height: 1px;
+          width: 70px;
+          background-color: var(--accent-color);
+          transition: all 0.4s;
+        }
+      }
+    }
+
+    &:hover {
+      background-color: var(--accent-color);
+      transform: translateY(-5px);
+
+      .icon-box {
+        background-color: var(--contrast-color);
 
         i {
-          margin-left: 5px;
-          transition: transform 0.3s;
+          color: var(--accent-color);
+        }
+      }
+
+      .arrow-link {
+        top: 16px;
+        right: 16px;
+        background-color: var(--contrast-color);
+      }
+
+      .content {
+        h4 a {
+          color: var(--contrast-color);
         }
 
-        &:hover {
+        p {
           color: var(--contrast-color);
+        }
 
-          i {
-            transform: translateX(5px);
+        .service-number {
+          color: var(--contrast-color);
+          padding-left: 0;
+
+          &::after {
+            background-color: var(--contrast-color);
+            left: 30px;
           }
         }
       }
     }
-
-    &:hover {
-      img {
-        transform: scale(1.05);
-      }
-
-      .img-overlay {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-      }
-    }
   }
 
-  .about-downtown-content {
-    h2 {
-      font-size: 2.2rem;
-      margin-bottom: 1rem;
-      position: relative;
+  .swiper-navigation {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
 
-      &:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -10px;
-        width: 60px;
-        height: 3px;
-        background-color: var(--accent-color);
-      }
-    }
-
-    p {
-      margin-top: 1.5rem;
-      line-height: 1.7;
-    }
-  }
-
-  .tourist-attraction-item {
-    background-color: var(--surface-color);
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    height: 100%;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-
-    .icon-box {
-      background-color: color-mix(
-        in srgb,
-        var(--accent-color),
-        transparent 85%
-      );
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      display: flex;
+    button {
+      display: inline-flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 1rem;
-      transition: all 0.3s ease;
-
-      i {
-        font-size: 1.5rem;
-        color: var(--accent-color);
-      }
-    }
-
-    h4 {
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      font-size: 0.9rem;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-
-      .icon-box {
-        background-color: var(--accent-color);
-
-        i {
-          color: var(--contrast-color);
-        }
-      }
-    }
-  }
-
-  .about-downtown-cta {
-    margin-top: 1rem;
-
-    .btn-primary {
+      border: none;
+      border-radius: 50%;
+      height: 56px;
+      width: 56px;
       background-color: var(--accent-color);
-      border-color: var(--accent-color);
       color: var(--contrast-color);
-      padding: 0.6rem 1.5rem;
-      font-weight: 500;
-      border-radius: 0.25rem;
-      transition: all 0.3s;
+      font-size: 20px;
+      transition: all 0.4s;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
 
       &:hover {
-        background-color: color-mix(
-          in srgb,
-          var(--accent-color),
-          transparent 20%
-        );
-        border-color: color-mix(in srgb, var(--accent-color), transparent 20%);
-        transform: translateY(-2px);
+        background-color: color-mix(in srgb, var(--accent-color), #000 15%);
       }
     }
   }
 
-  @media (max-width: 992px) {
-    .about-downtown-img {
-      margin-bottom: 2rem;
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
     }
 
-    .about-downtown-content {
-      h2 {
-        font-size: 1.8rem;
-      }
-    }
-  }
-
-  @media (max-width: 768px) {
-    .tourist-attraction-item {
-      margin-bottom: 1rem;
+    50% {
+      transform: translateY(-15px);
     }
   }
 }

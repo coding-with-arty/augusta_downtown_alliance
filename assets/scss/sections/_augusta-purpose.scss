@@ -1,0 +1,177 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Augusta Purpose Section
+--------------------------------------------------------------*/
+.augusta-purpose {
+  .section-intro {
+    max-width: 700px;
+    margin: 0 auto 4rem;
+
+    .subtitle {
+      color: color-mix(in srgb, var(--accent-color), transparent 20%);
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+
+      @media (min-width: 768px) {
+        font-size: 3rem;
+      }
+    }
+
+    .desc {
+      font-size: 1.125rem;
+      line-height: 1.7;
+    }
+  }
+
+  .highlight-cards {
+    margin-top: 5rem;
+
+    .highlight-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1.5rem;
+      height: 350px;
+
+      &.elevated {
+        transform: translateY(2rem);
+
+        @media (max-width: 768px) {
+          transform: translateY(0);
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.7s ease;
+      }
+
+      .card-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0.1) 40%,
+            transparent 100%);
+        opacity: 1;
+        transition: opacity 0.5s ease;
+      }
+
+      .card-content {
+        position: absolute;
+        bottom: 1rem;
+        left: 1.5rem;
+        transition: transform 0.3s ease;
+
+        .card-title {
+          color: var(--contrast-color);
+          font-size: 1.25rem;
+          font-weight: 600;
+        }
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+
+        .card-content {
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+
+  .values-section {
+    margin-top: 6rem;
+
+    .values-image {
+      position: relative;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+
+      img {
+        width: 100%;
+        transition: transform 0.7s ease;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    .values-content {
+      padding: 0 1rem;
+
+      @media (min-width: 992px) {
+        padding: 0 0 0 2rem;
+      }
+
+      .values-title {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+
+        @media (min-width: 768px) {
+          font-size: 2.25rem;
+        }
+      }
+
+      .values-desc {
+        font-size: 1.125rem;
+        line-height: 1.7;
+        margin-bottom: 2rem;
+      }
+
+      .values-list {
+        .value-item {
+          display: flex;
+          margin-bottom: 1.5rem;
+
+          .value-icon {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            margin-right: 1rem;
+
+            i {
+              color: var(--accent-color);
+              font-size: 1.5rem;
+            }
+          }
+
+          .value-text {
+            h4 {
+              font-size: 1.125rem;
+              font-weight: 600;
+              margin-bottom: 0.5rem;
+              display: inline;
+            }
+
+            p {
+              display: inline;
+              margin-left: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
