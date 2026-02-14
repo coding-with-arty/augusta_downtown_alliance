@@ -11,7 +11,7 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #e6fbea; /* Background color for the entire website, including individual sections */
+  --background-color: #f1f5f4; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #fd564a; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #7fa087; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -23,8 +23,8 @@
 :root {
   --nav-color: #5b5b5b;  /* The default color of the main navmenu links */
   --nav-hover-color: #7fa087; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #e6fbea; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-mobile-background-color: #f1f5f4; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #f1f5f4; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #7fa087; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
@@ -32,7 +32,7 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f5f2ef;
+  --background-color: #f1f5f4;
   --surface-color: #ffffff;
 }
 
@@ -2179,310 +2179,462 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Business Contact Section
+# Get Involved Section
 --------------------------------------------------------------*/
-.business-contact .contact-info-panel {
-  background: linear-gradient(135deg, var(--accent-color) 0%, color-mix(in srgb, var(--accent-color), #000 20%) 100%);
-  height: 100%;
-  min-height: 650px;
+.get-involved h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
   position: relative;
-  overflow: hidden;
 }
 
-.business-contact .contact-info-panel::before {
+.get-involved h2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent-color);
+}
+
+.get-involved h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.get-involved h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.get-involved p {
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+}
+
+.get-involved .admissions-steps .steps-wrapper {
+  position: relative;
+}
+
+.get-involved .admissions-steps .steps-wrapper:before {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
   bottom: 0;
-  background: url("../img/misc/misc-1.webp") center/cover;
-  opacity: 0.1;
-  z-index: 1;
+  left: 19px;
+  width: 2px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 80%);
+  z-index: 0;
 }
 
-.business-contact .contact-info-panel .panel-content {
-  position: relative;
-  z-index: 2;
-  padding: 80px 60px;
-  height: 100%;
+.get-involved .admissions-steps .step-item {
   display: flex;
-  flex-direction: column;
+  margin-bottom: 2rem;
+  position: relative;
 }
 
-@media (max-width: 992px) {
-  .business-contact .contact-info-panel .panel-content {
-    padding: 60px 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  .business-contact .contact-info-panel .panel-content {
-    padding: 40px 30px;
-  }
-}
-
-.business-contact .contact-info-panel .info-header {
-  margin-bottom: 50px;
-}
-
-.business-contact .contact-info-panel .info-header h2 {
-  font-size: 42px;
-  font-weight: 600;
-  color: var(--contrast-color);
-  margin-bottom: 20px;
-  line-height: 1.2;
-}
-
-@media (max-width: 768px) {
-  .business-contact .contact-info-panel .info-header h2 {
-    font-size: 32px;
-  }
-}
-
-.business-contact .contact-info-panel .info-header p {
-  font-size: 18px;
-  color: color-mix(in srgb, var(--contrast-color), transparent 15%);
-  line-height: 1.6;
+.get-involved .admissions-steps .step-item:last-child {
   margin-bottom: 0;
 }
 
-.business-contact .contact-info-panel .info-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-  margin-bottom: 50px;
-  flex: 1;
-}
-
-.business-contact .contact-info-panel .info-card {
+.get-involved .admissions-steps .step-item .step-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
   display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 25px;
-  background: color-mix(in srgb, var(--contrast-color), transparent 90%);
-  border-radius: 12px;
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-right: 1.5rem;
+  position: relative;
+  flex-shrink: 0;
+  z-index: 1;
 }
 
-.business-contact .contact-info-panel .info-card:hover {
-  background: color-mix(in srgb, var(--contrast-color), transparent 85%);
-  transform: translateX(10px);
+.get-involved .admissions-steps .step-item .step-content {
+  padding-top: 0.25rem;
 }
 
-.business-contact .contact-info-panel .info-card .card-icon {
-  width: 50px;
-  height: 50px;
-  background: var(--contrast-color);
+
+.get-involved .deadlines {
+  display: flex;
+  justify-content: center;
+}
+
+.get-involved .deadlines .img-wrapper {
+  width: 100%;
+  max-width: 400px;
+  /* adjust to taste */
+  text-align: center;
+}
+
+.get-involved .deadlines .deadline-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.get-involved .admissions-requirements {
+  background-color: var(--surface-color);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.get-involved .admissions-requirements .requirements-list {
+  margin-top: 1.5rem;
+}
+
+.get-involved .admissions-requirements .requirement-item {
+  display: flex;
+  margin-bottom: 1.75rem;
+}
+
+.get-involved .admissions-requirements .requirement-item:last-child {
+  margin-bottom: 0;
+}
+
+.get-involved .admissions-requirements .requirement-item .icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
   color: var(--accent-color);
-  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.get-involved .admissions-requirements .requirement-item .icon-box i {
+  font-size: 1.25rem;
+}
+
+.get-involved .request-info .card {
+  background-color: var(--surface-color);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.get-involved .request-info .card .card-body {
+  padding: 2rem;
+}
+
+.get-involved .request-info .card .card-title {
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.get-involved .request-info .card .card-title:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--accent-color);
+}
+
+.get-involved .request-info .form-control,
+.get-involved .request-info .form-select {
+  color: var(--default-color);
+  background-color: var(--surface-color);
+  font-size: 14px;
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+}
+
+.get-involved .request-info .form-control:focus,
+.get-involved .request-info .form-select:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--accent-color), transparent 90%);
+}
+
+.get-involved .request-info .form-control::placeholder,
+.get-involved .request-info .form-select::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.get-involved .request-info .btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  color: var(--contrast-color);
+}
+
+.get-involved .request-info .btn-primary:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.get-involved .cta-wrapper {
+  margin-top: 4rem;
+}
+
+.get-involved .cta-wrapper .cta-item {
+  padding: 2.5rem;
+  text-align: center;
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.get-involved .cta-wrapper .cta-item:hover {
+  transform: translateY(-5px);
+}
+
+.get-involved .cta-wrapper .cta-item i {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-color);
+}
+
+.get-involved .cta-wrapper .cta-item h3 {
+  margin-bottom: 1rem;
+}
+
+.get-involved .cta-wrapper .cta-item p {
+  margin-bottom: 1.5rem;
+}
+
+.get-involved .cta-wrapper .cta-item .btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.get-involved .cta-wrapper .cta-item.tour {
+  background-color: color-mix(in srgb, var(--heading-color), transparent 90%);
+  border-radius: 8px 0 0 8px;
+}
+
+.get-involved .cta-wrapper .cta-item.tour .btn-secondary {
+  background-color: var(--heading-color);
+  border-color: var(--heading-color);
+  color: var(--contrast-color);
+}
+
+.get-involved .cta-wrapper .cta-item.tour .btn-secondary:hover {
+  background-color: color-mix(in srgb, var(--heading-color), transparent 20%);
+  border-color: color-mix(in srgb, var(--heading-color), transparent 20%);
+}
+
+.get-involved .cta-wrapper .cta-item.apply {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  border-radius: 0 8px 8px 0;
+}
+
+.get-involved .cta-wrapper .cta-item.apply .btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.get-involved .cta-wrapper .cta-item.apply .btn-primary:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+@media (max-width: 991px) {
+  .get-involved h2 {
+    font-size: 2rem;
+  }
+
+  .get-involved h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .get-involved .cta-wrapper .cta-item.tour {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .get-involved .cta-wrapper .cta-item.apply {
+    border-radius: 0 0 8px 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .get-involved .deadlines .deadline-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .get-involved .requirement-item {
+    flex-direction: column;
+  }
+
+  .get-involved .requirement-item .icon-box {
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+
+  .get-involved .cta-item {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/*--------------------------------------------------------------
+# Business Contact Section
+--------------------------------------------------------------*/
+.business-contact .info-box {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 3rem;
+  border-radius: 1rem;
+  height: 100%;
+}
+
+.business-contact .info-box h3 {
+  color: var(--contrast-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .business-contact .info-box h3 {
+    font-size: 1.75rem;
+  }
+}
+
+.business-contact .info-box p {
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+.business-contact .info-box a {
+  color: var(--contrast-color);
+}
+
+@media (max-width: 992px) {
+  .business-contact .info-box {
+    padding: 1.5rem;
+  }
+}
+
+.business-contact .info-item {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.business-contact .info-item:last-child {
+  margin-bottom: 0;
+}
+
+.business-contact .info-item .icon-box {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: color-mix(in srgb, var(--contrast-color), transparent 85%);
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  transition: 0.3s;
 }
 
-.business-contact .contact-info-panel .info-card .card-icon i {
-  font-size: 22px;
-}
-
-.business-contact .contact-info-panel .info-card .card-content {
-  flex: 1;
-}
-
-.business-contact .contact-info-panel .info-card .card-content h4 {
-  font-size: 16px;
-  font-weight: 600;
+.business-contact .info-item .icon-box i {
+  font-size: 1.5rem;
   color: var(--contrast-color);
-  margin-bottom: 8px;
 }
 
-.business-contact .contact-info-panel .info-card .card-content p {
-  font-size: 14px;
-  color: color-mix(in srgb, var(--contrast-color), transparent 20%);
+.business-contact .info-item:hover .icon-box {
+  background-color: color-mix(in srgb, var(--contrast-color), transparent 70%);
+}
+
+.business-contact .info-item .content h4 {
+  color: var(--contrast-color);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.business-contact .info-item .content p {
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.business-contact .info-item .content p:last-child {
   margin-bottom: 0;
-  line-height: 1.5;
 }
 
-.business-contact .contact-info-panel .social-section {
-  border-top: 1px solid color-mix(in srgb, var(--contrast-color), transparent 80%);
-  padding-top: 30px;
-}
-
-.business-contact .contact-info-panel .social-section h5 {
-  font-size: 16px;
-  color: var(--contrast-color);
-  margin-bottom: 20px;
-  font-weight: 500;
-}
-
-.business-contact .contact-info-panel .social-section .social-icons {
-  display: flex;
-  gap: 15px;
-}
-
-.business-contact .contact-info-panel .social-section .social-icons .social-icon {
-  width: 44px;
-  height: 44px;
-  background: color-mix(in srgb, var(--contrast-color), transparent 85%);
-  color: var(--contrast-color);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.business-contact .contact-info-panel .social-section .social-icons .social-icon i {
-  font-size: 18px;
-}
-
-.business-contact .contact-info-panel .social-section .social-icons .social-icon:hover {
-  background: var(--contrast-color);
-  color: var(--accent-color);
-  transform: translateY(-3px);
-}
-
-.business-contact .contact-form-wrapper {
-  background: var(--surface-color);
-  padding: 80px 60px;
+.business-contact .contact-form {
+  background-color: var(--surface-color);
+  padding: 3rem;
+  border-radius: 1rem;
   height: 100%;
-  min-height: 650px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
 }
 
 @media (max-width: 992px) {
-  .business-contact .contact-form-wrapper {
-    padding: 60px 40px;
+  .business-contact .contact-form {
+    padding: 1.5rem;
   }
+}
+
+.business-contact .contact-form h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
-  .business-contact .contact-form-wrapper {
-    padding: 40px 30px;
+  .business-contact .contact-form h3 {
+    font-size: 1.75rem;
   }
 }
 
-.business-contact .contact-form-wrapper .form-header {
-  margin-bottom: 50px;
+.business-contact .contact-form p {
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  margin-bottom: 2rem;
 }
 
-.business-contact .contact-form-wrapper .form-header h3 {
-  font-size: 32px;
-  font-weight: 700;
-  color: var(--heading-color);
-  margin-bottom: 15px;
-}
-
-@media (max-width: 768px) {
-  .business-contact .contact-form-wrapper .form-header h3 {
-    font-size: 26px;
-  }
-}
-
-.business-contact .contact-form-wrapper .form-header .header-line {
-  width: 60px;
-  height: 3px;
-  background: var(--accent-color);
-  border-radius: 2px;
-}
-
-.business-contact .contact-form-wrapper .modern-form .form-group {
-  margin-bottom: 25px;
-}
-
-.business-contact .contact-form-wrapper .modern-form .form-group .form-control {
-  width: 100%;
-  padding: 18px 25px;
-  font-size: 16px;
-  border: 2px solid color-mix(in srgb, var(--default-color), transparent 85%);
-  border-radius: 8px;
-  background: var(--surface-color);
+.business-contact .contact-form .form-control,
+.business-contact .contact-form .form-select {
+  padding: 0.875rem 1.25rem;
+  border-color: color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 0.5rem;
+  background-color: color-mix(in srgb, var(--surface-color) 90%, white 5%);
   color: var(--default-color);
-  transition: all 0.3s ease;
 }
 
-.business-contact .contact-form-wrapper .modern-form .form-group .form-control:focus {
-  outline: none;
+.business-contact .contact-form .form-control:focus,
+.business-contact .contact-form .form-select:focus {
+  box-shadow: none;
   border-color: var(--accent-color);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color), transparent 90%);
 }
 
-.business-contact .contact-form-wrapper .modern-form .form-group .form-control::placeholder {
+.business-contact .contact-form .form-control::placeholder,
+.business-contact .contact-form .form-select::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 50%);
 }
 
-.business-contact .contact-form-wrapper .modern-form .form-group textarea.form-control {
-  resize: vertical;
-  min-height: 140px;
-  font-family: inherit;
-}
-
-.business-contact .contact-form-wrapper .modern-form .submit-btn {
-  background: var(--accent-color);
+.business-contact .contact-form .btn {
+  background-color: var(--accent-color);
   color: var(--contrast-color);
-  border: none;
-  padding: 18px 35px;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
+  gap: 0.5rem;
+  transition: 0.3s;
 }
 
-.business-contact .contact-form-wrapper .modern-form .submit-btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--contrast-color), transparent 80%), transparent);
-  transition: left 0.5s ease;
+.business-contact .contact-form .btn i {
+  font-size: 1.25rem;
 }
 
-.business-contact .contact-form-wrapper .modern-form .submit-btn:hover {
-  background: color-mix(in srgb, var(--accent-color), #000 10%);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px color-mix(in srgb, var(--accent-color), transparent 70%);
-}
-
-.business-contact .contact-form-wrapper .modern-form .submit-btn:hover::before {
-  left: 100%;
-}
-
-.business-contact .contact-form-wrapper .modern-form .submit-btn:hover .btn-icon {
-  transform: translateX(5px);
-}
-
-.business-contact .contact-form-wrapper .modern-form .submit-btn .btn-text,
-.business-contact .contact-form-wrapper .modern-form .submit-btn .btn-icon {
-  position: relative;
-  z-index: 2;
-}
-
-.business-contact .contact-form-wrapper .modern-form .submit-btn .btn-icon {
-  transition: transform 0.3s ease;
-}
-
-.business-contact .contact-form-wrapper .modern-form .submit-btn .btn-icon i {
-  font-size: 16px;
-}
-
-@media (max-width: 992px) {
-  .business-contact .contact-info-panel {
-    min-height: auto;
-  }
-
-  .business-contact .contact-form-wrapper {
-    min-height: auto;
-  }
+.business-contact .contact-form .btn:hover {
+  background-color: color-mix(in srgb, var(--accent-color), var(--contrast-color) 20%);
 }
 
 /*--------------------------------------------------------------
@@ -6082,4 +6234,114 @@ section,
   .downtown-initiatives .about-cta .btn-about-outline {
     justify-content: center;
   }
+}
+
+/*--------------------------------------------------------------
+# Gallery Section
+--------------------------------------------------------------*/
+.gallery .hotel-filters {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gallery .hotel-filters li {
+  background: transparent;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery .hotel-filters li:hover,
+.gallery .hotel-filters li.filter-active {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+@media (max-width: 768px) {
+  .gallery .hotel-filters li {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+
+.gallery .gallery-item {
+  margin-bottom: 30px;
+}
+
+.gallery .gallery-item .gallery-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery .gallery-item .gallery-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.gallery .gallery-item .gallery-wrapper img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 576px) {
+  .gallery .gallery-item .gallery-wrapper img {
+    height: 250px;
+  }
+}
+
+.gallery .gallery-item .gallery-wrapper:hover img {
+  transform: scale(1.1);
+}
+
+.gallery .gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery .gallery-overlay a {
+  color: var(--contrast-color);
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.gallery .gallery-overlay a:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  transform: scale(1.1);
+}
+
+.gallery .gallery-wrapper:hover .gallery-overlay {
+  opacity: 1;
 }
