@@ -1,0 +1,398 @@
+<!--
+======================================================
+TEAM
+------------------------------------------------------
+Developer: Arthur Daniel Belanger Jr.
+Role: Lead Developer & Technical Architect
+GitHub: https://github.com/coding-with-arty/coding-with-arty
+
+ORGANIZATION
+------------------------------------------------------
+Project: Augusta Downtown Alliance Website
+Purpose: Revitalizing downtown Augusta through community,
+         culture, and economic vitality.
+
+TECHNOLOGY
+------------------------------------------------------
+Standards: HTML5, CSS3, JavaScript, JSON-LD
+Tools: XAMPP, Git, PHPMailer
+Hosting: GoDaddy Linux Hosting
+
+LAST UPDATED
+------------------------------------------------------
+2026-02-14
+======================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Core Meta -->
+  <meta charset="utf-8" />
+  <!-- <base href="" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Augusta Downtown Alliance</title>
+  <meta name="description" content="Get in touch with the Augusta Downtown Alliance. Reach out for business inquiries, event participation, volunteer opportunities, or general information about downtown Augusta, Maine." />
+  <meta name="keywords" content="contact Augusta Downtown Alliance, Augusta Maine downtown contact, business inquiries Augusta, Augusta volunteer, downtown Augusta events contact" />
+  <meta name="author" content="Augusta Downtown Alliance" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#004d2a" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://augustadowntown.com/contact.html" />
+  <meta property="og:title" content="Contact - Augusta Downtown Alliance" />
+  <meta property="og:description" content="Contact the Augusta Downtown Alliance for partnerships, volunteering, and event information." />
+  <meta property="og:image" content="https://augustadowntown.com/assets/images/social-preview-contact.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://augustadowntown.com/contact.html" />
+  <meta name="twitter:title" content="Contact - Augusta Downtown Alliance" />
+  <meta name="twitter:description" content="Reach out to the Augusta Downtown Alliance team. Connect with us to support or engage with downtown Augusta." />
+  <meta name="twitter:image" content="https://augustadowntown.com/assets/images/social-preview-contact.jpg" />
+
+  <!-- Humans.txt link -->
+  <link rel="author" href="humans.txt">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://augustadowntown.com/contact.html" />
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16.png">
+  <link rel="apple-touch-icon" href="assets/images/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" />
+  <link rel="stylesheet" href="assets/vendor/aos/aos.css" />
+  <link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css" />
+  <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Augusta Downtown Alliance",
+      "url": "https://augustadowntown.com",
+      "logo": "https://augustadowntown.com/assets/images/media/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/AugustaDowntownAlliance",
+        "https://www.instagram.com/augustadowntownalliance",
+        "https://www.linkedin.com/company/augusta-downtown-alliance"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "PO Box 2066",
+        "addressLocality": "Augusta",
+        "addressRegion": "ME",
+        "postalCode": "04338",
+        "addressCountry": "US"
+      },
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "email": "info@augustadowntown.com",
+        "telephone": "+1-207-458-9551",
+        "areaServed": "US",
+        "availableLanguage": ["en"]
+      }]
+    }
+  </script>
+</head>
+
+<body class="contact-us-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="assets/images/favicons/logo.png" alt="Augusta Downtown Alliance logo">
+        <h1 class="sitename">Augusta Downtown Alliance</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html"><span>Home</span></a></li>
+
+          <li class="dropdown"><a href="businesses-features.html">Businesses &amp; Features <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="downtown-life.html">Downtown Life</a></li>
+              <li>
+                <!-- <a href="programs-initiatives.html">Programs &amp; Initiatives</a> --></li>
+              <li>
+                <!-- <a href="photo-gallery.html" class="active">Augusta photo gallery</a> --></li>
+            </ul>
+          </li>
+          <li><a href="events-calendar.html">Events Calendar</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
+          <li><a href="for-businesses.html">For Businesses</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="cta-btn" href="https://www.paypal.com/donate?hosted_button_id=JANPA59R5QZSL" target="_blank" rel="noopener noreferrer" aria-label="Donate to Augusta Downtown Alliance via PayPal">
+  Donate Today
+</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/images/dwntwn/dwntwn.jpg);">
+      <div class="container position-relative">
+        <h1>
+          Contact the Augusta Downtown Alliance
+        </h1>
+        <p>
+          Reach out to our team to learn about downtown events, support local businesses, volunteer opportunities, or ways to get involved in Augusta’s vibrant city center.
+        </p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Contact Us</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- End Page Title -->
+
+    <!-- Contact Us Section -->
+    <section id="contact-us" class="contact-us section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5 align-items-stretch">
+
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="info-panel">
+              <div class="panel-header">
+                <span class="section-badge">
+                  <i class="bi bi-chat-dots-fill"></i>
+                  Get In Touch
+                </span>
+                <h3>Partner with Us to Strengthen Downtown Augusta</h3>
+                <p>
+                  Whether you’re a resident, business owner, or visitor, we’re here to connect, collaborate, and support initiatives that make downtown Augusta a thriving community.
+                </p>
+              </div>
+
+              <div class="contact-methods">
+                <div class="method-item">
+                  <div class="method-icon">
+                    <i class="bi bi-envelope-paper-fill"></i>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">Email Us</span>
+                    <a href="mailto:info@augustadowntown.com">info@augustadowntown.com</a>
+                  </div>
+                </div>
+
+                <div class="method-item">
+                  <div class="method-icon">
+                    <i class="bi bi-headset"></i>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">Call Us</span>
+                    <a href="tel:+15558901234">+1 (207) 458-9551</a>
+                  </div>
+                </div>
+
+                <div class="method-item">
+                  <div class="method-icon">
+                    <i class="bi bi-pin-map-fill"></i>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">Contact Our Office</span>
+                    <span>PO Box 2066, Augusta, ME 04338</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="stats-strip">
+                <div class="stat-item">
+                  <span class="stat-number">150+</span>
+                  <span class="stat-text">Local Partnerships</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">250+</span>
+                  <span class="stat-text">Events Coordinated</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">27m+</span>
+                  <span class="stat-text">New Investments</span>
+                </div>
+              </div>
+
+              <div class="social-connect">
+                <span>Follow Us</span>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/AugustaDowntownAlliance" title="Visit us on Facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/augustadowntownalliance" title="Visit us on Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+                  <a href="https://twitter.com/augustadowntown" title="Visit us on X" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://github.com/coding-with-arty/augusta_downtown_alliance" title="View GitHub repository for site" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Info Panel -->
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="form-card">
+              <div class="form-card-header">
+                <div class="header-icon">
+                  <i class="bi bi-send-fill"></i>
+                </div>
+                <div class="header-text">
+                  <h4>Send Us a Message</h4>
+                  <p>Fill out the form and our team will respond within 24 hours.</p>
+                </div>
+              </div>
+
+              <form id="contact-form" action="https://formsubmit.co/ajax/info@augustadowntown.com" method="POST" class="php-email-form">
+
+                <!-- FormSubmit hidden fields -->
+                <input type="hidden" name="_subject" value="New message from Augusta Downtown website">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <!-- <input type="hidden" name="_next" value="https://augustadowntown.com/thank-you.html"> -->
+                <input type="text" name="_honey" style="display:none">
+                <!-- spam trap -->
+
+                <div class="row g-4">
+
+                  <div class="col-md-6">
+                    <div class="input-group-custom">
+                      <label>Your Name</label>
+                      <div class="input-wrapper">
+                        <i class="bi bi-person"></i>
+                        <input type="text" name="name" placeholder="John Doe" required autocomplete="name" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="input-group-custom">
+                      <label>Email Address</label>
+                      <div class="input-wrapper">
+                        <i class="bi bi-envelope"></i>
+                        <input type="email" name="email" placeholder="john@example.com" required autocomplete="email" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="input-group-custom">
+                      <label>Subject</label>
+                      <div class="input-wrapper">
+                        <i class="bi bi-chat-square-text"></i>
+                        <input type="text" name="subject" placeholder="How can we help?" required />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="input-group-custom">
+                      <label>Your Message</label>
+                      <div class="input-wrapper textarea-wrapper">
+                        <i class="bi bi-pencil-square"></i>
+                        <textarea name="message" rows="8" placeholder="Tell us about your project..." required></textarea>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Feedback & submit -->
+                <div class="form-actions">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit" class="btn-submit">
+      <span>Send Message</span>
+      <i class="bi bi-arrow-right-circle-fill"></i>
+    </button>
+
+                  <div class="secure-note">
+                    <i class="bi bi-lock-fill"></i>
+                    <span>Your data is encrypted and secure</span>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+          <!-- End Form Card -->
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Contact Us Section -->
+
+    <!-- 207-458-9551 Contact Number-->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <h3 class="sitename">Augusta Downtown Alliance</h3>
+      <p>Welcome to Downtown Augusta — the beating heart of Maine's capital city!</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.facebook.com/AugustaDowntownAlliance" title="Visit us on Facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/augustadowntownalliance" title="Visit us on Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+        <a href="https://twitter.com/augustadowntown" title="Visit us on X" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://github.com/coding-with-arty/augusta_downtown_alliance" title="View GitHub repository for site" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Augusta Downtown Alliance</strong> <span>All Rights Reserved</span>
+        </div>
+        <div>
+          <span>Site <a href="https://github.com/coding-with-arty/License" target="_blank" rel="noopener noreferrer" title="Visit developers license"> licensed</a> and created  by <a href="https://github.com/coding-with-arty/coding-with-arty" title="Visit developer Coding-With_Arty" target="_blank" rel="noopener noreferrer">Coding-With-Arty</a></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

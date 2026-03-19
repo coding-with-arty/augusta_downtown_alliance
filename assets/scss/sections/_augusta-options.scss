@@ -1,0 +1,302 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Augusta Options Section
+--------------------------------------------------------------*/
+.augusta-options {
+  .content-wrapper {
+    padding-right: 2rem;
+
+    .badge-pill {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color) 80%, #6366f1));
+      color: var(--contrast-color);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.5rem 1.25rem;
+      border-radius: 24px;
+      margin-bottom: 1.25rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--heading-color);
+      line-height: 1.25;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.01em;
+    }
+
+    .lead-text {
+      font-size: 1.1rem;
+      color: color-mix(in srgb, var(--default-color), transparent 20%);
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: var(--surface-color);
+    border-radius: 12px;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px color-mix(in srgb, var(--accent-color), transparent 85%);
+      border-color: color-mix(in srgb, var(--accent-color), transparent 70%);
+    }
+
+    .feature-icon {
+      width: 48px;
+      height: 48px;
+      min-width: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 85%), color-mix(in srgb, var(--accent-color), transparent 90%));
+      color: var(--accent-color);
+      font-size: 1.4rem;
+      transition: all 0.3s;
+    }
+
+    &:hover .feature-icon {
+      background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color) 85%, #6366f1));
+      color: var(--contrast-color);
+    }
+
+    .feature-content {
+      h5 {
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: var(--heading-color);
+        margin-bottom: 0.35rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+        color: color-mix(in srgb, var(--default-color), transparent 30%);
+        margin-bottom: 0;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+
+    .btn-primary-custom {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color) 85%, #6366f1));
+      color: var(--contrast-color);
+      padding: 0.875rem 1.75rem;
+      border-radius: 24px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      box-shadow: 0 4px 14px color-mix(in srgb, var(--accent-color), transparent 70%);
+      transition: all 0.3s;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px color-mix(in srgb, var(--accent-color), transparent 60%);
+        color: var(--contrast-color);
+      }
+    }
+
+    .btn-secondary-custom {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: transparent;
+      color: var(--accent-color);
+      padding: 0.875rem 1.75rem;
+      border-radius: 24px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border: 2px solid var(--accent-color);
+      transition: all 0.3s;
+
+      &:hover {
+        background: color-mix(in srgb, var(--accent-color), transparent 92%);
+        color: var(--accent-color);
+      }
+    }
+  }
+
+  .image-showcase {
+    position: relative;
+    padding: 2rem;
+
+    .main-image {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 12px 40px color-mix(in srgb, var(--default-color), transparent 85%);
+      border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.4s;
+      }
+
+      &:hover img {
+        transform: scale(1.03);
+      }
+    }
+
+    .floating-card {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: var(--surface-color);
+      padding: 1rem 1.25rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px color-mix(in srgb, var(--default-color), transparent 88%);
+      border: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);
+
+      .card-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color) 85%, #6366f1));
+        color: var(--contrast-color);
+        font-size: 1.1rem;
+      }
+
+      .card-info {
+        display: flex;
+        flex-direction: column;
+
+        .metric {
+          font-size: 1.25rem;
+          font-weight: 700;
+          color: var(--heading-color);
+          line-height: 1.2;
+        }
+
+        .label {
+          font-size: 0.8rem;
+          color: color-mix(in srgb, var(--default-color), transparent 40%);
+        }
+      }
+
+      &.card-top {
+        top: 0;
+        right: 0;
+      }
+
+      &.card-bottom {
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .content-wrapper {
+      padding-right: 0;
+      margin-bottom: 2rem;
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    .image-showcase {
+      padding: 1.5rem;
+
+      .floating-card {
+        &.card-top {
+          top: -0.5rem;
+          right: -0.5rem;
+        }
+
+        &.card-bottom {
+          bottom: -0.5rem;
+          left: -0.5rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .content-wrapper {
+      h2 {
+        font-size: 1.75rem;
+      }
+
+      .lead-text {
+        font-size: 1rem;
+      }
+    }
+
+    .feature-item {
+      padding: 1rem;
+
+      .feature-icon {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+        font-size: 1.2rem;
+      }
+    }
+
+    .cta-buttons {
+      flex-direction: column;
+      align-items: stretch;
+
+      .btn-primary-custom,
+      .btn-secondary-custom {
+        justify-content: center;
+        width: 100%;
+      }
+    }
+
+    .image-showcase {
+      padding: 2.5rem 1rem;
+
+      .floating-card {
+        padding: 0.75rem 1rem;
+
+        .card-icon {
+          width: 36px;
+          height: 36px;
+          font-size: 1rem;
+        }
+
+        .card-info {
+          .metric {
+            font-size: 1.1rem;
+          }
+
+          .label {
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+  }
+}

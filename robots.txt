@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Block sensitive areas
+Disallow: /vendor/
+Disallow: /forms/
+Disallow: /assets/scss/
+Disallow: /*.env$
+Disallow: /*.ini$
+Disallow: /*.log$
+Disallow: /*.sql$
+
+# Sitemap
+Sitemap: https://augustadowntown.com/sitemap.xml

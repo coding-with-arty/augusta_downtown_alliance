@@ -1,0 +1,1662 @@
+<!--
+======================================================
+TEAM
+------------------------------------------------------
+Developer: Arthur Daniel Belanger Jr.
+Role: Lead Developer & Technical Architect
+GitHub: https://github.com/coding-with-arty/coding-with-arty
+
+ORGANIZATION
+------------------------------------------------------
+Project: Augusta Downtown Alliance Website
+Purpose: Revitalizing downtown Augusta through community,
+         culture, and economic vitality.
+
+TECHNOLOGY
+------------------------------------------------------
+Standards: HTML5, CSS3, JavaScript, JSON-LD
+Tools: XAMPP, Git, PHPMailer
+Hosting: GoDaddy Linux Hosting
+
+LAST UPDATED
+------------------------------------------------------
+2026-02-14
+======================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Core Meta -->
+  <meta charset="utf-8" />
+  <!-- <base href="" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visit Downtown - Augusta Downtown Alliance</title>
+  <meta name="description" content="Explore downtown Augusta, Maine — a vibrant hub of culture, dining, art, and outdoor experiences. Discover what makes the heart of Maine’s capital a great place to live, work, and visit." />
+  <meta name="keywords" content="Downtown Augusta Maine, Augusta Downtown Alliance, local attractions, Augusta dining, Maine art scene, downtown events, Augusta culture, things to do in Augusta, Augusta nightlife" />
+  <meta name="author" content="Augusta Downtown Alliance" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#004d2a" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://augustadowntown.com/businesses-features.html" />
+  <meta property="og:title" content="Visit Downtown
+    Augusta Downtown Alliance" />
+  <meta property="og:description" content="Experience the energy of downtown Augusta, Maine — local shops, dining, art, and community all in one walkable, historic district." />
+  <meta property="og:image" content="https://augustadowntown.com/assets/images/social-preview-life.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://augustadowntown.com/businesses-features.html" />
+  <meta name="twitter:title" content="Visit Downtown
+    Augusta Downtown Alliance" />
+  <meta name="twitter:description" content="Discover downtown Augusta’s vibrant culture, local businesses, and community events that bring Maine’s capital to life." />
+  <meta name="twitter:image" content="https://augustadowntown.com/assets/images/social-preview-life.jpg" />
+
+  <!-- Humans.txt link -->
+  <link rel="author" href="humans.txt">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://augustadowntown.com/businesses-features.html" />
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16.png">
+  <link rel="apple-touch-icon" href="assets/images/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" />
+  <link rel="stylesheet" href="assets/vendor/aos/aos.css" />
+  <link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css" />
+  <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!-- JSON-LD Structured Data: full business graph -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [{
+          "@type": "CafeOrCoffeeShop",
+          "name": "Wrapped Up Coffee House",
+          "image": "https://augustadowntown.com/assets/images/plc/wrap1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "216 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "BarOrPub",
+          "name": "Capital Bar & Grill",
+          "image": "https://augustadowntown.com/assets/images/plc/cap3.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "288 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "Restaurant",
+          "name": "Otto's on the River",
+          "image": "https://augustadowntown.com/assets/images/plc/otto1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "287 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "Restaurant",
+          "name": "Downtown Diner",
+          "image": "https://augustadowntown.com/assets/images/plc/dwtndin1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "204 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "Brewery",
+          "name": "Cushnoc Brewing Co",
+          "image": "https://augustadowntown.com/assets/images/plc/cush1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "243 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "Restaurant",
+          "name": "Riverfront BBQ",
+          "image": "https://augustadowntown.com/assets/images/plc/rvrbbq1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "300 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "Restaurant",
+          "name": "State Lunch",
+          "image": "https://augustadowntown.com/assets/images/plc/state1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "217 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "BarOrPub",
+          "name": "The Oak Table & Bar",
+          "image": "https://augustadowntown.com/assets/images/plc/oak.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "233 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "Bakery",
+          "name": "Sand Hill Bagel",
+          "image": "https://augustadowntown.com/assets/images/plc/shb1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "10 Canal St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "BarOrPub",
+          "name": "Gin Mill",
+          "image": "https://augustadowntown.com/assets/images/plc/ginmill1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "302 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "Bakery",
+          "name": "Capital Bakery",
+          "image": "https://augustadowntown.com/assets/images/plc/cb1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "319 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        },
+
+        {
+          "@type": "Barbershop",
+          "name": "Water Street Barber Co",
+          "image": "https://augustadowntown.com/assets/images/plc/wtrbrbr1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "312 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "HairSalon",
+          "name": "Hair Gallery",
+          "image": "https://augustadowntown.com/assets/images/plc/hairg1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "182 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "HealthAndBeautyBusiness",
+          "name": "Best Life Nutrition",
+          "image": "https://augustadowntown.com/assets/images/plc/bl1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "212 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "HairSalon",
+          "name": "The List Salon & Gallery",
+          "image": "https://augustadowntown.com/assets/images/plc/listsln1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "19 Oak St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "BeautySalon",
+          "name": "SBC-Skin by Cara",
+          "image": "https://augustadowntown.com/assets/images/plc/sbc1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "162 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "HairSalon",
+          "name": "Mainely Braidz",
+          "image": "https://augustadowntown.com/assets/images/plc/mb1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "166 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "HairSalon",
+          "name": "Alpha Salon",
+          "image": "https://augustadowntown.com/assets/images/plc/alpha1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "188 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "BeautySalon",
+          "name": "Elegant Hair & Nail Salon",
+          "image": "https://augustadowntown.com/assets/images/plc/nail1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "337 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        },
+
+        {
+          "@type": "TattooParlor",
+          "name": "True North Tattoos",
+          "image": "https://augustadowntown.com/assets/images/plc/trunrth1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "177 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "Dentist",
+          "name": "Patenaude Family Dentistry",
+          "image": "https://augustadowntown.com/assets/images/plc/paten1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "169 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "LocalBusiness",
+          "name": "Tom Finn Shoe Repair",
+          "image": "https://augustadowntown.com/assets/images/plc/finn1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "165 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "TattooParlor",
+          "name": "Saylor Ink Tattoo",
+          "image": "https://augustadowntown.com/assets/images/plc/si.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "64 Bangor St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "MedicalBusiness",
+          "name": "Hydrapure IV",
+          "image": "https://augustadowntown.com/assets/images/plc/hydra1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "312 Water St, Suite 2",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "Optician",
+          "name": "Optometrist Donald Carbonneau",
+          "image": "https://augustadowntown.com/assets/images/plc/carbon1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "313 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "MedicalBusiness",
+          "name": "Kennebec Valley Chiropractic",
+          "image": "https://augustadowntown.com/assets/images/plc/kvc1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "11 Oak St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        },
+
+        {
+          "@type": "Store",
+          "name": "Merkaba Sol",
+          "image": "https://augustadowntown.com/assets/images/plc/ms1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "223 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "Florist",
+          "name": "Callie's Flower Shop",
+          "image": "https://augustadowntown.com/assets/images/plc/callies1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "79 Cony St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "BicycleStore",
+          "name": "Capital City Cycles",
+          "image": "https://augustadowntown.com/assets/images/plc/ccc1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "180 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "GardenStore",
+          "name": "Pistel & Page",
+          "image": "https://augustadowntown.com/assets/images/plc/pp1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "234 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "Store",
+          "name": "Patricia Buck Bridal",
+          "image": "https://augustadowntown.com/assets/images/plc/pbb1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "275 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "Store",
+          "name": "Capital City Coins",
+          "image": "https://augustadowntown.com/assets/images/plc/coin1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "231 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "Store",
+          "name": "Fussbudget Sports Cards",
+          "image": "https://augustadowntown.com/assets/images/plc/fsc1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "187 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "GroceryStore",
+          "name": "Al Naeem Market",
+          "image": "https://augustadowntown.com/assets/images/plc/anm.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "339 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        },
+
+        {
+          "@type": "HealthClub",
+          "name": "Downtown Yoga & Healing Arts",
+          "image": "https://augustadowntown.com/assets/images/plc/dty1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "283 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "ExerciseGym",
+          "name": "RBF Studio",
+          "image": "https://augustadowntown.com/assets/images/plc/rbf1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "11 Oak Street",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "ExerciseGym",
+          "name": "Kennebec Valley Coaching",
+          "image": "https://augustadowntown.com/assets/images/plc/kvcoach.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "11 Oak St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        },
+
+        {
+          "@type": "RealEstateAgent",
+          "name": "Pouliot Real Estate",
+          "image": "https://augustadowntown.com/assets/images/plc/pre1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "351 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "RealEstateAgent",
+          "name": "Guerette Properties",
+          "image": "https://augustadowntown.com/assets/images/plc/gp1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "227 Water St, #101",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "FinancialService",
+          "name": "Raymond James",
+          "image": "https://augustadowntown.com/assets/images/plc/rjm1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "320 Water St, 1st Floor",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "FinancialService",
+          "name": "Mendall Financial Group",
+          "image": "https://augustadowntown.com/assets/images/plc/mendall.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "313 Water St, 4th Floor",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "FinancialService",
+          "name": "Wipfli",
+          "image": "https://augustadowntown.com/assets/images/plc/Wipfli.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1 Market Square",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "ProfessionalService",
+          "name": "Grow Smart Maine",
+          "image": "https://augustadowntown.com/assets/images/plc/gsm.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "227 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "LocalBusiness",
+          "name": "SGC Engineering",
+          "image": "https://augustadowntown.com/assets/images/plc/sgc1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "211 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "LegalService",
+          "name": "Steve Smith Trial Lawyers",
+          "image": "https://augustadowntown.com/assets/images/plc/sstl1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "191 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        },
+
+        {
+          "@type": "PerformingArtsTheater",
+          "name": "Colonial Theater",
+          "image": "https://augustadowntown.com/assets/images/plc/ct1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "139 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "Library",
+          "name": "Lithgow Public Library",
+          "image": "https://augustadowntown.com/assets/images/plc/lpl1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "45 Winthrop Street",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "LocalBusiness",
+          "name": "The Village",
+          "image": "https://augustadowntown.com/assets/images/plc/tv1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "190 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        },
+
+        {
+          "@type": "NGO",
+          "name": "Augusta Teen Center",
+          "image": "https://augustadowntown.com/assets/images/plc/atc.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "244 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "NGO",
+          "name": "Maine Recovery Access Project (ME-RAP) Access Center",
+          "image": "https://augustadowntown.com/assets/images/plc/merap1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "47 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "NGO",
+          "name": "Bread of Life",
+          "image": "https://augustadowntown.com/assets/images/plc/bol1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "159 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "NGO",
+          "name": "Maine Math & Science Alliance",
+          "image": "https://augustadowntown.com/assets/images/plc/mmsa1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "343 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Maine at Augusta, Handley Hall (Architecture & Art Programs Building)",
+          "image": "https://augustadowntown.com/assets/images/plc/uma.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "338 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "RadioStation",
+          "name": "Townsquare Media",
+          "image": "https://augustadowntown.com/assets/images/plc/tsm.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "226 Water St",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        },
+
+        {
+          "@type": "TouristAttraction",
+          "name": "Old Fort Western",
+          "image": "https://augustadowntown.com/assets/images/plc/fort3.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "16 Cony Street",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "Park",
+          "name": "Mill Park",
+          "image": "https://augustadowntown.com/assets/images/plc/millpark.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Mill Park Road",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "Park",
+          "name": "Market Square Park",
+          "image": "https://augustadowntown.com/assets/images/plc/msp1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1 Market Sq",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "TouristAttraction",
+          "name": "Kennebec River Rail Trail",
+          "image": "https://augustadowntown.com/assets/images/plc/kvrt1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Front Street",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }, {
+          "@type": "TouristAttraction",
+          "name": "Museum in the Streets",
+          "image": "https://augustadowntown.com/assets/images/plc/mints1.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Water Street and surrounding areas",
+            "addressLocality": "Augusta",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          }
+        }
+      ]
+    }
+  </script>
+</head>
+
+<body class="visit-downtown-page">
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="assets/images/favicons/logo.png" alt="Augusta Downtown Alliance logo">
+        <h1 class="sitename">Augusta Downtown Alliance</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html"><span>Home</span></a></li>
+          <li class="dropdown"><a href="businesses-features.html" class="active"><span>Businesses & Features</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="downtown-life.html">Downtown Life</a></li>
+              <li>
+                <!-- <a href="programs-initiatives.html">Programs & Initiatives</a> -->
+              </li>
+              <li>
+                <!-- <a href="photo-gallery.html" class="active">Augusta photo gallery</a> -->
+              </li>
+            </ul>
+          </li>
+          <li><a href="events-calendar.html">Events Calendar</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="for-businesses.html">For Businesses</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="cta-btn" href="https://www.paypal.com/donate?hosted_button_id=JANPA59R5QZSL" target="_blank" rel="noopener noreferrer" aria-label="Donate to Augusta Downtown Alliance via PayPal">
+  Donate Today
+</a>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/images/dwntwn/dwntwn.jpg);">
+      <div class="container position-relative">
+        <h1>Downtown Businesses & Features</h1>
+        <p>
+          Explore our downtown businesses and you, too, will understand what makes Augusta such an attractive place to live, work, start a business, volunteer, and have fun!
+        </p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Visit Downtown</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- End Page Title -->
+
+    <!-- Downtown Gallery Section -->
+    <section id="downtown-gallery" class="downtown-gallery section">
+      <!-- Gallery Section -->
+      <section id="gallery" class="gallery section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+            <!-- Filters -->
+            <ul class="hotel-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-dining">Dining & Drinks</li>
+              <li data-filter=".filter-care">Personal Care & Beauty</li>
+              <li data-filter=".filter-retail">Shopping</li>
+              <li data-filter=".filter-health">Health & Fitness</li>
+              <li data-filter=".filter-services">Services</li>
+              <li data-filter=".filter-arts">Local Arts</li>
+              <li data-filter=".filter-community">Community</li>
+              <li data-filter=".filter-attractions">Attractions</li>
+            </ul>
+            <!-- End Filters -->
+
+            <!-- Items -->
+            <div id="downtown-isotope" class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+              <!-- ========= DINING & DRINKS ========= -->
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-dining">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/wrap1.jpg" class="img-fluid" loading="lazy" alt="Wrapped Up Coffee House at 216 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/wrap1.jpg" class="glightbox" title="Wrapped Up Coffee House — 216 Water St • Restaurant/cafe/bar"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Wrapped Up Coffee House</h5>
+                    <p>216 Water St<br>Restaurant/cafe/bar</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-dining">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/cap3.jpg" class="img-fluid" loading="lazy" alt="Capital Bar & Grill at 288 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/cap3.jpg" class="glightbox" title="Capital Bar & Grill — 288 Water St • Restaurant/cafe/bar"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Capital Bar & Grill</h5>
+                    <p>288 Water St<br>Restaurant/cafe/bar</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-dining">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/otto1.jpg" class="img-fluid" loading="lazy" alt="Otto's on the River at 287 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/otto1.jpg" class="glightbox" title="Otto's on the River — 287 Water St • Restaurant/cafe/bar"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Otto's on the River</h5>
+                    <p>287 Water St<br>Restaurant/cafe/bar</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-dining">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/dwtndin1.jpg" class="img-fluid" loading="lazy" alt="Downtown Diner at 204 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/dwtndin1.jpg" class="glightbox" title="Downtown Diner — 204 Water St • Restaurant/cafe/bar"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Downtown Diner</h5>
+                    <p>204 Water St<br>Restaurant/cafe/bar</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-dining">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/cush1.jpg" class="img-fluid" loading="lazy" alt="Cushnoc Brewing Co at 243 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/cush1.jpg" class="glightbox" title="Cushnoc Brewing Co — 243 Water St • Restaurant/cafe/bar"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Cushnoc Brewing Co</h5>
+                    <p>243 Water St<br>Restaurant/cafe/bar</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-dining">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/rvrbbq1.jpg" class="img-fluid" loading="lazy" alt="Riverfront BBQ at 300 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/rvrbbq1.jpg" class="glightbox" title="Riverfront BBQ — 300 Water St • Restaurant/cafe/bar"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Riverfront BBQ</h5>
+                    <p>300 Water St<br>Restaurant/cafe/bar</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-dining">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/state1.jpg" class="img-fluid" loading="lazy" alt="State Lunch at 217 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/state1.jpg" class="glightbox" title="State Lunch — 217 Water St • Restaurant/cafe/bar"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>State Lunch</h5>
+                    <p>217 Water St<br>Restaurant/cafe/bar</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-dining">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/oak.jpg" class="img-fluid" loading="lazy" alt="The Oak Table & Bar at 233 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/oak.jpg" class="glightbox" title="The Oak Table & Bar — 233 Water St • Restaurant/cafe/bar"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>The Oak Table & Bar</h5>
+                    <p>233 Water St<br>Restaurant/cafe/bar</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-dining">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/shb1.jpg" class="img-fluid" loading="lazy" alt="Sand Hill Bagel at 10 Canal St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/shb1.jpg" class="glightbox" title="Sand Hill Bagel — 10 Canal St • Restaurant/cafe/bar"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Sand Hill Bagel</h5>
+                    <p>10 Canal St<br>Restaurant/cafe/bar</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-dining">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/ginmill1.jpg" class="img-fluid" loading="lazy" alt="Gin Mill at 302 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/ginmill1.jpg" class="glightbox" title="Gin Mill — 302 Water St • Restaurant/cafe/bar"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Gin Mill</h5>
+                    <p>302 Water St<br>Restaurant/cafe/bar</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-dining">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/cb1.jpg" class="img-fluid" loading="lazy" alt="Capital Bakery at 319 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/cb1.jpg" class="glightbox" title="Capital Bakery — 319 Water St • Restaurant/cafe/bar"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Capital Bakery</h5>
+                    <p>319 Water St<br>Restaurant/cafe/bar</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ========= PERSONAL CARE & BEAUTY ========= -->
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-care">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/wtrbrbr1.jpg" class="img-fluid" loading="lazy" alt="Water Street Barber Co at 312 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/wtrbrbr1.jpg" class="glightbox" title="Water Street Barber Co — 312 Water St • Barber / Hair salon / Beauty Services"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Water Street Barber Co</h5>
+                    <p>312 Water St<br>Barber / Hair salon / Beauty Services</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-care">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/hairg1.jpg" class="img-fluid" loading="lazy" alt="Hair Gallery at 182 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/hairg1.jpg" class="glightbox" title="Hair Gallery — 182 Water St • Barber / Hair salon / Beauty Services"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Hair Gallery</h5>
+                    <p>182 Water St<br>Barber / Hair salon / Beauty Services</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-care">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/bl1.jpg" class="img-fluid" loading="lazy" alt="Best Life Nutrition at 212 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/bl1.jpg" class="glightbox" title="Best Life Nutrition — 212 Water St • Health & Beauty"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Best Life Nutrition</h5>
+                    <p>212 Water St<br>Health & Beauty</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-care">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/listsln1.jpg" class="img-fluid" loading="lazy" alt="The List Salon & Gallery at 19 Oak St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/listsln1.jpg" class="glightbox" title="The List Salon & Gallery — 19 Oak St • Barber / Hair salon / Beauty Services"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>The List Salon & Gallery</h5>
+                    <p>19 Oak St<br>Barber / Hair salon / Beauty Services</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-care">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/sbc1.jpg" class="img-fluid" loading="lazy" alt="SBC-Skin by Cara at 162 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/sbc1.jpg" class="glightbox" title="SBC-Skin by Cara — 162 Water St • Barber / Hair salon / Beauty Services"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>SBC-Skin by Cara</h5>
+                    <p>162 Water St<br>Barber / Hair salon / Beauty Services</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-care">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/mb1.jpg" class="img-fluid" loading="lazy" alt="Mainely Braidz at 166 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/mb1.jpg" class="glightbox" title="Mainely Braidz — 166 Water St • Barber / Hair salon / Beauty Services"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Mainely Braidz</h5>
+                    <p>166 Water St<br>Barber / Hair salon / Beauty Services</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-care">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/alpha1.jpg" class="img-fluid" loading="lazy" alt="Alpha Salon at 188 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/alpha1.jpg" class="glightbox" title="Alpha Salon — 188 Water St • Barber / Hair salon / Beauty Services"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Alpha Salon</h5>
+                    <p>188 Water St<br>Barber / Hair salon / Beauty Services</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-care">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/nail1.jpg" class="img-fluid" loading="lazy" alt="Elegant Hair & Nail Salon at 337 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/nail1.jpg" class="glightbox" title="Elegant Hair & Nail Salon — 337 Water St • Barber / Hair salon / Beauty Services"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Elegant Hair & Nail Salon</h5>
+                    <p>337 Water St<br>Barber / Hair salon / Beauty Services</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Personal Services in Care tab -->
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-care">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/trunrth1.jpg" class="img-fluid" loading="lazy" alt="True North Tattoos at 177 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/trunrth1.jpg" class="glightbox" title="True North Tattoos — 177 Water St • Personal Services"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>True North Tattoos</h5>
+                    <p>177 Water St<br>Personal Services</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-care">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/paten1.jpg" class="img-fluid" loading="lazy" alt="Patenaude Family Dentistry at 169 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/paten1.jpg" class="glightbox" title="Patenaude Family Dentistry — 169 Water St • Personal Services"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Patenaude Family Dentistry</h5>
+                    <p>169 Water St<br>Personal Services</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-care">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/finn1.jpg" class="img-fluid" loading="lazy" alt="Tom Finn Shoe Repair at 165 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/finn1.jpg" class="glightbox" title="Tom Finn Shoe Repair — 165 Water St • Personal Services"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Tom Finn Shoe Repair</h5>
+                    <p>165 Water St<br>Personal Services</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-care">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/si.jpg" class="img-fluid" loading="lazy" alt="Saylor Ink Tattoo at 64 Bangor St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/si.jpg" class="glightbox" title="Saylor Ink Tattoo — 64 Bangor St • Personal Services"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Saylor Ink Tattoo</h5>
+                    <p>64 Bangor St<br>Personal Services</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-care">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/hydra1.jpg" class="img-fluid" loading="lazy" alt="Hydrapure IV at 312 Water St, Suite 2 in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/hydra1.jpg" class="glightbox" title="Hydrapure IV — 312 Water St, Suite 2 • Personal Services"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Hydrapure IV</h5>
+                    <p>312 Water St, Suite 2<br>Personal Services</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-care">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/carbon1.jpg" class="img-fluid" loading="lazy" alt="Optometrist Donald Carbonneau at 313 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/carbon1.jpg" class="glightbox" title="Optometrist Donald Carbonneau — 313 Water St • Personal Services"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Optometrist Donald Carbonneau</h5>
+                    <p>313 Water St<br>Personal Services</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-care">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/kvc1.jpg" class="img-fluid" loading="lazy" alt="Kennebec Valley Chiropractic at 11 Oak St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/kvc1.jpg" class="glightbox" title="Kennebec Valley Chiropractic — 11 Oak St • Personal Services"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Kennebec Valley Chiropractic</h5>
+                    <p>11 Oak St<br>Personal Services</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ========= SHOPPING ========= -->
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-retail">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/ms1.jpg" class="img-fluid" loading="lazy" alt="Merkaba Sol at 223 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/ms1.jpg" class="glightbox" title="Merkaba Sol — 223 Water St • Shopping (chocolate and more)"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Merkaba Sol</h5>
+                    <p>223 Water St<br>Shopping (chocolate and more)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-retail">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/callies1.jpg" class="img-fluid" loading="lazy" alt="Callie's Flower Shop at 79 Cony St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/callies1.jpg" class="glightbox" title="Callie's Flower Shop — 79 Cony St • Shopping (flowers)"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Callie's Flower Shop</h5>
+                    <p>79 Cony St<br>Shopping (flowers)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-retail">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/ccc1.jpg" class="img-fluid" loading="lazy" alt="Capital City Cycles at 180 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/ccc1.jpg" class="glightbox" title="Capital City Cycles — 180 Water St • Shopping (bicycles and gear)"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Capital City Cycles</h5>
+                    <p>180 Water St<br>Shopping (bicycles and gear)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-retail">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/pp1.jpg" class="img-fluid" loading="lazy" alt="Pistel & Page at 234 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/pp1.jpg" class="glightbox" title="Pistel & Page — 234 Water St • Shopping (plants and more)"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Pistel & Page</h5>
+                    <p>234 Water St<br>Shopping (plants and more)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-retail">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/pbb1.jpg" class="img-fluid" loading="lazy" alt="Patricia Buck Bridal at 275 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/pbb1.jpg" class="glightbox" title="Patricia Buck Bridal — 275 Water St • Shopping (bridal)"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Patricia Buck Bridal</h5>
+                    <p>275 Water St<br>Shopping (bridal)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-retail">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/coin1.jpg" class="img-fluid" loading="lazy" alt="Capital City Coins at 231 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/coin1.jpg" class="glightbox" title="Capital City Coins — 231 Water St • Specialty retail (coins)"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Capital City Coins</h5>
+                    <p>231 Water St<br>Specialty retail (coins)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-retail">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/fsc1.jpg" class="img-fluid" loading="lazy" alt="Fussbudget Sports Cards at 187 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/fsc1.jpg" class="glightbox" title="Fussbudget Sports Cards — 187 Water St • Shopping (sports cards and memorabilia)"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Fussbudget Sports Cards</h5>
+                    <p>187 Water St<br>Shopping (sports cards and memorabilia)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-retail">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/anm.jpg" class="img-fluid" loading="lazy" alt="Al Naeem Market at 339 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/anm.jpg" class="glightbox" title="Al Naeem Market — 339 Water St • Grocery - Middle Eastern/Halal market"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Al Naeem Market</h5>
+                    <p>339 Water St<br>Grocery - Middle Eastern/Halal market</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ========= HEALTH & FITNESS ========= -->
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-health">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/dty1.jpg" class="img-fluid" loading="lazy" alt="Downtown Yoga & Healing Arts at 283 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/dty1.jpg" class="glightbox" title="Downtown Yoga & Healing Arts — 283 Water St • Fitness Studio"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Downtown Yoga & Healing Arts</h5>
+                    <p>283 Water St<br>Fitness Studio</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-health">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/rbf1.jpg" class="img-fluid" loading="lazy" alt="RBF Studio at 11 Oak Street in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/rbf1.jpg" class="glightbox" title="RBF Studio — 11 Oak Street • Fitness Studio"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>RBF Studio</h5>
+                    <p>11 Oak Street<br>Fitness Studio</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-health">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/kvcoach.jpg" class="img-fluid" loading="lazy" alt="Kennebec Valley Coaching at 11 Oak St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/kvcoach.jpg" class="glightbox" title="Kennebec Valley Coaching — 11 Oak St • Fitness (personal trainer)"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Kennebec Valley Coaching</h5>
+                    <p>11 Oak St<br>Fitness (personal trainer)</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ========= SERVICES (Professional) ========= -->
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-services">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/pre1.jpg" class="img-fluid" loading="lazy" alt="Pouliot Real Estate at 351 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/pre1.jpg" class="glightbox" title="Pouliot Real Estate — 351 Water St • Real estate"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Pouliot Real Estate</h5>
+                    <p>351 Water St<br>Real estate</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-services">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/gp1.jpg" class="img-fluid" loading="lazy" alt="Guerette Properties at 227 Water St, #101 in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/gp1.jpg" class="glightbox" title="Guerette Properties — 227 Water St, #101 • Real estate"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Guerette Properties</h5>
+                    <p>227 Water St, #101<br>Real estate</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-services">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/rjm1.jpg" class="img-fluid" loading="lazy" alt="Raymond James at 320 Water St, 1st Floor in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/rjm1.jpg" class="glightbox" title="Raymond James — 320 Water St, 1st Floor • Financial services"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Raymond James</h5>
+                    <p>320 Water St, 1st Floor<br>Financial services</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-services">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/mendall.jpg" class="img-fluid" loading="lazy" alt="Mendall Financial Group at 313 Water St, 4th Floor in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/mendall.jpg" class="glightbox" title="Mendall Financial Group — 313 Water St, 4th Floor • Financial services"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Mendall Financial Group</h5>
+                    <p>313 Water St, 4th Floor<br>Financial services</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-services">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/Wipfli.jpg" class="img-fluid" loading="lazy" alt="Wipfli at 1 Market Square in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/Wipfli.jpg" class="glightbox" title="Wipfli — 1 Market Square • Financial services"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Wipfli</h5>
+                    <p>1 Market Square<br>Financial services</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-services">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/gsm.jpg" class="img-fluid" loading="lazy" alt="Grow Smart Maine at 227 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/gsm.jpg" class="glightbox" title="Grow Smart Maine — 227 Water St • Professional office (planners)"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Grow Smart Maine</h5>
+                    <p>227 Water St<br>Professional office (planners)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-services">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/sgc1.jpg" class="img-fluid" loading="lazy" alt="SGC Engineering at 211 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/sgc1.jpg" class="glightbox" title="SGC Engineering — 211 Water St • Professional office (electrical, civil, structural engineers)"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>SGC Engineering</h5>
+                    <p>211 Water St<br>Professional office (electrical, civil, structural engineers)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-services">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/sstl1.jpg" class="img-fluid" loading="lazy" alt="Steve Smith Trial Lawyers at 191 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/sstl1.jpg" class="glightbox" title="Steve Smith Trial Lawyers — 191 Water St • Professional office (lawyers)"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Steve Smith Trial Lawyers</h5>
+                    <p>191 Water St<br>Professional office (lawyers)</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ========= LOCAL ARTS ========= -->
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-arts">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/ct1.jpg" class="img-fluid" loading="lazy" alt="Colonial Theater at 139 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/ct1.jpg" class="glightbox" title="Colonial Theater — 139 Water St • Tourist Attraction (cultural amenity)"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Colonial Theater</h5>
+                    <p>139 Water St<br>Tourist Attraction (cultural amenity)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-arts">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/lpl1.jpg" class="img-fluid" loading="lazy" alt="Lithgow Public Library at 45 Winthrop Street in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/lpl1.jpg" class="glightbox" title="Lithgow Public Library — 45 Winthrop Street • Tourist Attraction (cultural amenity)"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Lithgow Public Library</h5>
+                    <p>45 Winthrop Street<br>Tourist Attraction (cultural amenity)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-arts">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/tv1.jpg" class="img-fluid" loading="lazy" alt="The Village at 190 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/tv1.jpg" class="glightbox" title="The Village — 190 Water St • Family Attractions"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>The Village</h5>
+                    <p>190 Water St<br>Family Attractions</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ========= COMMUNITY ========= -->
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-community">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/atc.jpg" class="img-fluid" loading="lazy" alt="Augusta Teen Center at 244 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/atc.jpg" class="glightbox" title="Augusta Teen Center — 244 Water St • Non-profit service provider"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Augusta Teen Center</h5>
+                    <p>244 Water St<br>Non-profit service provider</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-8 col-md-6 gallery-item isotope-item filter-community">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/merap1.jpg" class="img-fluid" loading="lazy" alt="Maine Recovery Access Project (ME-RAP) Access Center at 47 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/merap1.jpg" class="glightbox" title="Maine Recovery Access Project (ME-RAP) Access Center — 47 Water St • Non-profit service provider"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Maine Recovery Access Project (ME-RAP) Access Center</h5>
+                    <p>47 Water St<br>Non-profit service provider</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-community">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/bol1.jpg" class="img-fluid" loading="lazy" alt="Bread of Life at 159 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/bol1.jpg" class="glightbox" title="Bread of Life — 159 Water St • Non-profit service provider"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Bread of Life</h5>
+                    <p>159 Water St<br>Non-profit service provider</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-8 col-md-6 gallery-item isotope-item filter-community">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/mmsa1.jpg" class="img-fluid" loading="lazy" alt="Maine Math & Science Alliance at 343 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/mmsa1.jpg" class="glightbox" title="Maine Math & Science Alliance — 343 Water St • Non-profit service provider - education"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Maine Math & Science Alliance</h5>
+                    <p>343 Water St<br>Non-profit service provider - education</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-8 col-md-6 gallery-item isotope-item filter-community">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/uma.jpg" class="img-fluid" loading="lazy" alt="University of Maine at Augusta, Handley Hall at 338 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/uma.jpg" class="glightbox" title="University of Maine at Augusta, Handley Hall (Architecture & Art Programs Building) — 338 Water St • Education"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>University of Maine at Augusta, Handley Hall (Architecture & Art Programs Building)</h5>
+                    <p>338 Water St<br>Education</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-8 col-md-6 gallery-item isotope-item filter-community">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/tsm.jpg" class="img-fluid" loading="lazy" alt="Townsquare Media at 226 Water St in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/tsm.jpg" class="glightbox" title="Townsquare Media — 226 Water St • Radio stations (B98.5 & 92 Moose)"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Townsquare Media</h5>
+                    <p>226 Water St<br>Radio stations (B98.5 & 92 Moose)</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ========= ATTRACTIONS / OUTDOOR ========= -->
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-attractions">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/fort3.jpg" class="img-fluid" loading="lazy" alt="Old Fort Western at 16 Cony Street in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/fort3.jpg" class="glightbox" title="Old Fort Western — 16 Cony Street • Tourist Attraction (historic site)"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Old Fort Western</h5>
+                    <p>16 Cony Street<br>Tourist Attraction (historic site)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-attractions">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/millpark.jpg" class="img-fluid" loading="lazy" alt="Mill Park on Mill Park Road in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/millpark.jpg" class="glightbox" title="Mill Park — Mill Park Road • Tourist Attraction (park)"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Mill Park</h5>
+                    <p>Mill Park Road<br>Tourist Attraction (park)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-attractions">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/msp1.jpg" class="img-fluid" loading="lazy" alt="Market Square Park at 1 Market Sq in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/msp1.jpg" class="glightbox" title="Market Square Park — 1 Market Sq • Tourist Attraction (park)"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Market Square Park</h5>
+                    <p>1 Market Sq<br>Tourist Attraction (park)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-attractions">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/kvrt1.jpg" class="img-fluid" loading="lazy" alt="Kennebec River Rail Trail on Front Street in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/kvrt1.jpg" class="glightbox" title="Kennebec River Rail Trail — Front Street • Tourist Attraction (trail)"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Kennebec River Rail Trail</h5>
+                    <p>Front Street<br>Tourist Attraction (trail)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-8 col-md-6 gallery-item isotope-item filter-attractions">
+                <div class="gallery-wrapper">
+                  <img src="assets/images/plc/mints1.jpg" class="img-fluid" loading="lazy" alt="Museum in the Streets along Water Street and the surrounding areas in Augusta, Maine">
+                  <div class="gallery-overlay">
+                    <a href="assets/images/plc/mints1.jpg" class="glightbox" title="Museum in the Streets — Water Street and surrounding areas • Tourist Attraction (trail)"><i class="bi bi-eye"></i></a>
+                  </div>
+                  <div class="gallery-caption">
+                    <h5>Museum in the Streets</h5>
+                    <p>Water Street and surrounding areas<br>Tourist Attraction (trail)</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- End Items -->
+
+            <div class="text-center mt-3">
+              <button type="button" class="btn btn-primary show-more" data-target="#downtown-isotope">
+                Show More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Gallery Section -->
+    </section>
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <h3 class="sitename">Augusta Downtown Alliance</h3>
+      <p>Welcome to Downtown Augusta — the beating heart of Maine's capital city!</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.facebook.com/AugustaDowntownAlliance" title="Visit us on Facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/augustadowntownalliance" title="Visit us on Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+        <a href="https://twitter.com/augustadowntown" title="Visit us on X" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://github.com/coding-with-arty/augusta_downtown_alliance" title="View GitHub repository for site" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Augusta Downtown Alliance</strong> <span>All Rights Reserved</span>
+        </div>
+        <div>
+          <span>Site <a href="https://github.com/coding-with-arty/License" target="_blank" rel="noopener noreferrer" title="Visit developers license"> licensed</a> and created by <a href="https://github.com/coding-with-arty/coding-with-arty" title="Visit developer Coding-With_Arty" target="_blank" rel="noopener noreferrer">Coding-With-Arty</a></span>
+        </div>
+      </div>
+    </div>
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <div id="preloader"></div>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </footer>
+</body>
+
+</html>

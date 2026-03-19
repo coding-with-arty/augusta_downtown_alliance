@@ -1,0 +1,62 @@
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  scroll-margin-top: 72px;
+  overflow: clip;
+}
+
+@media (max-width: 1199px) {
+
+  section,
+  .section {
+    scroll-margin-top: 57px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+@import './sections/_hero.scss';
+@import './sections/_about-downtown.scss';
+@import './sections/_ada-president.scss';
+@import './sections/_visit-downtown.scss';
+@import './sections/_about-augusta.scss';
+@import './sections/_gallery-home.scss';
+@import './sections/_faq.scss';
+@import './sections/_get-involved.scss';
+@import './sections/_business-contact.scss';
+@import './sections/_events-downtown.scss';
+@import './sections/_gallery-events.scss';
+@import './sections/_contact-us.scss';
+@import './sections/_gallery-3.scss';
+@import './sections/_downtown-information.scss';
+@import './sections/_augusta-purpose.scss';
+@import './sections/_augusta-options.scss';
+@import './sections/_featured-downtown.scss';
+@import './sections/_downtown-features.scss';
+@import './sections/_downtown-gallery.scss';
+@import './sections/_downtown-experience.scss';
+@import './sections/_downtown-programs.scss';
+@import './sections/_downtown-initiatives.scss';
+@import './sections/_gallery.scss';

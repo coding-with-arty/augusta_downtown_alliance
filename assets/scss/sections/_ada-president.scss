@@ -1,0 +1,189 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Ada President Section
+--------------------------------------------------------------*/
+.ada-president {
+  .about-img {
+    position: relative;
+
+    .img-wrapper {
+      position: relative;
+      padding: 20px;
+      border: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+      border-radius: 15px;
+
+      img {
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.02);
+        }
+      }
+    }
+  }
+
+  .content {
+    .section-header {
+      margin-bottom: 30px;
+
+      h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: var(--accent-color);
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+
+    .about-content {
+      .bio-text {
+        .lead {
+          font-size: 1.2rem;
+          color: var(--heading-color);
+          margin-bottom: 0;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.7;
+          color: var(--default-color);
+        }
+      }
+
+      .info-list {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+        .info-item {
+          display: flex;
+          align-items: flex-start;
+          gap: 15px;
+          padding: 15px;
+          background: var(--surface-color);
+          border-radius: 10px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+          transition: transform 0.3s ease;
+
+          &:hover {
+            transform: translateY(-3px);
+          }
+
+          i {
+            font-size: 24px;
+            color: var(--accent-color);
+            flex-shrink: 0;
+          }
+
+          h5 {
+            font-size: 16px;
+            margin: 0 0 5px;
+            font-weight: 600;
+            color: var(--heading-color);
+          }
+
+          p {
+            margin: 0;
+            font-size: 15px;
+            color: var(--default-color);
+          }
+        }
+      }
+
+      .social-links {
+        text-align: center;
+
+        .links-wrapper {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+
+          a {
+            color: var(--heading-color);
+            font-size: 20px;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--surface-color);
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+            &:hover {
+              color: var(--accent-color);
+              transform: translateY(-3px);
+              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    .about-img {
+      margin-bottom: 30px;
+    }
+
+    .content {
+      .about-content {
+        .info-list {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      .section-header {
+        h2 {
+          font-size: 28px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .about-content {
+        .bio-text {
+          .lead {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 575px) {
+    .about-img {
+      .img-wrapper {
+        .social-links {
+          padding: 12px 20px;
+          gap: 12px;
+
+          a {
+            font-size: 16px;
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+    }
+
+    .content {
+      .about-content {
+        .info-list {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+}

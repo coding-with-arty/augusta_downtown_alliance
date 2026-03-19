@@ -1,0 +1,23 @@
+======================================================
+TEAM
+------------------------------------------------------
+Developer: Arthur Daniel Belanger Jr.
+Role: Lead Developer & Technical Architect
+GitHub: https://github.com/coding-with-arty/coding-with-arty
+
+ORGANIZATION
+------------------------------------------------------
+Project: Augusta Downtown Alliance Website
+Purpose: Revitalizing downtown Augusta through community,
+         culture, and economic vitality.
+
+TECHNOLOGY
+------------------------------------------------------
+Standards: HTML5, CSS3, JavaScript, JSON-LD
+Tools: XAMPP, Git, PHPMailer
+Hosting: GoDaddy Linux Hosting
+
+LAST UPDATED
+------------------------------------------------------
+2026-02-14
+======================================================

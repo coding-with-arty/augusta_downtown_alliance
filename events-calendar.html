@@ -1,0 +1,415 @@
+<!--
+======================================================
+TEAM
+------------------------------------------------------
+Developer: Arthur Daniel Belanger Jr.
+Role: Lead Developer & Technical Architect
+GitHub: https://github.com/coding-with-arty/coding-with-arty
+
+ORGANIZATION
+------------------------------------------------------
+Project: Augusta Downtown Alliance Website
+Purpose: Revitalizing downtown Augusta through community,
+         culture, and economic vitality.
+
+TECHNOLOGY
+------------------------------------------------------
+Standards: HTML5, CSS3, JavaScript, JSON-LD
+Tools: XAMPP, Git, PHPMailer
+Hosting: GoDaddy Linux Hosting
+
+LAST UPDATED
+------------------------------------------------------
+2026-02-14
+======================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Core Meta -->
+  <meta charset="utf-8" />
+  <!-- <base href="" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events - Augusta Downtown Alliance</title>
+  <meta name="description" content="View upcoming events, festivals, and community gatherings hosted by the Augusta Downtown Alliance in downtown Augusta, Maine." />
+  <meta name="keywords" content="Augusta Maine history, Augusta tourism, historical landmarks Augusta, Maine heritage sites, Kennebec River attractions, Maine museums, Augusta walking tours, historic downtown Augusta" />
+  <meta name="author" content="Augusta Downtown Alliance" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#004d2a" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://augustadowntown.com/events-calendar.html" />
+  <meta property="og:title" content="Events - Augusta Downtown Alliance" />
+  <meta property="og:description" content="Discover Augusta’s historic landmarks, museums, and stories that make downtown Maine’s capital a destination for visitors and locals alike." />
+  <meta property="og:image" content="https://augustadowntown.com/assets/images/social-preview-history.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://augustadowntown.com/events-calendar.html" />
+  <meta name="twitter:title" content="Events - Augusta Downtown Alliance" />
+  <meta name="twitter:description" content="Walk through history in Augusta, Maine — explore landmarks, heritage trails, and cultural destinations in the heart of Maine’s capital." />
+  <meta name="twitter:image" content="https://augustadowntown.com/assets/images/social-preview-history.jpg" />
+
+  <!-- Humans.txt link -->
+  <link rel="author" href="humans.txt">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://augustadowntown.com/events-calendar.html" />
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16.png">
+  <link rel="apple-touch-icon" href="assets/images/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" />
+  <link rel="stylesheet" href="assets/vendor/aos/aos.css" />
+  <link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css" />
+  <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristDestination",
+      "name": "Historic Downtown Augusta",
+      "description": "Augusta, Maine offers rich historical attractions including heritage architecture, museums, and riverfront landmarks.",
+      "image": "https://augustadowntown.com/assets/images/social-preview-history.jpg",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 44.3106,
+        "longitude": -69.7795
+      },
+      "touristType": "Cultural Tourism",
+      "containedInPlace": {
+        "@type": "City",
+        "name": "Augusta"
+      },
+      "mainEntityOfPage": "https://augustadowntown.com/events-calendar.html",
+      "organizer": {
+        "@type": "Organization",
+        "name": "Augusta Downtown Alliance",
+        "url": "https://augustadowntown.com"
+      },
+      "hasPart": [{
+        "@type": "TouristAttraction",
+        "name": "Maine State House",
+        "description": "Historic capitol building overlooking the Kennebec River.",
+        "image": "https://augustadowntown.com/assets/images/attractions/statehouse.jpg"
+      }, {
+        "@type": "TouristAttraction",
+        "name": "Old Fort Western",
+        "description": "The oldest wooden fort in the United States, built in 1754.",
+        "image": "https://augustadowntown.com/assets/images/attractions/fortwestern.jpg"
+      }]
+    }
+  </script>
+</head>
+
+<body class="events-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="assets/images/favicons/logo.png" alt="Augusta Downtown Alliance logo">
+        <h1 class="sitename">Augusta Downtown Alliance</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html"><span>Home</span></a></li>
+
+          <li class="dropdown"><a href="businesses-features.html">Businesses &amp; Features <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="downtown-life.html">Downtown Life</a></li>
+              <li>
+                <!-- <a href="programs-initiatives.html">Programs &amp; Initiatives</a> --></li>
+              <li>
+                <!-- <a href="photo-gallery.html" class="active">Augusta photo gallery</a> --></li>
+            </ul>
+          </li>
+          <li><a href="events-calendar.html" class="active">Events Calendar</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="for-businesses.html">For Businesses</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="cta-btn" href="https://www.paypal.com/donate?hosted_button_id=JANPA59R5QZSL" target="_blank" rel="noopener" aria-label="Donate to Augusta Downtown Alliance via PayPal">
+  Donate Today
+</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background position-relative" data-aos="fade" style="background-image: url(assets/images/dwntwn/dwntwn.jpg);">
+      <div class="container position-relative">
+        <h1>Augusta Downtown Alliance Events Calendar</h1>
+        <p>
+          Stay connected with everything happening in downtown Augusta. When you participate, you help us keep our city thriving, beautiful, and welcoming.
+        </p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Events Calendar</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- End Page Title -->
+
+    <!-- Events Calendar Section -->
+    <section id="events-calendar" class="events-calendar-section" data-aos="fade-up" data-aos-delay="300">
+      <div class="container">
+        <h2 class="text-center mb-4">Upcoming Events Calendar</h2>
+        <div class="calendar-container ratio ratio-16x9">
+          <iframe src="https://calendar.google.com/calendar/embed?src=c_a7f288256dd5e21ad5673a32bbde9fc0d68f429e532cb76743deabd7c1fa72a2%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" frameborder="0" scrolling="no">
+            </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Events Section -->
+    <section id="gallery-events" class="gallery-events section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Past Events</h2>
+        <p>
+          Take a look at some of the people, places, and moments that define the Augusta Downtown Alliance.
+        </p>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="gallery-container">
+          <div class="swiper init-swiper">
+
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 800,
+                "autoplay": {
+                  "delay": 4000
+                },
+                "effect": "coverflow",
+                "grabCursor": true,
+                "centeredSlides": true,
+                "slidesPerView": "auto",
+                "coverflowEffect": {
+                  "rotate": 50,
+                  "stretch": 0,
+                  "depth": 100,
+                  "modifier": 1,
+                  "slideShadows": true
+                },
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "navigation": {
+                  "nextEl": ".swiper-button-next",
+                  "prevEl": ".swiper-button-prev"
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 1,
+                    "spaceBetween": 10
+                  },
+                  "768": {
+                    "slidesPerView": 2,
+                    "spaceBetween": 20
+                  },
+                  "1024": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 30
+                  }
+                }
+              }
+            </script>
+
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/images/gallery/1.jpg">
+                      <img src="assets/images/gallery/1.jpg" class="img-fluid" alt="Community members gathering at a downtown Augusta outdoor event">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle" aria-hidden="true"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/images/gallery/2.jpg">
+                      <img src="assets/images/gallery/2.jpg" class="img-fluid" alt="Families enjoying a public event in downtown Augusta, Maine">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle" aria-hidden="true"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/images/gallery/3.jpg">
+                      <img src="assets/images/gallery/3.jpg" class="img-fluid" alt="Live music performance during a downtown Augusta community event">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle" aria-hidden="true"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/images/gallery/4.jpg">
+                      <img src="assets/images/gallery/4.jpg" class="img-fluid" alt="Crowds gathered along Water Street during a seasonal downtown festival">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle" aria-hidden="true"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/images/gallery/13.jpg">
+                      <img src="assets/images/gallery/13.jpg" class="img-fluid" alt="Downtown Augusta streetscape during a community celebration">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle" aria-hidden="true"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/images/gallery/10.jpg">
+                      <img src="assets/images/gallery/10.jpg" class="img-fluid" alt="Volunteers and attendees interacting at an Augusta Downtown Alliance event">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle" aria-hidden="true"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/images/gallery/7.jpg">
+                      <img src="assets/images/gallery/7.jpg" class="img-fluid" alt="Local vendors and visitors at a downtown Augusta community market">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle" aria-hidden="true"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/images/gallery/9.jpg">
+                      <img src="assets/images/gallery/9.jpg" class="img-fluid" alt="Public gathering showcasing downtown Augusta’s historic character">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle" aria-hidden="true"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- /Gallery Events Section -->
+
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <h3 class="sitename">Augusta Downtown Alliance</h3>
+      <p>Welcome to Downtown Augusta — the beating heart of Maine's capital city!</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.facebook.com/AugustaDowntownAlliance" title="Visit us on Facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/augustadowntownalliance" title="Visit us on Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+        <a href="https://twitter.com/augustadowntown" title="Visit us on X" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://github.com/coding-with-arty/augusta_downtown_alliance" title="View GitHub repository for site" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Augusta Downtown Alliance</strong> <span>All Rights Reserved</span>
+        </div>
+        <div>
+          <span>Site <a href="https://github.com/coding-with-arty/License" target="_blank" rel="noopener noreferrer" title="Visit developers license"> licensed</a> and created  by <a href="https://github.com/coding-with-arty/coding-with-arty" title="Visit developer Coding-With_Arty" target="_blank" rel="noopener noreferrer">Coding-With-Arty</a></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
