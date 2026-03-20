@@ -36,10 +36,7 @@ augusta_downtown_alliance/
 ├── contact.html
 ├── /businesses-features/
 ├── programs-initiatives.html
-├── events.html
-├── privacy.html
-├── terms-conditions.html
-├── 404.html
+├── events-calendar.html
 │
 ├── /assets/
 │   ├── css/
