@@ -34,7 +34,7 @@ augusta_downtown_alliance/
 ├── about.html
 ├── for-businesses.html
 ├── contact.html
-├── businesses-features.html
+├── /businesses-features/
 ├── programs-initiatives.html
 ├── events.html
 ├── privacy.html

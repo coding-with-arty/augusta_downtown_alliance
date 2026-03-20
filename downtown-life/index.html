@@ -1,0 +1,602 @@
+<!--
+======================================================
+TEAM
+------------------------------------------------------
+Developer: Arthur Daniel Belanger Jr.
+Role: Lead Developer & Technical Architect
+GitHub: https://github.com/coding-with-arty/coding-with-arty
+
+ORGANIZATION
+------------------------------------------------------
+Project: Augusta Downtown Alliance Website
+Purpose: Revitalizing downtown Augusta through community,
+         culture, and economic vitality.
+
+TECHNOLOGY
+------------------------------------------------------
+Standards: HTML5, CSS3, JavaScript, JSON-LD
+Tools: XAMPP, Git, PHPMailer
+Hosting: GoDaddy Linux Hosting
+
+LAST UPDATED
+------------------------------------------------------
+2026-02-14
+======================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Essential Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Downtown Life - Augusta Downtown Alliance</title>
+    <meta
+      name="description"
+      content="Explore downtown Augusta, Maine—local shops, restaurants, events, and historic charm. Discover what’s happening in the heart of Maine’s capital."
+    />
+    <meta
+      name="keywords"
+      content="Augusta Downtown Alliance, Augusta Maine, downtown Augusta, community development, Maine events, local business, Augusta revitalization, Maine Main Street"
+    />
+    <meta name="author" content="Augusta Downtown Alliance" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#004d2a" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://augustadowntown.com/downtown-life/"
+    />
+    <meta property="og:title" content="About - Augusta Downtown Alliance" />
+    <meta
+      property="og:description"
+      content="Learn about Augusta Downtown Alliance’s mission to make downtown Augusta a vibrant, thriving, and inclusive community hub."
+    />
+    <meta
+      property="og:image"
+      content="https://augustadowntown.com/assets/images/social-preview.jpg"
+    />
+
+    <!-- Twitter Meta -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://augustadowntown.com/downtown-life/"
+    />
+    <meta name="twitter:title" content="About - Augusta Downtown Alliance" />
+    <meta
+      name="twitter:description"
+      content="Empowering Augusta’s downtown through innovation, collaboration, and community spirit."
+    />
+    <meta
+      name="twitter:image"
+      content="https://augustadowntown.com/assets/images/social-preview.jpg"
+    />
+
+    <!-- Humans.txt link -->
+    <link rel="author" href="humans.txt" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://augustadowntown.com/downtown-life/" />
+
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicons/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/images/favicons/favicon-16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/assets/images/favicons/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS -->
+    <link
+      rel="stylesheet"
+      href="/assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/assets/vendor/aos/aos.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/vendor/fontawesome-free/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/assets/vendor/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/vendor/glightbox/css/glightbox.min.css"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Augusta Downtown Alliance",
+        "url": "https://augustadowntown.com",
+        "logo": "https://augustadowntown.com/assets/images/media/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/AugustaDowntownAlliance",
+          "https://www.instagram.com/augustadowntownalliance",
+          "https://twitter.com/augustadowntown"
+        ],
+        "description": "Augusta Downtown Alliance works to strengthen the heart of Maine’s capital city through economic vitality, community events, and historic preservation."
+      }
+    </script>
+  </head>
+
+  <body class="downtown-life-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="container position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
+          <img
+            src="/assets/images/favicons/logo.png"
+            alt="Augusta Downtown Alliance logo"
+          />
+          <h1 class="sitename">Augusta Downtown Alliance</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li>
+              <a href="/"><span>Home</span></a>
+            </li>
+
+            <li class="dropdown">
+              <a href="/businesses-features/"
+                >Businesses &amp; Features
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li>
+                  <a href="/downtown-life/" class="active">Downtown Life</a>
+                </li>
+                <li>
+                  <!-- <a href="/programs-initiatives/">Programs &amp; Initiatives</a> -->
+                </li>
+                <li>
+                  <!-- <a href="/photo-gallery/" class="active">Augusta photo gallery</a> -->
+                </li>
+              </ul>
+            </li>
+            <li><a href="/events-calendar/">Events Calendar</a></li>
+            <li><a href="/contact/">Contact Us</a></li>
+            <li><a href="/for-businesses/">For Businesses</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <a
+          class="cta-btn"
+          href="https://www.paypal.com/donate?hosted_button_id=JANPA59R5QZSL"
+          target="_blank"
+          rel="noopener"
+          aria-label="Donate to Augusta Downtown Alliance via PayPal"
+        >
+          Donate Today
+        </a>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Page Title -->
+      <div
+        class="page-title dark-background position-relative"
+        data-aos="fade"
+        style="background-image: url(/assets/images/dwntwn/dwntwn.jpg)"
+      >
+        <div class="container position-relative">
+          <h1>Downtown Life</h1>
+          <p>
+            Experience the heart of Augusta—where local culture, community
+            spirit, and downtown energy come together to create a vibrant way of
+            life.
+          </p>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="/">Home</a></li>
+              <li class="current">Downtown Life</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!-- End Page Title -->
+
+      <!-- Downtown Information Section -->
+      <section id="downtown-information" class="downtown-information section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="content-wrapper">
+                <div class="section-badge">Augusta Downtown</div>
+                <h2>the beating heart of Maine's capital city!</h2>
+                <p class="lead">
+                  Discover the heartbeat of downtown Augusta through our vibrant
+                  events and historic attractions. From cultural festivals and
+                  live performances to guided tours of our iconic landmarks,
+                  there’s always something happening for residents and visitors
+                  alike. Explore, connect, and experience the rich heritage and
+                  lively community that make Augusta’s downtown a unique
+                  destination year-round.
+                </p>
+
+                <div class="stats-grid">
+                  <div class="stat-item">
+                    <div
+                      class="stat-number purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="150"
+                      data-purecounter-duration="1"
+                    ></div>
+                    <div class="stat-label">New Businesses</div>
+                  </div>
+                  <div class="stat-item">
+                    <div
+                      class="stat-number purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="120"
+                      data-purecounter-duration="1"
+                    ></div>
+                    <div class="stat-label">Family Attractions</div>
+                  </div>
+                  <div class="stat-item">
+                    <div
+                      class="stat-number purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="250"
+                      data-purecounter-duration="1"
+                    ></div>
+                    <div class="stat-label">New Residents Downtown</div>
+                  </div>
+                  <div class="stat-item">
+                    <div
+                      class="stat-number purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="27"
+                      data-purecounter-duration="1"
+                    ></div>
+                    <div class="stat-label">Million in New Investments</div>
+                  </div>
+                </div>
+
+                <div class="features-row">
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="bi bi-lightning-charge-fill"></i>
+                    </div>
+                    <div class="feature-content">
+                      <h4>Great Opportunities</h4>
+                      <p>
+                        Augusta is a thriving hub for businesses and tourism
+                        within the state of Maine, new businesses start here
+                        every year.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="bi bi-shield-check"></i>
+                    </div>
+                    <div class="feature-content">
+                      <h4>Local Feel</h4>
+                      <p>
+                        There is a different feel to Augusta than many other
+                        cities, it's a connection that must be felt to
+                        understand.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cta-group">
+                  <a href="/contact/" class="btn btn-primary"
+                    >Volunteer Today</a
+                  >
+                  <a href="#" class="btn btn-secondary">Donate</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="image-stack">
+                <div class="image-card image-primary">
+                  <img
+                    src="/assets/images/dwntwn/dwntwn.jpg"
+                    alt="Team collaboration"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="image-card image-secondary">
+                  <img
+                    src="/assets/images/dwntwn/bridge.jpg"
+                    alt="Digital workspace"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="floating-badge">
+                  <div class="badge-icon">
+                    <i class="bi bi-award-fill"></i>
+                  </div>
+                  <div class="badge-text">
+                    <div class="badge-title">Best Places to Live</div>
+                    <div class="badge-subtitle">DownEast Magazine</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Downtown Information Section -->
+
+      <!-- Augusta Purpose Section -->
+      <section id="augusta-purpose" class="augusta-purpose section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <!-- Heading / Intro -->
+          <div class="section-intro text-center" data-aos="fade-up">
+            <h4 class="subtitle">The Augusta Way of Life</h4>
+            <h2 class="title">Experience Downtown</h2>
+            <p class="desc">
+              From historic streets to modern gatherings, Augusta’s downtown
+              offers something for everyone. Discover local shops, art, food,
+              and events that keep the city’s spirit alive year-round.
+            </p>
+          </div>
+
+          <!-- Three-card highlight strip -->
+          <div
+            class="highlight-cards row"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div class="col-md-4 mb-4 mb-md-0">
+              <div class="highlight-card">
+                <img
+                  src="/assets/images/dwntwn/9.jpg"
+                  alt="Nightlife"
+                  class="img-fluid"
+                />
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <h3 class="card-title">Nightlife</h3>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-md-4 mb-4 mb-md-0"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="highlight-card elevated">
+                <img
+                  src="/assets/images/plc/mints1.jpg"
+                  alt="Historical Sites &amp; Attractions"
+                  class="img-fluid"
+                />
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <h3 class="card-title">Historical Sites &amp; Attractions</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="250">
+              <div class="highlight-card">
+                <img
+                  src="/assets/images/plc/fam2.jpg"
+                  alt="Family Friendly"
+                  class="img-fluid"
+                />
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <h3 class="card-title">Family Friendly</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Split-screen content block -->
+          <div
+            class="values-section row align-items-center mt-5"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <div class="values-image">
+                <img
+                  src="/assets/images/media/logo.png"
+                  alt="Our Logo"
+                  class="img-fluid rounded"
+                />
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div
+                class="values-content"
+                data-aos="fade-up"
+                data-aos-delay="350"
+              >
+                <h3 class="values-title">
+                  Meet our team of dedicated professionals
+                </h3>
+                <p class="values-desc">
+                  The Augusta Downtown Alliance is led by a passionate team of
+                  professionals and volunteers committed to the revitalization
+                  and growth of our downtown district. Our board members and
+                  staff bring together diverse expertise in business, community
+                  development, and urban planning.
+                </p>
+
+                <div class="values-list">
+                  <div class="value-item">
+                    <div class="value-icon">
+                      <i class="bi bi-info-circle"></i>
+                    </div>
+                    <div class="value-text">
+                      <h4>Community First</h4>
+                      <p>
+                        We put Augusta’s residents, businesses, and visitors at
+                        the center of everything we do, creating a downtown that
+                        is welcoming, vibrant, and alive with activity.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="value-item">
+                    <div class="value-icon">
+                      <i class="bi bi-play-fill"></i>
+                    </div>
+                    <div class="value-text">
+                      <h4>Fresh Ideas</h4>
+                      <p>
+                        We embrace new approaches and creative solutions to make
+                        downtown Augusta a hub for culture, events, and
+                        innovation that benefit the whole community.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="value-item">
+                    <div class="value-icon">
+                      <i class="bi bi-heart-fill"></i>
+                    </div>
+                    <div class="value-text">
+                      <h4>Connected and Caring</h4>
+                      <p>
+                        We listen, support, and collaborate with our neighbors
+                        to ensure downtown is accessible, inclusive, and a place
+                        where everyone feels at home.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Augusta Purpose Section -->
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+      <div class="container">
+        <h3 class="sitename">Augusta Downtown Alliance</h3>
+        <p>
+          Welcome to Downtown Augusta — the beating heart of Maine's capital
+          city!
+        </p>
+        <div class="social-links d-flex justify-content-center">
+          <a
+            href="https://www.facebook.com/AugustaDowntownAlliance"
+            title="Visit us on Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/augustadowntownalliance"
+            title="Visit us on Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a
+            href="https://twitter.com/augustadowntown"
+            title="Visit us on X"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="bi bi-twitter-x"></i
+          ></a>
+          <a
+            href="https://github.com/coding-with-arty/augusta_downtown_alliance"
+            title="View GitHub repository for site"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="bi bi-github"></i
+          ></a>
+        </div>
+        <div class="container">
+          <div class="copyright">
+            <span>Copyright</span>
+            <strong class="px-1 sitename">Augusta Downtown Alliance</strong>
+            <span>All Rights Reserved</span>
+          </div>
+          <div>
+            <span
+              >Site
+              <a
+                href="https://github.com/coding-with-arty/License"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Visit developers license"
+              >
+                licensed</a
+              >
+              and created by
+              <a
+                href="https://github.com/coding-with-arty/coding-with-arty"
+                title="Visit developer Coding-With_Arty"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Coding-With-Arty</a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/aos/aos.js"></script>
+    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
