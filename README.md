@@ -1,6 +1,5 @@
-# Augusta Downtown Alliance Website
-
 # <center>Augusta Downtown Alliance</center>
+
 <p align="center">
   <img src="/assets/images/media/logo.png" alt="ADA Logo" width="300"/>
 </p>
@@ -115,7 +114,9 @@ A local server is recommended for development:
 ```bash
 npx serve
 ```
+
 <!--  -->
+
 The site will typically be available at:
 
 ```
@@ -129,19 +130,21 @@ http://localhost:3000
 Contributions are welcome and encouraged, particularly improvements related to accessibility, performance, content clarity, and design consistency.
 
 ### Contribution Process
+
 <!--  -->
+
 1. Fork the repository
 2. Create a feature branch:
    ```bash
-git checkout -b feature-name
+   git checkout -b feature-name
    ```
 3. Commit your changes:
    ```bash
-git commit -m "Clear description of changes"
+   git commit -m "Clear description of changes"
    ```
 4. Push your branch:
    ```bash
-git push origin feature-name
+   git push origin feature-name
    ```
 5. Open a Pull Request
 
@@ -151,7 +154,8 @@ All pull requests are reviewed before being merged to protect the live site.
 
 ## 🧾 License
 
-This project is licensed under 
+This project is licensed under
+
 #### Belanger Non-Commerrcial Open Licencse(BNOL)
 
 You are free to use, modify, and distribute this code with proper attribution.
