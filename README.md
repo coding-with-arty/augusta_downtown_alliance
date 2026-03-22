@@ -127,29 +127,71 @@ http://localhost:3000
 
 ## 🤝 Contributing
 
-Contributions are welcome and encouraged, particularly improvements related to accessibility, performance, content clarity, and design consistency.
+## 📥 Submitting Updates, Events, or Issues
 
-### Contribution Process
+This project is designed to accept contributions from both developers **and non-technical users**. If you are not comfortable working with code, you can still contribute easily.
 
-<!--  -->
+### 🔹 Option 1: Submit an Issue (Recommended)
+
+Use this for:
+- Reporting bugs or broken pages
+- Submitting new events
+- Updating business listings
+- General feedback
+
+**Steps:**
+1. Go to the Issues page:
+   https://github.com/coding-with-arty/augusta_downtown_alliance/issues
+2. Click **"New Issue"**
+3. Select the appropriate template
+4. Fill out the form and submit
+
+> This is the fastest and easiest way to contribute. No coding required.
+
+---
+
+### 🔹 Option 2: Comment on Existing Issues
+
+If someone has already submitted a similar request:
+
+1. Open the issue
+2. Scroll to the bottom
+3. Add your comment or additional details
+
+This helps improve accuracy and avoids duplicate submissions.
+
+---
+
+### 🔹 Option 3: Contribute Code or Content (Pull Requests)
+
+For users comfortable editing files:
 
 1. Fork the repository
-2. Create a feature branch:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Clear description of changes"
-   ```
-4. Push your branch:
-   ```bash
-   git push origin feature-name
-   ```
-5. Open a Pull Request
+2. Make your changes (fixes, updates, improvements)
+3. Commit your changes
+4. Open a Pull Request
 
-All pull requests are reviewed before being merged to protect the live site.
+Examples of contributions:
+- Fixing typos or broken links
+- Updating business or event information
+- Improving layout or performance
+- Enhancing accessibility
 
+---
+
+### ⚠️ Important Notes
+
+- This repository deploys directly to the live site
+- All changes are reviewed before being published
+- Keep contributions focused and clearly described
+- When possible, include screenshots or references
+
+---
+
+### 💡 Tip for Non-Developers
+
+If you’re unsure what to do, **use the Issue system**.  
+It’s specifically designed to guide you through submitting updates without needing technical knowledge.
 ---
 
 ## 🧾 License
