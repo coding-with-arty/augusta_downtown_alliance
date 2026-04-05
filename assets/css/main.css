@@ -2628,6 +2628,10 @@ section,
   background-color: color-mix(in srgb, var(--accent-color), var(--contrast-color) 20%);
 }
 
+.biz4 {
+  margin-top: 0.75rem;
+}
+
 
 /*--------------------------------------------------------------
 # Events Downtown Section
