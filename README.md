@@ -1,7 +1,7 @@
 # <center>Augusta Downtown Alliance</center>
 
 <p align="center">
-  <img src="/assets/images/media/logo.png" alt="ADA Logo" width="300"/>
+  <img src="/assets/media/logo.png" alt="ADA Logo" width="300"/>
 </p>
 
 The official website for the **Augusta Downtown Alliance**, designed to promote downtown Augusta, Maine’s businesses, events, culture, and community life.
