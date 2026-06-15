@@ -771,7 +771,8 @@ section,
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: url("../images/place/city.webp") no-repeat center center;
+  /* Absolute production URL fallback */
+  background: url("https://augustadowntown.com/assets/images/place/city.webp") no-repeat center center;
   background-size: cover;
 }
 
