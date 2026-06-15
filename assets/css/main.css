@@ -772,7 +772,7 @@ section,
   align-items: center;
   overflow: hidden;
   /* Absolute production URL fallback */
-  background: url("https://augustadowntown.com/assets/images/place/city.webp") no-repeat center center;
+  background: url("/assets/images/place/city.webp") no-repeat center center;
   background-size: cover;
 }
 
