@@ -771,8 +771,8 @@ section,
   display: flex;
   align-items: center;
   overflow: hidden;
-  /* Background image here */
-  background: url("/assets/images/place/city.webp") no-repeat center center;
+  /* Use ../ to step out of the css folder, then enter images */
+  background: url("../images/place/city.webp") no-repeat center center;
   background-size: cover;
 }
 
