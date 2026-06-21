@@ -15,8 +15,8 @@ Purpose: Revitalizing downtown Augusta through community,
 TECHNOLOGY
 ------------------------------------------------------
 Standards: HTML5, CSS3, JavaScript, JSON-LD
-Tools: XAMPP, Git, PHPMailer
-Hosting: GoDaddy Linux Hosting
+Tools: XAMPP, Git, Bootstrap
+Hosting: Cloudflare Hosting
 
 LAST UPDATED
 ------------------------------------------------------
@@ -26,15 +26,14 @@ LAST UPDATED
 
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <!-- Core Meta -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us - Augusta Downtown Alliance</title>
-    <meta
-      name="description"
-      content="Explore downtown Augusta, Maine—discover local shops, restaurants, events, and historic charm. Plan your visit to Maine’s capital today."
-    />
+    <meta name="description"
+      content="Explore downtown Augusta, Maine—discover local shops, restaurants, events, and historic charm. Plan your visit to Maine’s capital today." />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="author" content="Augusta Downtown Alliance" />
     <meta name="theme-color" content="#004d2a" />
@@ -43,27 +42,17 @@ LAST UPDATED
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://augustadowntown.com/contact/" />
     <meta property="og:title" content="Contact - Augusta Downtown Alliance" />
-    <meta
-      property="og:description"
-      content="Contact the Augusta Downtown Alliance for partnerships, volunteering, and event information."
-    />
-    <meta
-      property="og:image"
-      content="https://augustadowntown.com/assets/images/social-preview-contact.webp"
-    />
+    <meta property="og:description"
+      content="Contact the Augusta Downtown Alliance for partnerships, volunteering, and event information." />
+    <meta property="og:image" content="https://augustadowntown.com/assets/images/social-preview-contact.webp" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://augustadowntown.com/contact/" />
     <meta name="twitter:title" content="Contact - Augusta Downtown Alliance" />
-    <meta
-      name="twitter:description"
-      content="Reach out to the Augusta Downtown Alliance team. Connect with us to support or engage with downtown Augusta."
-    />
-    <meta
-      name="twitter:image"
-      content="https://augustadowntown.com/assets/images/social-preview-contact.webp"
-    />
+    <meta name="twitter:description"
+      content="Reach out to the Augusta Downtown Alliance team. Connect with us to support or engage with downtown Augusta." />
+    <meta name="twitter:image" content="https://augustadowntown.com/assets/images/social-preview-contact.webp" />
 
     <!-- Humans.txt link -->
     <link rel="author" href="humans.txt" />
@@ -72,22 +61,9 @@ LAST UPDATED
     <link rel="canonical" href="https://augustadowntown.com/contact/" />
 
     <!-- favicon -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/assets/images/favicons/favicon-32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/assets/images/favicons/favicon-16.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="/assets/images/favicons/apple-touch-icon.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16.png" />
+    <link rel="apple-touch-icon" href="/assets/images/favicons/apple-touch-icon.png" />
     <link rel="manifest" href="manifest.json" />
 
     <!-- Preconnect -->
@@ -97,24 +73,14 @@ LAST UPDATED
     <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
 
     <!-- Vendor CSS -->
-    <link
-      rel="stylesheet"
-      href="/assets/vendor/bootstrap/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/assets/vendor/bootstrap-icons/bootstrap-icons.css"
-    />
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" />
     <link rel="stylesheet" href="/assets/vendor/aos/aos.css" />
     <link rel="stylesheet" href="/assets/vendor/swiper/swiper-bundle.min.css" />
-    <link
-      rel="stylesheet"
-      href="/assets/vendor/glightbox/css/glightbox.min.css"
-    />
+    <link rel="stylesheet" href="/assets/vendor/glightbox/css/glightbox.min.css" />
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="/assets/css/main.css" />
@@ -156,14 +122,9 @@ LAST UPDATED
 
   <body class="contact-us-page">
     <header id="header" class="header d-flex align-items-center sticky-top">
-      <div
-        class="container position-relative d-flex align-items-center justify-content-between"
-      >
+      <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
-          <img
-            src="/assets/images/favicons/logo.png"
-            alt="Augusta Downtown Alliance logo"
-          />
+          <img src="/assets/images/favicons/logo.png" alt="Augusta Downtown Alliance logo" />
           <h1 class="sitename">Augusta Downtown Alliance</h1>
         </a>
 
@@ -174,10 +135,8 @@ LAST UPDATED
             </li>
 
             <li class="dropdown">
-              <a href="/businesses-features/"
-                >Businesses &amp; Features
-                <i class="bi bi-chevron-down toggle-dropdown"></i
-              ></a>
+              <a href="/businesses-features/">Businesses &amp; Features
+                <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="/downtown-life/">Downtown Life</a></li>
                 <li>
@@ -195,13 +154,8 @@ LAST UPDATED
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a
-          class="cta-btn"
-          href="https://www.paypal.com/donate?hosted_button_id=JANPA59R5QZSL"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Donate to Augusta Downtown Alliance via PayPal"
-        >
+        <a class="cta-btn" href="https://www.paypal.com/donate?hosted_button_id=JANPA59R5QZSL" target="_blank"
+          rel="noopener noreferrer" aria-label="Donate to Augusta Downtown Alliance via PayPal">
           Donate Today
         </a>
       </div>
@@ -209,11 +163,8 @@ LAST UPDATED
 
     <main class="main">
       <!-- Page Title -->
-      <div
-        class="page-title dark-background"
-        data-aos="fade"
-        style="background-image: url(/assets/images/place/dwntwn.webp)"
-      >
+      <div class="page-title dark-background" data-aos="fade"
+        style="background-image: url(/assets/images/place/dwntwn.webp)">
         <div class="container position-relative">
           <h1>Contact the Augusta Downtown Alliance</h1>
           <p>
@@ -257,9 +208,7 @@ LAST UPDATED
                     </div>
                     <div class="method-details">
                       <span class="method-label">Email Us</span>
-                      <a href="mailto:info@augustadowntown.com"
-                        >info@augustadowntown.com</a
-                      >
+                      <a href="mailto:info@augustadowntown.com">info@augustadowntown.com</a>
                     </div>
                   </div>
 
@@ -302,34 +251,15 @@ LAST UPDATED
                 <div class="social-connect">
                   <span>Follow Us</span>
                   <div class="social-icons">
-                    <a
-                      href="https://www.facebook.com/AugustaDowntownAlliance"
-                      title="Visit us on Facebook"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      ><i class="bi bi-facebook"></i
-                    ></a>
-                    <a
-                      href="https://www.instagram.com/augustadowntownalliance"
-                      title="Visit us on Instagram"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      ><i class="bi bi-instagram"></i
-                    ></a>
-                    <a
-                      href="https://twitter.com/augustadowntown"
-                      title="Visit us on X"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      ><i class="bi bi-twitter-x"></i
-                    ></a>
-                    <a
-                      href="https://github.com/coding-with-arty/augusta_downtown_alliance"
-                      title="View GitHub repository for site"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      ><i class="bi bi-github"></i
-                    ></a>
+                    <a href="https://www.facebook.com/AugustaDowntownAlliance" title="Visit us on Facebook"
+                      target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/augustadowntownalliance" title="Visit us on Instagram"
+                      target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+                    <a href="https://twitter.com/augustadowntown" title="Visit us on X" target="_blank"
+                      rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://github.com/coding-with-arty/augusta_downtown_alliance"
+                      title="View GitHub repository for site" target="_blank" rel="noopener noreferrer"><i
+                        class="bi bi-github"></i></a>
                   </div>
                 </div>
               </div>
@@ -351,18 +281,10 @@ LAST UPDATED
                   </div>
                 </div>
 
-                <form
-                  id="contact-form"
-                  action="https://formsubmit.co/ajax/bceac12fe2c4bfd1866cf73498b8a896"
-                  method="POST"
-                  class="php-email-form"
-                >
+                <form id="contact-form" action="https://formsubmit.co/ajax/bceac12fe2c4bfd1866cf73498b8a896"
+                  method="POST" class="php-email-form">
                   <!-- FormSubmit hidden fields -->
-                  <input
-                    type="hidden"
-                    name="_subject"
-                    value="New message from Augusta Downtown website"
-                  />
+                  <input type="hidden" name="_subject" value="New message from Augusta Downtown website" />
                   <input type="hidden" name="_captcha" value="false" />
                   <input type="hidden" name="_template" value="table" />
                   <input type="text" name="_honey" style="display: none" />
@@ -374,13 +296,7 @@ LAST UPDATED
                         <label>Your Name</label>
                         <div class="input-wrapper">
                           <i class="bi bi-person"></i>
-                          <input
-                            type="text"
-                            name="name"
-                            placeholder="John Doe"
-                            required
-                            autocomplete="name"
-                          />
+                          <input type="text" name="name" placeholder="John Doe" required autocomplete="name" />
                         </div>
                       </div>
                     </div>
@@ -390,13 +306,8 @@ LAST UPDATED
                         <label>Email Address</label>
                         <div class="input-wrapper">
                           <i class="bi bi-envelope"></i>
-                          <input
-                            type="email"
-                            name="email"
-                            placeholder="john@example.com"
-                            required
-                            autocomplete="email"
-                          />
+                          <input type="email" name="email" placeholder="john@example.com" required
+                            autocomplete="email" />
                         </div>
                       </div>
                     </div>
@@ -406,12 +317,7 @@ LAST UPDATED
                         <label>Subject</label>
                         <div class="input-wrapper">
                           <i class="bi bi-chat-square-text"></i>
-                          <input
-                            type="text"
-                            name="subject"
-                            placeholder="How can we help?"
-                            required
-                          />
+                          <input type="text" name="subject" placeholder="How can we help?" required />
                         </div>
                       </div>
                     </div>
@@ -421,12 +327,8 @@ LAST UPDATED
                         <label>Your Message</label>
                         <div class="input-wrapper textarea-wrapper">
                           <i class="bi bi-pencil-square"></i>
-                          <textarea
-                            name="message"
-                            rows="8"
-                            placeholder="Tell us about your project..."
-                            required
-                          ></textarea>
+                          <textarea name="message" rows="8" placeholder="Tell us about your project..."
+                            required></textarea>
                         </div>
                       </div>
                     </div>
@@ -470,34 +372,15 @@ LAST UPDATED
           city!
         </p>
         <div class="social-links d-flex justify-content-center">
-          <a
-            href="https://www.facebook.com/AugustaDowntownAlliance"
-            title="Visit us on Facebook"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="bi bi-facebook"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/augustadowntownalliance"
-            title="Visit us on Instagram"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="bi bi-instagram"></i
-          ></a>
-          <a
-            href="https://twitter.com/augustadowntown"
-            title="Visit us on X"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="bi bi-twitter-x"></i
-          ></a>
-          <a
-            href="https://github.com/coding-with-arty/augusta_downtown_alliance"
-            title="View GitHub repository for site"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="bi bi-github"></i
-          ></a>
+          <a href="https://www.facebook.com/AugustaDowntownAlliance" title="Visit us on Facebook" target="_blank"
+            rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/augustadowntownalliance" title="Visit us on Instagram" target="_blank"
+            rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+          <a href="https://twitter.com/augustadowntown" title="Visit us on X" target="_blank"
+            rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://github.com/coding-with-arty/augusta_downtown_alliance"
+            title="View GitHub repository for site" target="_blank" rel="noopener noreferrer"><i
+              class="bi bi-github"></i></a>
         </div>
         <div class="container">
           <div class="copyright">
@@ -506,47 +389,26 @@ LAST UPDATED
             <span>All Rights Reserved</span>
           </div>
           <div>
-            <span
-              >Site created by
-              <a
-                href="https://github.com/coding-with-arty/coding-with-arty"
-                title="Visit developer Coding-With_Arty"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Coding-With-Arty</a
-              ></span
-            >
+            <span>Site created by
+              <a href="https://github.com/coding-with-arty/coding-with-arty" title="Visit developer Coding-With_Arty"
+                target="_blank" rel="noopener noreferrer">Coding-With-Arty</a></span>
           </div>
         </div>
         <div class="mt-3 text-center small">
           <span class="me-2">Want to help improve this site?</span>
 
-          <a
-            href="https://github.com/coding-with-arty/augusta_downtown_alliance"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="me-2"
-            title="View source code"
-          >
+          <a href="https://github.com/coding-with-arty/augusta_downtown_alliance" target="_blank"
+            rel="noopener noreferrer" class="me-2" title="View source code">
             <i class="bi bi-github"></i> View Source
           </a>
 
-          <a
-            href="https://github.com/coding-with-arty/augusta_downtown_alliance/issues"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="me-2"
-            title="Report an issue"
-          >
+          <a href="https://github.com/coding-with-arty/augusta_downtown_alliance/issues" target="_blank"
+            rel="noopener noreferrer" class="me-2" title="Report an issue">
             Report Issue
           </a>
 
-          <a
-            href="https://github.com/coding-with-arty/augusta_downtown_alliance/pulls"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Submit a contribution"
-          >
+          <a href="https://github.com/coding-with-arty/augusta_downtown_alliance/pulls" target="_blank"
+            rel="noopener noreferrer" title="Submit a contribution">
             Contribute
           </a>
         </div>
@@ -554,12 +416,8 @@ LAST UPDATED
     </footer>
 
     <!-- Scroll Top -->
-    <a
-      href="#"
-      id="scroll-top"
-      class="scroll-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
 
     <!-- Preloader -->
     <div id="preloader"></div>
@@ -576,4 +434,5 @@ LAST UPDATED
     <!-- Main JS File -->
     <script src="/assets/js/main.js"></script>
   </body>
+
 </html>

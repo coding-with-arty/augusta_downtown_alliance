@@ -15,8 +15,8 @@ Purpose: Revitalizing downtown Augusta through community,
 TECHNOLOGY
 ------------------------------------------------------
 Standards: HTML5, CSS3, JavaScript, JSON-LD
-Tools: XAMPP, Git, PHPMailer
-Hosting: GoDaddy Linux Hosting
+Tools: XAMPP, Git, Bootstrap
+Hosting: Cloudflare Hosting
 
 LAST UPDATED
 ------------------------------------------------------
@@ -172,6 +172,7 @@ h6 {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -236,14 +237,17 @@ h6 {
   .header .logo {
     order: 1;
   }
+
   .header .logo h1 {
     font-size: 24px;
   }
+
   .header .cta-btn {
     order: 2;
     margin: 0 15px 0 0;
     padding: 6px 20px;
   }
+
   .header .navmenu {
     order: 3;
   }
@@ -291,6 +295,7 @@ h6 {
   .navmenu {
     padding: 0;
   }
+
   .navmenu ul {
     margin: 0;
     padding: 0;
@@ -298,16 +303,20 @@ h6 {
     list-style: none;
     align-items: center;
   }
+
   .navmenu li {
     position: relative;
   }
+
   .navmenu>ul>li {
     white-space: nowrap;
     padding: 15px 14px;
   }
+
   .navmenu>ul>li:last-child {
     padding-right: 0;
   }
+
   .navmenu a,
   .navmenu a:focus {
     color: color-mix(in srgb, var(--nav-color), transparent 30%);
@@ -322,6 +331,7 @@ h6 {
     transition: 0.3s;
     position: relative;
   }
+
   .navmenu a i,
   .navmenu a:focus i {
     font-size: 12px;
@@ -329,6 +339,7 @@ h6 {
     margin-left: 5px;
     transition: 0.3s;
   }
+
   .navmenu>ul>li>a:before {
     content: "";
     position: absolute;
@@ -340,17 +351,20 @@ h6 {
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
   }
+
   .navmenu a:hover:before,
   .navmenu li:hover>a:before,
   .navmenu .active:before {
     visibility: visible;
     width: 100%;
   }
+
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-color);
   }
+
   .navmenu .dropdown ul {
     margin: 0;
     padding: 10px 0;
@@ -366,33 +380,40 @@ h6 {
     z-index: 99;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
   }
+
   .navmenu .dropdown ul li {
     min-width: 200px;
   }
+
   .navmenu .dropdown ul a {
     padding: 10px 20px;
     font-size: 15px;
     text-transform: none;
     color: var(--nav-dropdown-color);
   }
+
   .navmenu .dropdown ul a i {
     font-size: 12px;
   }
+
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
   .navmenu .dropdown ul li:hover>a {
     color: var(--nav-dropdown-hover-color);
   }
+
   .navmenu .dropdown:hover>ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
   }
+
   .navmenu .dropdown .dropdown ul {
     top: 0;
     left: -90%;
     visibility: hidden;
   }
+
   .navmenu .dropdown .dropdown:hover>ul {
     opacity: 1;
     top: 0;
@@ -413,10 +434,12 @@ h6 {
     cursor: pointer;
     transition: color 0.3s;
   }
+
   .navmenu {
     padding: 0;
     z-index: 9997;
   }
+
   .navmenu ul {
     display: none;
     list-style: none;
@@ -432,6 +455,7 @@ h6 {
     transition: 0.3s;
     z-index: 9998;
   }
+
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-dropdown-color);
@@ -445,6 +469,7 @@ h6 {
     white-space: nowrap;
     transition: 0.3s;
   }
+
   .navmenu a i,
   .navmenu a:focus i {
     font-size: 12px;
@@ -459,22 +484,26 @@ h6 {
     transition: 0.3s;
     background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
   }
+
   .navmenu a i:hover,
   .navmenu a:focus i:hover {
     background-color: var(--accent-color);
     color: var(--contrast-color);
   }
+
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-dropdown-hover-color);
   }
+
   .navmenu .active i,
   .navmenu .active:focus i {
     background-color: var(--accent-color);
     color: var(--contrast-color);
     transform: rotate(180deg);
   }
+
   .navmenu .dropdown ul {
     position: static;
     display: none;
@@ -484,16 +513,20 @@ h6 {
     background-color: var(--nav-dropdown-background-color);
     transition: all 0.5s ease-in-out;
   }
+
   .navmenu .dropdown ul ul {
     background-color: rgba(33, 37, 41, 0.1);
   }
+
   .navmenu .dropdown>.dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
+
   .mobile-nav-active {
     overflow: hidden;
   }
+
   .mobile-nav-active .mobile-nav-toggle {
     color: #fff;
     position: absolute;
@@ -503,6 +536,7 @@ h6 {
     margin-right: 0;
     z-index: 9999;
   }
+
   .mobile-nav-active .navmenu {
     position: fixed;
     overflow: hidden;
@@ -510,6 +544,7 @@ h6 {
     background: rgba(33, 37, 41, 0.8);
     transition: 0.3s;
   }
+
   .mobile-nav-active .navmenu>ul {
     display: block;
   }
@@ -610,6 +645,7 @@ h6 {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -728,6 +764,7 @@ section,
 }
 
 @media (max-width: 1199px) {
+
   section,
   .section {
     scroll-margin-top: 57px;
@@ -881,6 +918,7 @@ section,
     padding: 80px 0;
     min-height: 80vh;
   }
+
   .hero .hero-content {
     min-height: 80vh;
   }
@@ -1033,12 +1071,15 @@ section,
     padding: 15px;
     min-width: 140px;
   }
+
   .about-downtown .experience-badge h2 {
     font-size: 2.8rem;
   }
+
   .about-downtown .experience-badge p {
     font-size: 0.8rem;
   }
+
   .about-downtown .projects-badge {
     top: 15px;
     right: 15px;
@@ -1046,9 +1087,11 @@ section,
     min-width: 140px;
     border-radius: 10px;
   }
+
   .about-downtown .projects-badge h2 {
     font-size: 2rem;
   }
+
   .about-downtown .projects-badge p {
     font-size: 0.75rem;
   }
@@ -1059,19 +1102,24 @@ section,
     padding: 12px;
     min-width: 120px;
   }
+
   .about-downtown .experience-badge h2 {
     font-size: 2.2rem;
   }
+
   .about-downtown .experience-badge p {
     font-size: 0.75rem;
   }
+
   .about-downtown .projects-badge {
     padding: 12px;
     min-width: 120px;
   }
+
   .about-downtown .projects-badge h2 {
     font-size: 1.8rem;
   }
+
   .about-downtown .projects-badge p {
     font-size: 0.7rem;
   }
@@ -1203,6 +1251,7 @@ section,
   .ada-president .about-img {
     margin-bottom: 30px;
   }
+
   .ada-president .content .about-content .info-list {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
@@ -1212,9 +1261,11 @@ section,
   .ada-president .content .section-header h2 {
     font-size: 28px;
   }
+
   .ada-president .content .section-header p {
     font-size: 16px;
   }
+
   .ada-president .content .about-content .bio-text .lead {
     font-size: 1.1rem;
   }
@@ -1225,11 +1276,13 @@ section,
     padding: 12px 20px;
     gap: 12px;
   }
+
   .ada-president .about-img .img-wrapper .social-links a {
     font-size: 16px;
     width: 32px;
     height: 32px;
   }
+
   .ada-president .content .about-content .info-list {
     grid-template-columns: 1fr;
   }
@@ -1515,10 +1568,12 @@ section,
 }
 
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-15px);
   }
@@ -1755,45 +1810,58 @@ section,
   .about-augusta .content-wrapper {
     margin-bottom: 48px;
   }
+
   .about-augusta .content-wrapper h3 {
     font-size: 28px;
   }
+
   .about-augusta .image-stack {
     min-height: 450px;
   }
+
   .about-augusta .image-stack .image-primary {
     width: 80%;
   }
+
   .about-augusta .image-stack .image-primary img {
     height: 300px;
   }
+
   .about-augusta .image-stack .image-secondary {
     width: 65%;
   }
+
   .about-augusta .image-stack .image-secondary img {
     height: 240px;
   }
+
   .about-augusta .image-stack .experience-badge {
     width: 100px;
     height: 100px;
     padding: 16px;
   }
+
   .about-augusta .image-stack .experience-badge i {
     font-size: 20px;
   }
+
   .about-augusta .image-stack .experience-badge span {
     font-size: 16px;
   }
+
   .about-augusta .image-stack .experience-badge p {
     font-size: 10px;
   }
+
   .about-augusta .highlights-bar {
     margin-top: 64px;
   }
+
   .about-augusta .highlights-bar .highlight-item {
     border-right: none;
     border-bottom: 1px solid color-mix(in srgb, var(--contrast-color) 20%, transparent);
   }
+
   .about-augusta .highlights-bar .highlight-item:last-child {
     border-bottom: none;
   }
@@ -1803,6 +1871,7 @@ section,
   .about-augusta .highlights-bar .row>[class*=col-]:nth-child(odd) .highlight-item {
     border-right: 1px solid color-mix(in srgb, var(--contrast-color) 20%, transparent);
   }
+
   .about-augusta .highlights-bar .row>[class*=col-]:nth-child(3) .highlight-item,
   .about-augusta .highlights-bar .row>[class*=col-]:nth-child(4) .highlight-item {
     border-bottom: none;
@@ -1813,64 +1882,83 @@ section,
   .about-augusta {
     padding: 48px 0;
   }
+
   .about-augusta .content-wrapper .tagline {
     font-size: 12px;
   }
+
   .about-augusta .content-wrapper h3 {
     font-size: 24px;
   }
+
   .about-augusta .content-wrapper .intro {
     font-size: 16px;
   }
+
   .about-augusta .content-wrapper .stats-grid .stat-box {
     padding: 16px 8px;
   }
+
   .about-augusta .content-wrapper .stats-grid .stat-box .purecounter {
     font-size: 28px;
   }
+
   .about-augusta .content-wrapper .stats-grid .stat-box .suffix {
     font-size: 18px;
   }
+
   .about-augusta .content-wrapper .stats-grid .stat-box p {
     font-size: 12px;
   }
+
   .about-augusta .content-wrapper .btn-discover {
     width: 100%;
     justify-content: center;
   }
+
   .about-augusta .image-stack {
     min-height: 380px;
   }
+
   .about-augusta .image-stack .image-primary {
     width: 90%;
   }
+
   .about-augusta .image-stack .image-primary img {
     height: 240px;
   }
+
   .about-augusta .image-stack .image-secondary {
     width: 60%;
   }
+
   .about-augusta .image-stack .image-secondary img {
     height: 200px;
     border-width: 4px;
   }
+
   .about-augusta .image-stack .experience-badge {
     width: 90px;
     height: 90px;
     padding: 12px;
   }
+
   .about-augusta .image-stack .experience-badge i {
     font-size: 18px;
   }
+
   .about-augusta .image-stack .experience-badge span {
     font-size: 14px;
   }
+
   .about-augusta .image-stack .experience-badge p {
     font-size: 9px;
   }
+
   .about-augusta .highlights-bar {
     margin-top: 48px;
   }
+
   .about-augusta .highlights-bar .highlight-item {
     padding: 24px 16px;
     justify-content: center;
@@ -1880,15 +1968,19 @@ section,
     border-right: none !important;
     border-bottom: 1px solid color-mix(in srgb, var(--contrast-color) 20%, transparent);
   }
+
   .about-augusta .highlights-bar .highlight-item:last-child {
     border-bottom: none;
   }
+
   .about-augusta .highlights-bar .highlight-item i {
     font-size: 32px;
   }
+
   .about-augusta .highlights-bar .highlight-item .highlight-text h4 {
     font-size: 16px;
   }
+
   .about-augusta .highlights-bar .highlight-item .highlight-text p {
     font-size: 12px;
   }
@@ -2020,6 +2112,7 @@ section,
   .gallery-home .gallery-item {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   }
+
   .gallery-home .swiper-button-next,
   .gallery-home .swiper-button-prev {
     display: none;
@@ -2030,6 +2123,7 @@ section,
   .gallery-home .swiper-wrapper {
     padding: 15px 0;
   }
+
   .gallery-home .gallery-img .gallery-overlay i {
     font-size: 2rem;
   }
@@ -2153,10 +2247,12 @@ section,
   .faq .faq-list .faq-item {
     padding: 20px;
   }
+
   .faq .faq-list .faq-item h3 {
     font-size: 16px;
     line-height: 24px;
   }
+
   .faq .faq-list .faq-item .faq-toggle {
     right: 20px;
     top: 20px;
@@ -2435,6 +2531,7 @@ section,
   .get-involved h2 {
     font-size: 2rem;
   }
+
   .get-involved h3 {
     font-size: 1.5rem;
   }
@@ -2444,6 +2541,7 @@ section,
   .get-involved .cta-wrapper .cta-item.tour {
     border-radius: 8px 8px 0 0;
   }
+
   .get-involved .cta-wrapper .cta-item.apply {
     border-radius: 0 0 8px 8px;
   }
@@ -2453,13 +2551,16 @@ section,
   .get-involved .deadlines .deadline-grid {
     grid-template-columns: 1fr;
   }
+
   .get-involved .requirement-item {
     flex-direction: column;
   }
+
   .get-involved .requirement-item .icon-box {
     margin-bottom: 1rem;
     margin-right: 0;
   }
+
   .get-involved .cta-item {
     padding: 2rem 1.5rem;
   }
@@ -3048,6 +3149,7 @@ section,
   .gallery-events .gallery-item {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   }
+
   .gallery-events .swiper-button-next,
   .gallery-events .swiper-button-prev {
     display: none;
@@ -3058,6 +3160,7 @@ section,
   .gallery-events .swiper-wrapper {
     padding: 15px 0;
   }
+
   .gallery-events .gallery-img .gallery-overlay i {
     font-size: 2rem;
   }
@@ -3480,16 +3583,20 @@ section,
   .contact-us .info-panel {
     padding: 40px;
   }
+
   .contact-us .info-panel .panel-header h3 {
     font-size: 28px;
   }
+
   .contact-us .info-panel .stats-strip {
     gap: 16px;
     padding: 20px;
   }
+
   .contact-us .info-panel .stats-strip .stat-item .stat-number {
     font-size: 24px;
   }
+
   .contact-us .form-card {
     padding: 40px;
   }
@@ -3499,59 +3606,74 @@ section,
   .contact-us .info-panel {
     padding: 32px;
   }
+
   .contact-us .info-panel .panel-header {
     margin-bottom: 32px;
   }
+
   .contact-us .info-panel .panel-header h3 {
     font-size: 24px;
   }
+
   .contact-us .info-panel .contact-methods {
     margin-bottom: 32px;
   }
+
   .contact-us .info-panel .stats-strip {
     flex-direction: column;
     gap: 16px;
   }
+
   .contact-us .info-panel .stats-strip .stat-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: left;
   }
+
   .contact-us .info-panel .stats-strip .stat-item .stat-number {
     margin-bottom: 0;
     order: 2;
   }
+
   .contact-us .info-panel .stats-strip .stat-item .stat-text {
     order: 1;
   }
+
   .contact-us .info-panel .social-connect {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
   }
+
   .contact-us .form-card {
     padding: 32px 24px;
   }
+
   .contact-us .form-card .form-card-header {
     flex-direction: column;
     gap: 16px;
   }
+
   .contact-us .form-card .form-card-header .header-icon {
     width: 56px;
     height: 56px;
   }
+
   .contact-us .form-card .form-card-header .header-icon i {
     font-size: 24px;
   }
+
   .contact-us .form-card .form-card-header .header-text h4 {
     font-size: 22px;
   }
+
   .contact-us .form-card .php-email-form .input-group-custom .input-wrapper input,
   .contact-us .form-card .php-email-form .input-group-custom .input-wrapper textarea {
     height: 52px;
     padding: 14px 14px 14px 48px;
   }
+
   .contact-us .form-card .php-email-form .form-actions .btn-submit {
     height: 52px;
   }
@@ -3561,23 +3683,29 @@ section,
   .contact-us .info-panel {
     padding: 24px;
   }
+
   .contact-us .info-panel .method-item {
     padding: 14px;
   }
+
   .contact-us .info-panel .method-item .method-icon {
     width: 44px;
     height: 44px;
   }
+
   .contact-us .info-panel .method-item .method-icon i {
     font-size: 18px;
   }
+
   .contact-us .form-card {
     padding: 24px 20px;
   }
+
   .contact-us .form-card .form-card-header {
     margin-bottom: 32px;
     padding-bottom: 24px;
   }
+
   .contact-us .form-card .php-email-form .input-group-custom .input-wrapper input,
   .contact-us .form-card .php-email-form .input-group-custom .input-wrapper textarea {
     font-size: 16px;
@@ -3710,6 +3838,7 @@ section,
   .gallery-3 .gallery-item {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   }
+
   .gallery-3 .swiper-button-next,
   .gallery-3 .swiper-button-prev {
     display: none;
@@ -3720,6 +3849,7 @@ section,
   .gallery-3 .swiper-wrapper {
     padding: 15px 0;
   }
+
   .gallery-3 .gallery-img .gallery-overlay i {
     font-size: 2rem;
   }
@@ -4401,16 +4531,20 @@ section,
     padding-right: 0;
     margin-bottom: 2rem;
   }
+
   .augusta-options .content-wrapper h2 {
     font-size: 2rem;
   }
+
   .augusta-options .image-showcase {
     padding: 1.5rem;
   }
+
   .augusta-options .image-showcase .floating-card.card-top {
     top: -0.5rem;
     right: -0.5rem;
   }
+
   .augusta-options .image-showcase .floating-card.card-bottom {
     bottom: -0.5rem;
     left: -0.5rem;
@@ -4421,41 +4555,51 @@ section,
   .augusta-options .content-wrapper h2 {
     font-size: 1.75rem;
   }
+
   .augusta-options .content-wrapper .lead-text {
     font-size: 1rem;
   }
+
   .augusta-options .feature-item {
     padding: 1rem;
   }
+
   .augusta-options .feature-item .feature-icon {
     width: 42px;
     height: 42px;
     min-width: 42px;
     font-size: 1.2rem;
   }
+
   .augusta-options .cta-buttons {
     flex-direction: column;
     align-items: stretch;
   }
+
   .augusta-options .cta-buttons .btn-primary-custom,
   .augusta-options .cta-buttons .btn-secondary-custom {
     justify-content: center;
     width: 100%;
   }
+
   .augusta-options .image-showcase {
     padding: 2.5rem 1rem;
   }
+
   .augusta-options .image-showcase .floating-card {
     padding: 0.75rem 1rem;
   }
+
   .augusta-options .image-showcase .floating-card .card-icon {
     width: 36px;
     height: 36px;
     font-size: 1rem;
   }
+
   .augusta-options .image-showcase .floating-card .card-info .metric {
     font-size: 1.1rem;
   }
+
   .augusta-options .image-showcase .floating-card .card-info .label {
     font-size: 0.75rem;
   }
@@ -4772,27 +4916,34 @@ section,
   .featured-downtown {
     padding: 60px 0;
   }
+
   .featured-downtown .programs-overview {
     grid-template-columns: 1fr;
     gap: 40px;
     margin-bottom: 60px;
   }
+
   .featured-downtown .programs-overview .overview-content {
     order: 2;
   }
+
   .featured-downtown .programs-overview .overview-content h2 {
     font-size: 2rem;
   }
+
   .featured-downtown .programs-overview .overview-content .overview-stats {
     justify-content: space-between;
     gap: 20px;
   }
+
   .featured-downtown .programs-overview .overview-image {
     order: 1;
   }
+
   .featured-downtown .programs-overview .overview-image img {
     height: 300px;
   }
+
   .featured-downtown .programs-showcase {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -4805,18 +4956,22 @@ section,
     gap: 24px;
     text-align: center;
   }
+
   .featured-downtown .featured-program .card-content {
     padding: 24px 20px;
   }
+
   .featured-downtown .program-item {
     flex-direction: column;
     text-align: center;
     gap: 16px;
   }
+
   .featured-downtown .program-item .item-visual {
     width: 120px;
     height: 120px;
   }
+
   .featured-downtown .program-item .item-action {
     margin-left: 0;
   }
@@ -4826,15 +4981,19 @@ section,
   .featured-downtown {
     padding: 40px 0;
   }
+
   .featured-downtown .programs-overview {
     margin-bottom: 40px;
   }
+
   .featured-downtown .programs-overview .overview-content h2 {
     font-size: 1.8rem;
   }
+
   .featured-downtown .programs-overview .overview-image img {
     height: 250px;
   }
+
   .featured-downtown .programs-showcase {
     gap: 30px;
   }
@@ -5071,45 +5230,58 @@ section,
   .downtown-features .content-wrapper {
     margin-bottom: 48px;
   }
+
   .downtown-features .content-wrapper h3 {
     font-size: 28px;
   }
+
   .downtown-features .image-stack {
     min-height: 450px;
   }
+
   .downtown-features .image-stack .image-primary {
     width: 80%;
   }
+
   .downtown-features .image-stack .image-primary img {
     height: 300px;
   }
+
   .downtown-features .image-stack .image-secondary {
     width: 65%;
   }
+
   .downtown-features .image-stack .image-secondary img {
     height: 240px;
   }
+
   .downtown-features .image-stack .experience-badge {
     width: 100px;
     height: 100px;
     padding: 16px;
   }
+
   .downtown-features .image-stack .experience-badge i {
     font-size: 20px;
   }
+
   .downtown-features .image-stack .experience-badge span {
     font-size: 16px;
   }
+
   .downtown-features .image-stack .experience-badge p {
     font-size: 10px;
   }
+
   .downtown-features .highlights-bar {
     margin-top: 64px;
   }
+
   .downtown-features .highlights-bar .highlight-item {
     border-right: none;
     border-bottom: 1px solid color-mix(in srgb, var(--contrast-color) 20%, transparent);
   }
+
   .downtown-features .highlights-bar .highlight-item:last-child {
     border-bottom: none;
   }
@@ -5119,6 +5291,7 @@ section,
   .downtown-features .highlights-bar .row>[class*=col-]:nth-child(odd) .highlight-item {
     border-right: 1px solid color-mix(in srgb, var(--contrast-color) 20%, transparent);
   }
+
   .downtown-features .highlights-bar .row>[class*=col-]:nth-child(3) .highlight-item,
   .downtown-features .highlights-bar .row>[class*=col-]:nth-child(4) .highlight-item {
     border-bottom: none;
@@ -5129,64 +5302,83 @@ section,
   .downtown-features {
     padding: 48px 0;
   }
+
   .downtown-features .content-wrapper .tagline {
     font-size: 12px;
   }
+
   .downtown-features .content-wrapper h3 {
     font-size: 24px;
   }
+
   .downtown-features .content-wrapper .intro {
     font-size: 16px;
   }
+
   .downtown-features .content-wrapper .stats-grid .stat-box {
     padding: 16px 8px;
   }
+
   .downtown-features .content-wrapper .stats-grid .stat-box .purecounter {
     font-size: 28px;
   }
+
   .downtown-features .content-wrapper .stats-grid .stat-box .suffix {
     font-size: 18px;
   }
+
   .downtown-features .content-wrapper .stats-grid .stat-box p {
     font-size: 12px;
   }
+
   .downtown-features .content-wrapper .btn-discover {
     width: 100%;
     justify-content: center;
   }
+
   .downtown-features .image-stack {
     min-height: 380px;
   }
+
   .downtown-features .image-stack .image-primary {
     width: 90%;
   }
+
   .downtown-features .image-stack .image-primary img {
     height: 240px;
   }
+
   .downtown-features .image-stack .image-secondary {
     width: 60%;
   }
+
   .downtown-features .image-stack .image-secondary img {
     height: 200px;
     border-width: 4px;
   }
+
   .downtown-features .image-stack .experience-badge {
     width: 90px;
     height: 90px;
     padding: 12px;
   }
+
   .downtown-features .image-stack .experience-badge i {
     font-size: 18px;
   }
+
   .downtown-features .image-stack .experience-badge span {
     font-size: 14px;
   }
+
   .downtown-features .image-stack .experience-badge p {
     font-size: 9px;
   }
+
   .downtown-features .highlights-bar {
     margin-top: 48px;
   }
+
   .downtown-features .highlights-bar .highlight-item {
     padding: 24px 16px;
     justify-content: center;
@@ -5196,15 +5388,19 @@ section,
     border-right: none !important;
     border-bottom: 1px solid color-mix(in srgb, var(--contrast-color) 20%, transparent);
   }
+
   .downtown-features .highlights-bar .highlight-item:last-child {
     border-bottom: none;
   }
+
   .downtown-features .highlights-bar .highlight-item i {
     font-size: 32px;
   }
+
   .downtown-features .highlights-bar .highlight-item .highlight-text h4 {
     font-size: 16px;
   }
+
   .downtown-features .highlights-bar .highlight-item .highlight-text p {
     font-size: 12px;
   }
@@ -5480,6 +5676,7 @@ section,
 }
 
 @media (max-width: 576px) {
+
   .downtown-gallery .gallery-actions .btn-primary-gallery,
   .downtown-gallery .gallery-actions .btn-secondary-gallery {
     padding: 12px 25px;
@@ -5753,6 +5950,7 @@ section,
   .downtown-experience .testimonial-section .testimonial-content blockquote {
     font-size: 1.125rem;
   }
+
   .downtown-experience .testimonial-section .testimonial-content blockquote::before {
     font-size: 3rem;
     top: -15px;
@@ -5849,12 +6047,15 @@ section,
     margin-bottom: 30px;
     padding: 0;
   }
+
   .downtown-programs .nav-tabs .nav-item {
     margin: 8px 0;
   }
+
   .downtown-programs .nav-tabs .nav-link {
     padding: 10px 15px;
   }
+
   .downtown-programs .nav-tabs .nav-link.active::after {
     right: 0;
     bottom: -3px;
@@ -5914,6 +6115,7 @@ section,
     font-size: 24px;
     margin-top: 20px;
   }
+
   .downtown-programs .tab-content img {
     margin-bottom: 30px;
   }
@@ -6105,9 +6307,11 @@ section,
     padding-bottom: 48px;
     margin-bottom: 16px;
   }
+
   .downtown-initiatives .about-gallery .experience-badge {
     right: 16px;
   }
+
   .downtown-initiatives .about-content h2 {
     font-size: 30px;
   }
@@ -6118,23 +6322,29 @@ section,
     padding-right: 32px;
     padding-bottom: 32px;
   }
+
   .downtown-initiatives .about-gallery .experience-badge {
     width: 80px;
     height: 80px;
     right: 0;
   }
+
   .downtown-initiatives .about-gallery .experience-badge .number {
     font-size: 22px;
   }
+
   .downtown-initiatives .about-gallery .experience-badge .text {
     font-size: 9px;
   }
+
   .downtown-initiatives .about-content h2 {
     font-size: 26px;
   }
+
   .downtown-initiatives .about-cta {
     flex-direction: column;
   }
+
   .downtown-initiatives .about-cta .btn-about,
   .downtown-initiatives .about-cta .btn-about-outline {
     justify-content: center;

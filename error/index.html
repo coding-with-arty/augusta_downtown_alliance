@@ -15,8 +15,8 @@ Purpose: Revitalizing downtown Augusta through community,
 TECHNOLOGY
 ------------------------------------------------------
 Standards: HTML5, CSS3, JavaScript, JSON-LD
-Tools: XAMPP, Git, PHPMailer
-Hosting: GoDaddy Linux Hosting
+Tools: XAMPP, Git, Bootstrap
+Hosting: Cloudflare Hosting
 
 LAST UPDATED
 ------------------------------------------------------
@@ -26,48 +26,33 @@ LAST UPDATED
 
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <!-- Core Meta -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, follow" />
     <title>Page Not Found — Augusta Downtown Alliance</title>
-    <meta
-      name="description"
-      content="Explore downtown Augusta, Maine—discover local shops, restaurants, events, and historic charm. Plan your visit to Maine’s capital today."
-    />
+    <meta name="description"
+      content="Explore downtown Augusta, Maine—discover local shops, restaurants, events, and historic charm. Plan your visit to Maine’s capital today." />
     <link rel="canonical" href="https://augustadowntown.com/error.html" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
-<meta name="author" content="Augusta Downtown Alliance" />
+    <meta name="author" content="Augusta Downtown Alliance" />
     <meta name="theme-color" content="#004d2a" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://augustadowntown.com/error.html" />
-    <meta
-      property="og:title"
-      content="Page Not Found — Augusta Downtown Alliance"
-    />
-    <meta
-      property="og:description"
-      content="We couldn’t find the page you were looking for."
-    />
+    <meta property="og:title" content="Page Not Found — Augusta Downtown Alliance" />
+    <meta property="og:description" content="We couldn’t find the page you were looking for." />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:url"
-      content="https://augustadowntown.com/events-calendar/"
-    />
+    <meta name="twitter:url" content="https://augustadowntown.com/events-calendar/" />
     <meta name="twitter:title" content="Events - Augusta Downtown Alliance" />
-    <meta
-      name="twitter:description"
-      content="Walk through history in Augusta, Maine — explore landmarks, heritage trails, and cultural destinations in the heart of Maine’s capital."
-    />
-    <meta
-      name="twitter:image"
-      content="https://augustadowntown.com/assets/images/social-preview-history.webp"
-    />
+    <meta name="twitter:description"
+      content="Walk through history in Augusta, Maine — explore landmarks, heritage trails, and cultural destinations in the heart of Maine’s capital." />
+    <meta name="twitter:image" content="https://augustadowntown.com/assets/images/social-preview-history.webp" />
 
     <!-- Humans.txt link -->
     <link rel="author" href="humans.txt" />
@@ -76,22 +61,9 @@ LAST UPDATED
     <link rel="canonical" href="https://augustadowntown.com/events-calendar/" />
 
     <!-- favicon -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/assets/images/favicons/favicon-32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/assets/images/favicons/favicon-16.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="/assets/images/favicons/apple-touch-icon.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16.png" />
+    <link rel="apple-touch-icon" href="/assets/images/favicons/apple-touch-icon.png" />
     <link rel="manifest" href="manifest.json" />
 
     <!-- Preconnect -->
@@ -101,24 +73,14 @@ LAST UPDATED
     <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
 
     <!-- Vendor CSS -->
-    <link
-      rel="stylesheet"
-      href="/assets/vendor/bootstrap/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/assets/vendor/bootstrap-icons/bootstrap-icons.css"
-    />
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" />
     <link rel="stylesheet" href="/assets/vendor/aos/aos.css" />
     <link rel="stylesheet" href="/assets/vendor/swiper/swiper-bundle.min.css" />
-    <link
-      rel="stylesheet"
-      href="/assets/vendor/glightbox/css/glightbox.min.css"
-    />
+    <link rel="stylesheet" href="/assets/vendor/glightbox/css/glightbox.min.css" />
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="/assets/css/main.css" />
@@ -136,14 +98,9 @@ LAST UPDATED
 
   <body class="events-page">
     <header id="header" class="header d-flex align-items-center sticky-top">
-      <div
-        class="container position-relative d-flex align-items-center justify-content-between"
-      >
+      <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
-          <img
-            src="/assets/images/favicons/logo.png"
-            alt="Augusta Downtown Alliance logo"
-          />
+          <img src="/assets/images/favicons/logo.png" alt="Augusta Downtown Alliance logo" />
           <h1 class="sitename">Augusta Downtown Alliance</h1>
         </a>
 
@@ -154,10 +111,8 @@ LAST UPDATED
             </li>
 
             <li class="dropdown">
-              <a href="/businesses-features/"
-                >Businesses &amp; Features
-                <i class="bi bi-chevron-down toggle-dropdown"></i
-              ></a>
+              <a href="/businesses-features/">Businesses &amp; Features
+                <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="/downtown-life/">Downtown Life</a></li>
                 <li>
@@ -177,13 +132,8 @@ LAST UPDATED
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a
-          class="cta-btn"
-          href="https://www.paypal.com/donate?hosted_button_id=JANPA59R5QZSL"
-          target="_blank"
-          rel="noopener"
-          aria-label="Donate to Augusta Downtown Alliance via PayPal"
-        >
+        <a class="cta-btn" href="https://www.paypal.com/donate?hosted_button_id=JANPA59R5QZSL" target="_blank"
+          rel="noopener" aria-label="Donate to Augusta Downtown Alliance via PayPal">
           Donate Today
         </a>
       </div>
@@ -191,11 +141,8 @@ LAST UPDATED
 
     <main class="main">
       <!-- Page Title -->
-      <div
-        class="page-title dark-background position-relative"
-        data-aos="fade"
-        style="background-image: url(/assets/images/place/dwntwn.webp)"
-      >
+      <div class="page-title dark-background position-relative" data-aos="fade"
+        style="background-image: url(/assets/images/place/dwntwn.webp)">
         <div class="container position-relative">
           <h1>Augusta Downtown Alliance Error Page</h1>
           <p>
@@ -219,17 +166,11 @@ LAST UPDATED
           <div class="error-details mb-4">
             Sorry, an error has occurred. The requested page was not found!
           </div>
-          <div
-            class="error-actions d-flex flex-wrap gap-2 justify-content-center"
-          >
+          <div class="error-actions d-flex flex-wrap gap-2 justify-content-center">
             <a href="/" class="btn btn-primary btn-lg" style="width: 240px">
               <i class="bi bi-house"></i> Take Me Home
             </a>
-            <a
-              href="/contact/"
-              class="btn btn-outline-secondary btn-lg"
-              style="width: 240px"
-            >
+            <a href="/contact/" class="btn btn-outline-secondary btn-lg" style="width: 240px">
               <i class="bi bi-mailbox-flag"></i> Contact Support
             </a>
           </div>
@@ -245,34 +186,15 @@ LAST UPDATED
           city!
         </p>
         <div class="social-links d-flex justify-content-center">
-          <a
-            href="https://www.facebook.com/AugustaDowntownAlliance"
-            title="Visit us on Facebook"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="bi bi-facebook"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/augustadowntownalliance"
-            title="Visit us on Instagram"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="bi bi-instagram"></i
-          ></a>
-          <a
-            href="https://twitter.com/augustadowntown"
-            title="Visit us on X"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="bi bi-twitter-x"></i
-          ></a>
-          <a
-            href="https://github.com/coding-with-arty/augusta_downtown_alliance"
-            title="View GitHub repository for site"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="bi bi-github"></i
-          ></a>
+          <a href="https://www.facebook.com/AugustaDowntownAlliance" title="Visit us on Facebook" target="_blank"
+            rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/augustadowntownalliance" title="Visit us on Instagram" target="_blank"
+            rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+          <a href="https://twitter.com/augustadowntown" title="Visit us on X" target="_blank"
+            rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://github.com/coding-with-arty/augusta_downtown_alliance"
+            title="View GitHub repository for site" target="_blank" rel="noopener noreferrer"><i
+              class="bi bi-github"></i></a>
         </div>
         <div class="container">
           <div class="copyright">
@@ -281,47 +203,26 @@ LAST UPDATED
             <span>All Rights Reserved</span>
           </div>
           <div>
-            <span
-              >Site created by
-              <a
-                href="https://github.com/coding-with-arty/coding-with-arty"
-                title="Visit developer Coding-With_Arty"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Coding-With-Arty</a
-              ></span
-            >
+            <span>Site created by
+              <a href="https://github.com/coding-with-arty/coding-with-arty" title="Visit developer Coding-With_Arty"
+                target="_blank" rel="noopener noreferrer">Coding-With-Arty</a></span>
           </div>
         </div>
         <div class="mt-3 text-center small">
           <span class="me-2">Want to help improve this site?</span>
 
-          <a
-            href="https://github.com/coding-with-arty/augusta_downtown_alliance"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="me-2"
-            title="View source code"
-          >
+          <a href="https://github.com/coding-with-arty/augusta_downtown_alliance" target="_blank"
+            rel="noopener noreferrer" class="me-2" title="View source code">
             <i class="bi bi-github"></i> View Source
           </a>
 
-          <a
-            href="https://github.com/coding-with-arty/augusta_downtown_alliance/issues"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="me-2"
-            title="Report an issue"
-          >
+          <a href="https://github.com/coding-with-arty/augusta_downtown_alliance/issues" target="_blank"
+            rel="noopener noreferrer" class="me-2" title="Report an issue">
             Report Issue
           </a>
 
-          <a
-            href="https://github.com/coding-with-arty/augusta_downtown_alliance/pulls"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Submit a contribution"
-          >
+          <a href="https://github.com/coding-with-arty/augusta_downtown_alliance/pulls" target="_blank"
+            rel="noopener noreferrer" title="Submit a contribution">
             Contribute
           </a>
         </div>
@@ -329,12 +230,8 @@ LAST UPDATED
     </footer>
 
     <!-- Scroll Top -->
-    <a
-      href="#"
-      id="scroll-top"
-      class="scroll-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
 
     <!-- Preloader -->
     <div id="preloader"></div>
@@ -351,4 +248,5 @@ LAST UPDATED
     <!-- Main JS File -->
     <script src="/assets/js/main.js"></script>
   </body>
+
 </html>
