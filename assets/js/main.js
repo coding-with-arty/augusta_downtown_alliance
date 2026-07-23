@@ -4,7 +4,7 @@ TEAM
 ------------------------------------------------------
 Developer: Arthur Daniel Belanger Jr.
 Role: Lead Developer & Technical Architect
-GitHub: https://github.com/coding-with-arty/coding-with-arty
+GitHub: https://github.com/coding-with-arty
 
 ORGANIZATION
 ------------------------------------------------------
@@ -15,7 +15,7 @@ Purpose: Revitalizing downtown Augusta through community,
 TECHNOLOGY
 ------------------------------------------------------
 Standards: HTML5, CSS3, JavaScript, JSON-LD
-Tools: XAMPP, Git, PHPMailer
+Tools: Laragon, Git, PHPMailer
 Hosting: GoDaddy Linux Hosting
 
 LAST UPDATED

@@ -14,7 +14,7 @@ Purpose: Revitalizing downtown Augusta through community,
 TECHNOLOGY
 ------------------------------------------------------
 Standards: HTML5, CSS3, JavaScript, JSON-LD
-Tools: XAMPP, Git, PHPMailer
+Tools: Laragon, Git, PHPMailer
 Hosting: GoDaddy Linux Hosting
 
 LAST UPDATED
