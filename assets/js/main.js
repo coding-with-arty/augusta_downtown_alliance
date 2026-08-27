@@ -10,7 +10,7 @@ ORGANIZATION
 ------------------------------------------------------
 Project: Augusta Downtown Alliance Website
 Purpose: Revitalizing downtown Augusta through community,
-         culture, and economic vitality.
+culture, and economic vitality.
 
 TECHNOLOGY
 ------------------------------------------------------
@@ -20,7 +20,7 @@ Hosting: GoDaddy Linux Hosting
 
 LAST UPDATED
 ------------------------------------------------------
-2026-07-23
+2026-08-27
 ======================================================
  */
 
